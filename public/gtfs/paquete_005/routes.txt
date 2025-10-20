@@ -1,0 +1,6 @@
+﻿route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color
+9__1__013_,CRTM,1,L1 CIRCULAR (FFCC-Moreras-FFCC),,3,https://www.crtm.es/9__1__013_.aspx,E60003,FFFFFF
+9__2__013_,CRTM,2,L2 CIRCULAR (FFCC-Residencia-FFCC),,3,https://www.crtm.es/9__2__013_.aspx,E60003,FFFFFF
+9__3__013_,CRTM,3,L3 CIRCULAR (FFCC-Glorieta de la Música-FFCC),,3,https://www.crtm.es/9__3__013_.aspx,E60003,FFFFFF
+9__4__013_,CRTM,4,EST. ARANJUEZ - HOSPITAL - PAU DE LA MONTAÑA,,3,https://www.crtm.es/9__4__013_.aspx,E60003,FFFFFF
+9__5__013_,CRTM,5,L5  CIRCULAR (FFCC-La Montaña-FFCC),,3,https://www.crtm.es/9__5__013_.aspx,E60003,FFFFFF

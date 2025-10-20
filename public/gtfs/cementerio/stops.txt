@@ -1,0 +1,10 @@
+stop_id,stop_name,stop_lat,stop_lon
+CEMENT6_1,FF.CC. Fuenlabrada Central,40.282,-3.804
+CEMENT6_2,Luis Sauquillo,40.283,-3.800
+CEMENT6_3,Leganés,40.284,-3.796
+CEMENT6_4,Av. Estados,40.286,-3.792
+CEMENT6_5,Brasil,40.287,-3.789
+CEMENT6_6,Constitución,40.288,-3.785
+CEMENT6_7,Fuente (Cementerio Viejo),40.289,-3.781
+CEMENT6_8,Campo de Fútbol / Av. Libertad,40.290,-3.778
+CEMENT6_9,Cementerio,40.291,-3.774

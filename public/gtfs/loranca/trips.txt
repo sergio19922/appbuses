@@ -1,0 +1,2 @@
+route_id,service_id,trip_id,shape_id
+LORANCA4,serv1,LORANCA4-trip1,LORSHAPE

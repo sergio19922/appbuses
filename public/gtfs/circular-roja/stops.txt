@@ -1,0 +1,24 @@
+stop_id,stop_name,stop_lat,stop_lon
+1,Barrio El Naranjo (Galicia),40.29525,-3.81256
+2,Almendro (C.C. Nexum),40.2876,-3.8001
+3,Móstoles,40.2903,-3.805
+4,Av. Naciones,40.2869,-3.8035
+5,C.° Molino,40.285,-3.801
+6,Portugal,40.2835,-3.7995
+7,Av. Andes,40.282,-3.798
+8,Av. España,40.281,-3.797
+9,Castilla La Vieja,40.28,-3.796
+10,Avilés,40.279,-3.795
+11,Av. Estados,40.278,-3.794
+12,Brasil,40.277,-3.793
+13,Av. Fco. Sauquillo,40.276,-3.792
+14,Av. Fco. J. Sauquillo,40.275,-3.791
+15,Móstoles,40.274,-3.79
+16,Luis Sauquillo,40.273,-3.789
+17,Panaderas,40.272,-3.788
+18,Com. Madrid,40.271,-3.787
+19,Parque de los Estados,40.27,-3.786
+20,La Serna,40.269,-3.785
+21,Hospital de Europa (Metro),40.268,-3.784
+22,Parque Europa (Metro),40.267,-3.783
+23,Fuenlabrada Central (Metro),40.266,-3.782

@@ -1,0 +1,14 @@
+stop_id,stop_name,stop_lat,stop_lon
+LOR1,Parque del Olivar,40.2832,-3.8255
+LOR2,Centro Salud El Arroyo,40.2851,-3.8190
+LOR3,Luis Sauquillo,40.2873,-3.8122
+LOR4,Leganés,40.3290,-3.7645
+LOR5,Málaga,40.2905,-3.7982
+LOR6,Av. Regiones,40.2942,-3.7923
+LOR7,Av. Naciones,40.2967,-3.7870
+LOR8,Francia,40.2990,-3.7822
+LOR9,Parque Europa,40.3015,-3.7778
+LOR10,Hospital Fuenlabrada,40.3039,-3.7710
+LOR11,Urb. Nuevo Versalles,40.3057,-3.7650
+LOR12,Urb. Loranca,40.3073,-3.7590
+LOR13,Loranca,40.3105,-3.7522

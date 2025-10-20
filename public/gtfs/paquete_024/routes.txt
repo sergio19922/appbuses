@@ -1,0 +1,24 @@
+﻿route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color
+8__421___,CRTM,421,MADRID (Legazpi)-PINTO,,3,https://www.crtm.es/8__421___.aspx,8EBF42,FFFFFF
+8__422___,CRTM,422,MADRID (Legazpi)-VALDEMORO,,3,https://www.crtm.es/8__422___.aspx,8EBF42,FFFFFF
+8__423___,CRTM,423,MADRID (Estación Sur)-ARANJUEZ,,3,https://www.crtm.es/8__423___.aspx,8EBF42,FFFFFF
+8__424___,CRTM,424,MADRID (Legazpi)-VALDEMORO (El Restón),,3,https://www.crtm.es/8__424___.aspx,8EBF42,FFFFFF
+8__425___,CRTM,425,VALDEMORO (Hospital)-CIEMPOZUELOS,,3,https://www.crtm.es/8__425___.aspx,8EBF42,FFFFFF
+8__426___,CRTM,426,MADRID (Legazpi)-CIEMPOZUELOS,,3,https://www.crtm.es/8__426___.aspx,8EBF42,FFFFFF
+8__427___,CRTM,427,MADRID (Villaverde Bajo-Cruce)-ÁREA EMPRESARIAL ANDALUCIA-PINTO,,3,https://www.crtm.es/8__427___.aspx,8EBF42,FFFFFF
+8__428___,CRTM,428,GETAFE-VALDEMORO,,3,https://www.crtm.es/8__428___.aspx,8EBF42,FFFFFF
+8__429___,CRTM,429,MADRID (Legazpi)-ARANJUEZ (PAU de la Montaña),,3,https://www.crtm.es/8__429___.aspx,8EBF42,FFFFFF
+8__430___,CRTM,430,ARANJUEZ-VILLAREJO DE SALVANES,,3,https://www.crtm.es/8__430___.aspx,8EBF42,FFFFFF
+8_N_401___,CRTM,N401,MADRID (Atocha)-PINTO-VALDEMORO,,3,https://www.crtm.es/8_N_401___.aspx,8EBF42,FFFFFF
+8_N_402___,CRTM,N402,MADRID (Atocha)-CIEMPOZUELOS-ARANJUEZ,,3,https://www.crtm.es/8_N_402___.aspx,8EBF42,FFFFFF
+9__1__161_,CRTM,1,CIRCULAR (FFCC-Ambulatorio-FFCC),,3,https://www.crtm.es/9__1__161_.aspx,E60003,FFFFFF
+9__1__040_,CRTM,1,CIRCULAR DE CIEMPOZUELOS,,3,https://www.crtm.es/9__1__040_.aspx,E60003,FFFFFF
+9__2__161_,CRTM,2,ESTACIÓN FFCC-EL RESTÓN,,3,https://www.crtm.es/9__2__161_.aspx,E60003,FFFFFF
+9__3__161_,CRTM,3,CIRCULAR (El Restón-Avenida Andalucía-El Restón),,3,https://www.crtm.es/9__3__161_.aspx,E60003,FFFFFF
+9__4__161_,CRTM,4,ESTACIÓN FFCC-POLÍGONOS NORTE,,3,https://www.crtm.es/9__4__161_.aspx,E60003,FFFFFF
+9__5__161_,CRTM,5,ESTACIÓN FFCC-P.I. ROMPECUBAS,,3,https://www.crtm.es/9__5__161_.aspx,E60003,FFFFFF
+9__6__161_,CRTM,6,ESTACIÓN FFCC-EL CARACOL-EL RESTÓN II,,3,https://www.crtm.es/9__6__161_.aspx,E60003,FFFFFF
+9__7__161_,CRTM,7,ESTACIÓN FFCC-HOSPITAL-EL RESTÓN,,3,https://www.crtm.es/9__7__161_.aspx,E60003,FFFFFF
+9__1_A_113_,CRTM,1A,CIRCULAR PINTO,,3,https://www.crtm.es/9__1_A_113_.aspx,E60003,FFFFFF
+9__1_B_113_,CRTM,1B,CIRCULAR PINTO,,3,https://www.crtm.es/9__1_B_113_.aspx,E60003,FFFFFF
+9__SE__161_,CRTM,SE,SE URBANA VALDEMORO,,3,https://www.crtm.es/9__SE__161_.aspx,E60003,FFFFFF

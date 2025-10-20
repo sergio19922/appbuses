@@ -1,0 +1,14 @@
+route_id,route_short_name,route_long_name,route_color
+CIR1,1,Circular Colmenar Viejo,FF7F00
+720,720,Colmenar Viejo 720,0A84FF
+721,721,Colmenar Viejo 721,34C759
+722,722,Colmenar Viejo 722,AF52DE
+723,723,Colmenar Viejo 723,FF3B30
+724,724,Colmenar Viejo 724,FFD60A
+725,725,Colmenar Viejo 725,64D2FF
+726,726,Colmenar Viejo 726,5856D6
+727,727,Colmenar Viejo 727,30B0C7
+9__3__045_,3,San Sebastián - Estación FF.CC.,E60003
+9__4__045_,4,Ronda Oeste - FF.CC.,E60003
+9__5__045_,5,Estación FF.CC. - San Sebastián (circular),E60003
+9__6__045_,6,Estación FF.CC. - Olivar,E60003

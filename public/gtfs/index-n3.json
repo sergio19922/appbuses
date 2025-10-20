@@ -1,0 +1,146 @@
+{
+  "packages": [
+    {
+      "id": "paquete_009",
+      "base": "/gtfs/paquete_009",
+      "carretera": "N3",
+      "routes": [
+        {
+          "route_id": "8__312___",
+          "short_name": "312",
+          "long_name": "MADRID (Pavones)-ARGANDA (El Mirador)",
+          "color": "8EBF42",
+          "hasShape": true,
+          "carretera": "N3"
+        },
+        {
+          "route_id": "8__313___",
+          "short_name": "313",
+          "long_name": "MADRID (Pavones)-VALDILECHA",
+          "color": "8EBF42",
+          "hasShape": true,
+          "carretera": "N3"
+        },
+        {
+          "route_id": "8__320___",
+          "short_name": "320",
+          "long_name": "ARGANDA DEL REY-ALCALÁ DE HENARES",
+          "color": "8EBF42",
+          "hasShape": true,
+          "carretera": "N3"
+        },
+        {
+          "route_id": "8__321___",
+          "short_name": "321",
+          "long_name": "ARGANDA (Hospital)-VILLAR DEL OLMO",
+          "color": "8EBF42",
+          "hasShape": true,
+          "carretera": "N3"
+        },
+        {
+          "route_id": "8__322___",
+          "short_name": "322",
+          "long_name": "ARGANDA DEL REY (Hospital)-AMBITE",
+          "color": "8EBF42",
+          "hasShape": true,
+          "carretera": "N3"
+        },
+        {
+          "route_id": "8__326___",
+          "short_name": "326",
+          "long_name": "MADRID (Pavones)-MONDEJAR-DRIEBES",
+          "color": "8EBF42",
+          "hasShape": true,
+          "carretera": "N3"
+        },
+        {
+          "route_id": "9__1__014_",
+          "short_name": "1",
+          "long_name": "RESIDENCIA-LA POVEDA",
+          "color": "E60003",
+          "hasShape": true,
+          "carretera": "N3"
+        },
+        {
+          "route_id": "9__2__014_",
+          "short_name": "2",
+          "long_name": "LA POVEDA-SIETE VIENTOS-HOSPITAL",
+          "color": "E60003",
+          "hasShape": true,
+          "carretera": "N3"
+        },
+        {
+          "route_id": "9__4__014_",
+          "short_name": "4",
+          "long_name": "CIRCULAR ARGANDA",
+          "color": "E60003",
+          "hasShape": true,
+          "carretera": "N3"
+        }
+      ]
+    },
+    {
+      "id": "paquete_050",
+      "base": "/gtfs/paquete_050",
+      "carretera": "N3",
+      "routes": [
+        {
+          "route_id": "8__350_A__",
+          "short_name": "350A",
+          "long_name": "ARGANDA (Hospital)-ESTREMERA",
+          "color": "8EBF42",
+          "hasShape": true,
+          "carretera": "N3"
+        },
+        {
+          "route_id": "8__350_B__",
+          "short_name": "350B",
+          "long_name": "ARGANDA (Hospital) - VILLAREJO - VILLAMANRIQUE DE TAJO",
+          "color": "8EBF42",
+          "hasShape": true,
+          "carretera": "N3"
+        },
+        {
+          "route_id": "8__350_C__",
+          "short_name": "350C",
+          "long_name": "ARGANDA (Hospital) - BELMONTE",
+          "color": "8EBF42",
+          "hasShape": true,
+          "carretera": "N3"
+        },
+        {
+          "route_id": "8__351___",
+          "short_name": "351",
+          "long_name": "MADRID (Estación Sur)-ESTREMERA-BARAJAS DE MELO",
+          "color": "8EBF42",
+          "hasShape": true,
+          "carretera": "N3"
+        },
+        {
+          "route_id": "8__352___",
+          "short_name": "352",
+          "long_name": "MADRID (Estación Sur)-FUENTIDUEÑA-TARANCÓN",
+          "color": "8EBF42",
+          "hasShape": true,
+          "carretera": "N3"
+        },
+        {
+          "route_id": "8__353___",
+          "short_name": "353",
+          "long_name": "MADRID (Estación Sur)-VILLAMANRIQUE-STA.CRUZ",
+          "color": "8EBF42",
+          "hasShape": true,
+          "carretera": "N3"
+        },
+        {
+          "route_id": "8__355___",
+          "short_name": "355",
+          "long_name": "FUENTIDUEÑA DE TAJO-CENTRO PENITENCIARIO-ESTREMERA",
+          "color": "8EBF42",
+          "hasShape": true,
+          "carretera": "N3"
+        }
+      ]
+    }
+  ]
+}

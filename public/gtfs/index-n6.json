@@ -1,0 +1,407 @@
+[
+  {
+    "id": "paquete_004",
+    "base": "/gtfs/paquete_004",
+    "carretera": "N6",
+    "routes": [
+      {
+        "route_id": "8__571___",
+        "short_name": "571",
+        "long_name": "MADRID (Aluche)-BOADILLA (Por Urb. Montepríncipe)",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__572___",
+        "short_name": "572",
+        "long_name": "MADRID (Aluche)-CIUDAD DE LA IMAGEN",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__573___",
+        "short_name": "573",
+        "long_name": "MADRID (Moncloa)-BOADILLA (por Urb. Montepríncipe)",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__574___",
+        "short_name": "574",
+        "long_name": "MADRID (Aluche)-BOADILLA DEL MONTE (Por Ciudad Financiera)",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__575___",
+        "short_name": "575",
+        "long_name": "BOADILLA DEL MONTE-BRUNETE",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__591___",
+        "short_name": "591",
+        "long_name": "MADRID (Aluche) - ETSI  Informáticos",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__865___",
+        "short_name": "865",
+        "long_name": "MADRID (Moncloa) - CAMPUS UPM MONTEGANCEDO",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8_N_905___",
+        "short_name": "N905",
+        "long_name": "MADRID (Moncloa)-BOADILLA DEL MONTE",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "9__1__022_",
+        "short_name": "1",
+        "long_name": "Urb. 1 El Escorial",
+        "color": "E60003",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "9__2__022_",
+        "short_name": "2",
+        "long_name": "Urb. 2 El Escorial",
+        "color": "E60003",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "9__3__022_",
+        "short_name": "3",
+        "long_name": "Urb. 3 El Escorial",
+        "color": "E60003",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "9__4__022_",
+        "short_name": "4",
+        "long_name": "BOADILLA CENTRO - EL PASTEL",
+        "color": "E60003",
+        "hasShape": true,
+        "carretera": "N6"
+      }
+    ]
+  },
+  {
+    "id": "paquete_026",
+    "base": "/gtfs/paquete_026",
+    "carretera": "N6",
+    "routes": [
+      {
+        "route_id": "8__580___",
+        "short_name": "580",
+        "long_name": "MAJADAHONDA(Hospital)-BRUNETE",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__581___",
+        "short_name": "581",
+        "long_name": "MADRID (Cuatro Vientos)-BRUNETE-QUIJORNA",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__620___",
+        "short_name": "620",
+        "long_name": "LAS MATAS-HOSPITAL PUERTA DE HIERRO",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__621___",
+        "short_name": "621",
+        "long_name": "MADRID (Moncloa)-LAS ROZAS",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__622___",
+        "short_name": "622",
+        "long_name": "MADRID (Moncloa)-LAS ROZAS-LAS MATAS",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__623___",
+        "short_name": "623",
+        "long_name": "MADRID (Moncloa)-LAS ROZAS-URB.VILLAFRANCA DEL CASTILLO",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__624___",
+        "short_name": "624",
+        "long_name": "MADRID (Moncloa)-COL.VERACRUZ-LAS ROZAS",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__624_A__",
+        "short_name": "624A",
+        "long_name": "MADRID (Moncloa) - LAS ROZAS (La Marazuela)",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__625___",
+        "short_name": "625",
+        "long_name": "MADRID (Moncloa)-MONTE ROZAS",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__626___",
+        "short_name": "626",
+        "long_name": "LAS ROZAS-MAJADAHONDA-VILLANUEVA DE LA CAÑADA",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__626_A__",
+        "short_name": "626A",
+        "long_name": "MAJADAHONDA (Estación FFCC)-VILLANUEVA DEL PARDILLO",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__627___",
+        "short_name": "627",
+        "long_name": "MADRID (Moncloa)-VILLANUEVA DE LA CAÑADA-BRUNETE",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__628___",
+        "short_name": "628",
+        "long_name": "MADRID (Moncloa)-P.EMPRESARIAL-EL CANTIZAL",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__629___",
+        "short_name": "629",
+        "long_name": "MADRID (Moncloa)-LAS ROZAS (Parque Empresarial)",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8_N_903___",
+        "short_name": "N903",
+        "long_name": "MADRID (Moncloa)-LAS ROZAS-MONTE ROZAS",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8_N_907___",
+        "short_name": "N907",
+        "long_name": "MADRID (Moncloa)-VILLANUEVA DE LA CAÑADA-BRUNETE",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "9__1__127_",
+        "short_name": "1",
+        "long_name": "Urb. 1 Boadilla del Monte",
+        "color": "E60003",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "9__2__127_",
+        "short_name": "2",
+        "long_name": "Urb. 2 Boadilla del Monte",
+        "color": "E60003",
+        "hasShape": true,
+        "carretera": "N6"
+      }
+    ]
+  },
+  {
+    "id": "paquete_039",
+    "base": "/gtfs/paquete_039",
+    "carretera": "N6",
+    "routes": [
+      {
+        "route_id": "8__640___",
+        "short_name": "640",
+        "long_name": "SAN LORENZO DE EL ESCORIAL-ROBLEDO CHAVELA-VALDEMAQUEDA",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__640_A__",
+        "short_name": "640A",
+        "long_name": "ROBLEDO DE CHAVELA FFCC-ROBLEDO DE CHAVELA",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__645___",
+        "short_name": "645",
+        "long_name": "MADRID (Moncloa)-ROBLEDO DE CHAVELA-CEBREROS",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__660___",
+        "short_name": "660",
+        "long_name": "SAN LORENZO DE EL ESCORIAL-GUADARRAMA-VILLALBA",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__661___",
+        "short_name": "661",
+        "long_name": "MADRID (Moncloa)-SAN LORENZO DE EL ESCORIAL (Por Galapagar)",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__661_A__",
+        "short_name": "661A",
+        "long_name": "MADRID (Moncloa)-LAS ZORRERAS (Por Galapagar)",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__662___",
+        "short_name": "662",
+        "long_name": "MADRID (Moncloa)-URB. MOLINO DE LA HOZ",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__664___",
+        "short_name": "664",
+        "long_name": "MADRID (Moncloa)-SAN LORENZO DE EL ESCORIAL (Guadarrama)",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__665___",
+        "short_name": "665",
+        "long_name": "SAN LORENZO DE EL ESCORIAL-PEGUERINOS",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__666___",
+        "short_name": "666",
+        "long_name": "SAN LORENZO DE EL ESCORIAL-ZARZALEJO-LAS NAVAS DEL MARQUÉS",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__667___",
+        "short_name": "667",
+        "long_name": "MAJADAHONDA (Hospital)-SAN LORENZO DE EL ESCORIAL (Por Galapagar)",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__669___",
+        "short_name": "669",
+        "long_name": "SAN LORENZO DE EL ESCORIAL-VILLANUEVA DE LA CAÑADA",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8__669_A__",
+        "short_name": "669A",
+        "long_name": "S. L. DE EL ESCORIAL - FRESNEDILLAS - NAVALAGAMELLA",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "8_N_604___",
+        "short_name": "N604",
+        "long_name": "MADRID (Moncloa)-EL ESCORIAL-SAN LORENZO DE EL ESCORIAL",
+        "color": "8EBF42",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "9__1__131_",
+        "short_name": "1",
+        "long_name": "S. L. DE EL ESCORIAL-FFCC-S. L. DE EL ESCORIAL",
+        "color": "E60003",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "9__2__131_",
+        "short_name": "2",
+        "long_name": "EL ESCORIAL-SAN LORENZO DE EL ESCORIAL-HOSPITAL-LA PIZARRA",
+        "color": "E60003",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "9__3__054_",
+        "short_name": "3",
+        "long_name": "EL ESCORIAL-LAS ZORRERAS",
+        "color": "E60003",
+        "hasShape": true,
+        "carretera": "N6"
+      },
+      {
+        "route_id": "9__4__131_",
+        "short_name": "4",
+        "long_name": "Urb. 4 San Lorenzo del Escorial",
+        "color": "E60003",
+        "hasShape": true,
+        "carretera": "N6"
+      }
+    ]
+  }
+]

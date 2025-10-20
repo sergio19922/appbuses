@@ -1,0 +1,212 @@
+[
+  {
+    "id": "paquete_009",
+    "base": "/gtfs/paquete_009",
+    "carretera": "N2",
+    "routes": [
+      {
+        "route_id": "8__260___",
+        "short_name": "260",
+        "long_name": "ALCALÁ DE HENARES-AMBITE-ORUSCO",
+        "color": "8EBF42",
+        "hasShape": false
+      },
+      {
+        "route_id": "8__261___",
+        "short_name": "261",
+        "long_name": "MADRID (Av. de América) - NUEVO BAZTÁN-VILLAR DEL OLMO",
+        "color": "8EBF42",
+        "hasShape": true
+      }
+    ]
+  },
+  {
+    "id": "paquete_076",
+    "base": "/gtfs/paquete_076",
+    "carretera": "N2",
+    "routes": [
+      {
+        "route_id": "8__210___",
+        "short_name": "210",
+        "long_name": "S. S. DE LOS REYES (Hospital)-PARACUELLOS DE JARAMA",
+        "color": "8EBF42",
+        "hasShape": true
+      },
+      {
+        "route_id": "8__211___",
+        "short_name": "211",
+        "long_name": "MADRID (Canillejas) - PARACUELLOS",
+        "color": "8EBF42",
+        "hasShape": true
+      },
+      {
+        "route_id": "8__212___",
+        "short_name": "212",
+        "long_name": "MADRID (Canillejas) - PARACUELLOS (Miramadrid)",
+        "color": "8EBF42",
+        "hasShape": true
+      },
+      {
+        "route_id": "8__215___",
+        "short_name": "215",
+        "long_name": "TORREJÓN DE ARDOZ - PARACUELLOS DE JARAMA",
+        "color": "8EBF42",
+        "hasShape": true
+      },
+      {
+        "route_id": "8__220___",
+        "short_name": "220",
+        "long_name": "TORREJÓN DE ARDOZ-SAN FERNANDO DE HENARES",
+        "color": "8EBF42",
+        "hasShape": true
+      },
+      {
+        "route_id": "8__222___",
+        "short_name": "222",
+        "long_name": "MADRID (Avda. América)-MECO",
+        "color": "8EBF42",
+        "hasShape": true
+      },
+      {
+        "route_id": "8__223___",
+        "short_name": "223",
+        "long_name": "MADRID (Avda. América)-ALCALÁ DE HENARES",
+        "color": "8EBF42",
+        "hasShape": true
+      },
+      {
+        "route_id": "8__224___",
+        "short_name": "224",
+        "long_name": "MADRID (Avda. América)-TORREJÓN DE ARDOZ",
+        "color": "8EBF42",
+        "hasShape": true
+      },
+      {
+        "route_id": "8__226___",
+        "short_name": "226",
+        "long_name": "MADRID (Avda. América)-TORREJÓN DE ARDOZ (El Soto)",
+        "color": "8EBF42",
+        "hasShape": true
+      },
+      {
+        "route_id": "8__227___",
+        "short_name": "227",
+        "long_name": "MADRID (Avda. América)-ALCALÁ (Espartales-Universidad)",
+        "color": "8EBF42",
+        "hasShape": true
+      },
+      {
+        "route_id": "8__229___",
+        "short_name": "229",
+        "long_name": "MADRID (Avda. América)-ALCALÁ (Virgen del Val)",
+        "color": "8EBF42",
+        "hasShape": true
+      },
+      {
+        "route_id": "8__231___",
+        "short_name": "231",
+        "long_name": "ALCALÁ DE HENARES-URB. ZULEMA-EL VISO",
+        "color": "8EBF42",
+        "hasShape": true
+      },
+      {
+        "route_id": "8__232___",
+        "short_name": "232",
+        "long_name": "ALCALÁ DE HENARES-TORRES DE LA ALAMEDA",
+        "color": "8EBF42",
+        "hasShape": true
+      },
+      {
+        "route_id": "8__250___",
+        "short_name": "250",
+        "long_name": "ALCALÁ DE HENARES-MECO",
+        "color": "8EBF42",
+        "hasShape": true
+      },
+      {
+        "route_id": "8__251___",
+        "short_name": "251",
+        "long_name": "TORREJÓN-VALDEAVERO-ALCALÁ",
+        "color": "8EBF42",
+        "hasShape": true
+      },
+      {
+        "route_id": "8__252___",
+        "short_name": "252",
+        "long_name": "TORREJÓN-DAGANZO-ALCALÁ",
+        "color": "8EBF42",
+        "hasShape": true
+      },
+      {
+        "route_id": "8__254___",
+        "short_name": "254",
+        "long_name": "VALDEOLMOS/FUENTE EL SAZ-ALCALÁ DE HENARES",
+        "color": "8EBF42",
+        "hasShape": true
+      },
+      {
+        "route_id": "8__255___",
+        "short_name": "255",
+        "long_name": "VALDEAVERO-CAMARMA DE ESTERUELAS-ALCALÁ DE HENARES",
+        "color": "8EBF42",
+        "hasShape": true
+      },
+      {
+        "route_id": "8__256___",
+        "short_name": "256",
+        "long_name": "MADRID (Canillejas)-DAGANZO-VALDEAVERO",
+        "color": "8EBF42",
+        "hasShape": true
+      },
+      {
+        "route_id": "9__2__148_",
+        "short_name": "2",
+        "long_name": "FRONTERAS-BARRIO CASTILLO-FRESNO",
+        "color": "E60003",
+        "hasShape": true
+      },
+      {
+        "route_id": "9__2__104_",
+        "short_name": "2",
+        "long_name": "PICÓN DEL CURA - URB. LOS BERROCALES",
+        "color": "E60003",
+        "hasShape": true
+      },
+      {
+        "route_id": "9__3__148_",
+        "short_name": "3",
+        "long_name": "LOS FRESNOS - PLAZA DE ESPAÑA - LOS ALMENDROS",
+        "color": "E60003",
+        "hasShape": true
+      },
+      {
+        "route_id": "9__4__148_",
+        "short_name": "4",
+        "long_name": "TORREJÓN-PARQUE CORREDOR",
+        "color": "E60003",
+        "hasShape": true
+      },
+      {
+        "route_id": "9__6__148_",
+        "short_name": "6",
+        "long_name": "PLAZA DE ESPAÑA - OASIZ",
+        "color": "E60003",
+        "hasShape": true
+      },
+      {
+        "route_id": "9__1_A_148_",
+        "short_name": "1A",
+        "long_name": "CIRCULAR TORREJÓN",
+        "color": "E60003",
+        "hasShape": true
+      },
+      {
+        "route_id": "9__5_A_148_",
+        "short_name": "5A",
+        "long_name": "CIRCULAR PARQUE EUROPA",
+        "color": "E60003",
+        "hasShape": true
+      }
+    ]
+  }
+]

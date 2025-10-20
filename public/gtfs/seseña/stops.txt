@@ -1,0 +1,6 @@
+stop_id,stop_name,stop_lat,stop_lon
+4061,Legazpi (Madrid),40.3910,-3.6955
+4062,Getafe,40.3475,-3.6997
+4063,Valdemoro,40.2413,-3.6990
+4064,Esquivias,40.1910,-3.6780
+4065,Seseña,40.1040,-3.7045

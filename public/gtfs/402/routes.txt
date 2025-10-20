@@ -1,0 +1,2 @@
+route_id,agency_id,route_short_name,route_long_name,route_type,route_color,route_text_color
+402,CRTM,402,Madrid (Plaza Elíptica) - Toledo,3,8EBF42,FFFFFF

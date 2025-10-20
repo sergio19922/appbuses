@@ -1,0 +1,261 @@
+[
+  {
+    "id": "402",
+    "base": "/gtfs/402",
+    "carretera": "N4",
+    "routes": [
+      {
+        "route_id": "402",
+        "short_name": "402",
+        "long_name": "Madrid (Plaza Elíptica) - Toledo",
+        "color": "8EBF42",
+        "hasShape": true
+      }
+    ]
+  },
+  {
+    "id": "circular-roja",
+    "base": "/gtfs/circular-roja",
+    "carretera": "N4",
+    "routes": [
+      {
+        "route_id": "CIRCULAR3",
+        "short_name": "L3",
+        "long_name": "Circular Roja",
+        "color": "FF0000",
+        "hasShape": true
+      }
+    ]
+  },
+  {
+    "id": "colmenar",
+    "base": "/gtfs/colmenar",
+    "carretera": "N4",
+    "routes": [
+      {
+        "route_id": "CIR1",
+        "short_name": "1",
+        "long_name": "Circular Colmenar Viejo",
+        "color": "FF7F00",
+        "hasShape": true
+      },
+      {
+        "route_id": "720",
+        "short_name": "720",
+        "long_name": "Colmenar Viejo 720",
+        "color": "0A84FF",
+        "hasShape": true
+      },
+      {
+        "route_id": "721",
+        "short_name": "721",
+        "long_name": "Colmenar Viejo 721",
+        "color": "34C759",
+        "hasShape": true
+      },
+      {
+        "route_id": "722",
+        "short_name": "722",
+        "long_name": "Colmenar Viejo 722",
+        "color": "AF52DE",
+        "hasShape": true
+      },
+      {
+        "route_id": "723",
+        "short_name": "723",
+        "long_name": "Colmenar Viejo 723",
+        "color": "FF3B30",
+        "hasShape": true
+      },
+      {
+        "route_id": "724",
+        "short_name": "724",
+        "long_name": "Colmenar Viejo 724",
+        "color": "FFD60A",
+        "hasShape": true
+      },
+      {
+        "route_id": "725",
+        "short_name": "725",
+        "long_name": "Colmenar Viejo 725",
+        "color": "64D2FF",
+        "hasShape": true
+      },
+      {
+        "route_id": "726",
+        "short_name": "726",
+        "long_name": "Colmenar Viejo 726",
+        "color": "5856D6",
+        "hasShape": true
+      },
+      {
+        "route_id": "727",
+        "short_name": "727",
+        "long_name": "Colmenar Viejo 727",
+        "color": "30B0C7",
+        "hasShape": true
+      },
+      {
+        "route_id": "9__3__045_",
+        "short_name": "3",
+        "long_name": "San Sebastián - Estación FF.CC.",
+        "color": "E60003",
+        "hasShape": true
+      },
+      {
+        "route_id": "9__4__045_",
+        "short_name": "4",
+        "long_name": "Ronda Oeste - FF.CC.",
+        "color": "E60003",
+        "hasShape": true
+      },
+      {
+        "route_id": "9__5__045_",
+        "short_name": "5",
+        "long_name": "Estación FF.CC. - San Sebastián (circular)",
+        "color": "E60003",
+        "hasShape": true
+      },
+      {
+        "route_id": "9__6__045_",
+        "short_name": "6",
+        "long_name": "Estación FF.CC. - Olivar",
+        "color": "E60003",
+        "hasShape": true
+      }
+    ]
+  },
+  {
+    "id": "fuenlabradacentral",
+    "base": "/gtfs/fuenlabradacentral",
+    "carretera": "N4",
+    "routes": [
+      {
+        "route_id": "13",
+        "short_name": "13",
+        "long_name": "Barrio El Naranjo - Fuenlabrada Central",
+        "color": "FF0000",
+        "hasShape": true
+      }
+    ]
+  },
+  {
+    "id": "cementerio",
+    "base": "/gtfs/cementerio",
+    "carretera": "N4",
+    "routes": [
+      {
+        "route_id": "6",
+        "short_name": "6",
+        "long_name": "Cementerio",
+        "color": "FF0000",
+        "hasShape": true
+      }
+    ]
+  },
+  {
+    "id": "circularverde",
+    "base": "/gtfs/circularverde",
+    "carretera": "N4",
+    "routes": [
+      {
+        "route_id": "2",
+        "short_name": "2",
+        "long_name": "Circular Verde",
+        "color": "FF0000",
+        "hasShape": true
+      }
+    ]
+  },
+  {
+    "id": "loranca",
+    "base": "/gtfs/loranca",
+    "carretera": "N4",
+    "routes": [
+      {
+        "route_id": "LORANCA4",
+        "short_name": "4",
+        "long_name": "Loranca",
+        "color": "E60003",
+        "hasShape": true
+      }
+    ]
+  },
+  {
+    "id": "miraflores",
+    "base": "/gtfs/miraflores",
+    "carretera": "N4",
+    "routes": [
+      {
+        "route_id": "1",
+        "short_name": "1",
+        "long_name": "Parque Miraflores - Polígono Sevilla",
+        "color": "FF0000",
+        "hasShape": true
+      }
+    ]
+  },
+  {
+    "id": "paquete_024",
+    "base": "/gtfs/paquete_024",
+    "carretera": "N4",
+    "routes": [
+      {
+        "route_id": "8__421___",
+        "short_name": "421",
+        "long_name": "MADRID (Legazpi)-PINTO",
+        "color": "8EBF42",
+        "hasShape": true
+      },
+      {
+        "route_id": "8__422___",
+        "short_name": "422",
+        "long_name": "MADRID (Legazpi)-VALDEMORO",
+        "color": "8EBF42",
+        "hasShape": true
+      },
+      {
+        "route_id": "8__423___",
+        "short_name": "423",
+        "long_name": "MADRID (Estación Sur)-ARANJUEZ",
+        "color": "8EBF42",
+        "hasShape": true
+      },
+      {
+        "route_id": "8__424___",
+        "short_name": "424",
+        "long_name": "MADRID (Legazpi)-VALDEMORO (El Restón)",
+        "color": "8EBF42",
+        "hasShape": true
+      },
+      {
+        "route_id": "8__425___",
+        "short_name": "425",
+        "long_name": "VALDEMORO (Hospital)-CIEMPOZUELOS",
+        "color": "8EBF42",
+        "hasShape": true
+      },
+      {
+        "route_id": "8__426___",
+        "short_name": "426",
+        "long_name": "MADRID (Legazpi)-CIEMPOZUELOS",
+        "color": "8EBF42",
+        "hasShape": true
+      },
+      {
+        "route_id": "8__427___",
+        "short_name": "427",
+        "long_name": "MADRID (Villaverde Bajo-Cruce)-ÁREA EMPRESARIAL ANDALUCIA-PINTO",
+        "color": "8EBF42",
+        "hasShape": true
+      },
+      {
+        "route_id": "8__428___",
+        "short_name": "428",
+        "long_name": "GETAFE-VALDEMORO",
+        "color": "8EBF42",
+        "hasShape": true
+      }
+    ]
+  }
+]

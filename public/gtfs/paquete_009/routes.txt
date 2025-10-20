@@ -1,0 +1,14 @@
+﻿route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color
+8__260___,CRTM,260,ALCALÁ DE HENARES-AMBITE-ORUSCO,,3,https://www.crtm.es/8__260___.aspx,8EBF42,FFFFFF
+8__261___,CRTM,261,MADRID (Av. de América) - NUEVO BAZTÁN-VILLAR DEL OLMO,,3,https://www.crtm.es/8__261___.aspx,8EBF42,FFFFFF
+8__312___,CRTM,312,MADRID (Pavones)-ARGANDA (El Mirador),,3,https://www.crtm.es/8__312___.aspx,8EBF42,FFFFFF
+8__312_A__,CRTM,312A,MADRID (Pavones)-ARGANDA (El Mirador) por La Poveda,,3,https://www.crtm.es/8__312_A__.aspx,8EBF42,FFFFFF
+8__313___,CRTM,313,MADRID (Pavones)-VALDILECHA,,3,https://www.crtm.es/8__313___.aspx,8EBF42,FFFFFF
+8__320___,CRTM,320,ARGANDA DEL REY-ALCALÁ DE HENARES,,3,https://www.crtm.es/8__320___.aspx,8EBF42,FFFFFF
+8__321___,CRTM,321,ARGANDA (Hospital)-VILLAR DEL OLMO,,3,https://www.crtm.es/8__321___.aspx,8EBF42,FFFFFF
+8__322___,CRTM,322,ARGANDA DEL REY (Hospital)-AMBITE,,3,https://www.crtm.es/8__322___.aspx,8EBF42,FFFFFF
+8__326___,CRTM,326,MADRID (Pavones)-MONDEJAR-DRIEBES,,3,https://www.crtm.es/8__326___.aspx,8EBF42,FFFFFF
+8_N_303___,CRTM,N303,MADRID (Atocha)-ARGANDA DEL REY,,3,https://www.crtm.es/8_N_303___.aspx,8EBF42,FFFFFF
+9__1__014_,CRTM,1,RESIDENCIA-LA POVEDA,,3,https://www.crtm.es/9__1__014_.aspx,E60003,FFFFFF
+9__2__014_,CRTM,2,LA POVEDA-SIETE VIENTOS-HOSPITAL,,3,https://www.crtm.es/9__2__014_.aspx,E60003,FFFFFF
+9__4__014_,CRTM,4,CIRCULAR ARGANDA,,3,https://www.crtm.es/9__4__014_.aspx,E60003,FFFFFF

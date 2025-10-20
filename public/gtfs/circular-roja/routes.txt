@@ -1,0 +1,2 @@
+route_id,agency_id,route_short_name,route_long_name,route_type,route_color
+CIRCULAR3,1,L3,Circular Roja,3,FF0000

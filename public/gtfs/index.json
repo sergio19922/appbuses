@@ -1,0 +1,3673 @@
+{
+  "generatedAt": "2025-09-11T12:00:16.521Z",
+  "packages": [
+    {
+      "id": "402",
+      "base": "/gtfs/402",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "402",
+          "short_name": "402",
+          "long_name": "Madrid (Plaza Elíptica) - Toledo",
+          "color": "8EBF42",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "circular-roja",
+      "base": "/gtfs/circular-roja",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "CIRCULAR3",
+          "short_name": "L3",
+          "long_name": "Circular Roja",
+          "color": "FF0000",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "colmenar",
+      "base": "/gtfs/colmenar",
+      "carretera": "M607",
+      "routes": [
+        {
+          "route_id": "CIR1",
+          "short_name": "1",
+          "long_name": "Circular Colmenar Viejo",
+          "color": "FF7F00",
+          "hasShape": true
+        },
+        {
+          "route_id": "720",
+          "short_name": "720",
+          "long_name": "Colmenar Viejo 720",
+          "color": "0A84FF",
+          "hasShape": true
+        },
+        {
+          "route_id": "721",
+          "short_name": "721",
+          "long_name": "Colmenar Viejo 721",
+          "color": "34C759",
+          "hasShape": true
+        },
+        {
+          "route_id": "722",
+          "short_name": "722",
+          "long_name": "Colmenar Viejo 722",
+          "color": "AF52DE",
+          "hasShape": true
+        },
+        {
+          "route_id": "723",
+          "short_name": "723",
+          "long_name": "Colmenar Viejo 723",
+          "color": "FF3B30",
+          "hasShape": true
+        },
+        {
+          "route_id": "724",
+          "short_name": "724",
+          "long_name": "Colmenar Viejo 724",
+          "color": "FFD60A",
+          "hasShape": true
+        },
+        {
+          "route_id": "725",
+          "short_name": "725",
+          "long_name": "Colmenar Viejo 725",
+          "color": "64D2FF",
+          "hasShape": true
+        },
+        {
+          "route_id": "726",
+          "short_name": "726",
+          "long_name": "Colmenar Viejo 726",
+          "color": "5856D6",
+          "hasShape": true
+        },
+        {
+          "route_id": "727",
+          "short_name": "727",
+          "long_name": "Colmenar Viejo 727",
+          "color": "30B0C7",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__3__045_",
+          "short_name": "3",
+          "long_name": "San Sebastián - Estación FF.CC.",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__4__045_",
+          "short_name": "4",
+          "long_name": "Ronda Oeste - FF.CC.",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__5__045_",
+          "short_name": "5",
+          "long_name": "Estación FF.CC. - San Sebastián (circular)",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__6__045_",
+          "short_name": "6",
+          "long_name": "Estación FF.CC. - Olivar",
+          "color": "E60003",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "circularverde",
+      "base": "/gtfs/circularverde",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "2",
+          "short_name": "2",
+          "long_name": "Circular Verde",
+          "color": "FF0000",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "cementerio",
+      "base": "/gtfs/cementerio",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "6",
+          "short_name": "6",
+          "long_name": "Cementerio",
+          "color": "FF0000",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "fuenlabradacentral",
+      "base": "/gtfs/fuenlabradacentral",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "13",
+          "short_name": "13",
+          "long_name": "Barrio El Naranjo - Fuenlabrada Central",
+          "color": "FF0000",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "loranca",
+      "base": "/gtfs/loranca",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "LORANCA4",
+          "short_name": "4",
+          "long_name": "Loranca",
+          "color": "E60003",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "miraflores",
+      "base": "/gtfs/miraflores",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "1",
+          "short_name": "1",
+          "long_name": "Parque Miraflores - Polígono Sevilla",
+          "color": "FF0000",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "paquete_001",
+      "base": "/gtfs/paquete_001",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "8__151___",
+          "short_name": "151",
+          "long_name": "MADRID (Plaza de Castilla) - ALCOBENDAS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__152_C__",
+          "short_name": "152C",
+          "long_name": "MADRID (Plaza de Castilla)-S.S. DE LOS REYES (Dehesa Vieja)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__153___",
+          "short_name": "153",
+          "long_name": "MADRID (Plaza de Castilla)-ALCOBENDAS-ROSA LUXEMBURGO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__154___",
+          "short_name": "154",
+          "long_name": "MADRID (Chamartín)-S.S. REYES CIRCULAR (Por Fuencarral)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__154_C__",
+          "short_name": "154C",
+          "long_name": "MADRID (Plaza de Castilla)-S.S. DE LOS REYES (Avda. de los Quiñones)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__155___",
+          "short_name": "155",
+          "long_name": "MADRID (Plaza de Castilla)-EL SOTO DE LA MORALEJA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__155_B__",
+          "short_name": "155B",
+          "long_name": "MADRID (Plaza de Castilla)-EL ENCINAR DE LOS REYES",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__156___",
+          "short_name": "156",
+          "long_name": "MADRID (Plaza de Castilla)-S.S. DE LOS REYES (P.I. Moscatelares)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__157___",
+          "short_name": "157",
+          "long_name": "MADRID (Plaza de Castilla)-ALCOBENDAS (P.Chopera)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__157_C__",
+          "short_name": "157C",
+          "long_name": "MADRID (Plaza de Castilla)-ALCOBENDAS (Valdelasfuentes)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__158___",
+          "short_name": "158",
+          "long_name": "MADRID (Pinar de Chamartín) - SAN SEBASTIÁN DE LOS REYES (Tempranales)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__159___",
+          "short_name": "159",
+          "long_name": "Madrid (Plaza Castilla)-ALCOBENDAS (El Juncal)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__161___",
+          "short_name": "161",
+          "long_name": "MADRID (Plaza de Castilla)-URB. FUENTE DEL FRESNO",
+          "color": "8EBF42",
+          "hasShape": false
+        },
+        {
+          "route_id": "8__166___",
+          "short_name": "166",
+          "long_name": "SAN SEBASTIAN DE LOS REYES - URBANIZACION VALDELAGUA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__180___",
+          "short_name": "180",
+          "long_name": "ALCOBENDAS-ALGETE",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__181___",
+          "short_name": "181",
+          "long_name": "MADRID (Plaza de Castilla)-ALGETE",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__182___",
+          "short_name": "182",
+          "long_name": "MADRID (Plaza de Castilla)-ALGETE-VALDEOLMOS",
+          "color": "8EBF42",
+          "hasShape": false
+        },
+        {
+          "route_id": "8__183___",
+          "short_name": "183",
+          "long_name": "MADRID (Plaza de Castilla)-COBEÑA-ALGETE",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__184___",
+          "short_name": "184",
+          "long_name": "MADRID (Plaza de Castilla)-EL CASAR",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__185___",
+          "short_name": "185",
+          "long_name": "MADRID (Plaza de Castilla)-NUEVO ALGETE",
+          "color": "8EBF42",
+          "hasShape": false
+        },
+        {
+          "route_id": "8__263___",
+          "short_name": "263",
+          "long_name": "MADRID (Barajas)-COBEÑA-ALGETE",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__720___",
+          "short_name": "720",
+          "long_name": "COLMENAR VIEJO (Estación FF.CC.) - COLLADO VILLALBA",
+          "color": "8EBF42",
+          "hasShape": false
+        },
+        {
+          "route_id": "8__721___",
+          "short_name": "721",
+          "long_name": "MADRID (Plaza de Castilla)-COLMENAR VIEJO",
+          "color": "8EBF42",
+          "hasShape": false
+        },
+        {
+          "route_id": "8__722___",
+          "short_name": "722",
+          "long_name": "MADRID (Plaza de Castilla) - COLMENAR VIEJO (Navallar)",
+          "color": "8EBF42",
+          "hasShape": false
+        },
+        {
+          "route_id": "8__723___",
+          "short_name": "723",
+          "long_name": "COLMENAR VIEJO-TRES CANTOS",
+          "color": "8EBF42",
+          "hasShape": false
+        },
+        {
+          "route_id": "8__724___",
+          "short_name": "724",
+          "long_name": "MADRID (Plaza de Castilla)-MANZANARES-EL BOALO",
+          "color": "8EBF42",
+          "hasShape": false
+        },
+        {
+          "route_id": "8__725___",
+          "short_name": "725",
+          "long_name": "MADRID (Plaza de Castilla)-MIRAFLORES-BUSTARVIEJO-VALDEMANCO",
+          "color": "8EBF42",
+          "hasShape": false
+        },
+        {
+          "route_id": "8__726___",
+          "short_name": "726",
+          "long_name": "MADRID (Plaza de Castilla)-GUADALIX-NAVALAFUENTE",
+          "color": "8EBF42",
+          "hasShape": false
+        },
+        {
+          "route_id": "8__727___",
+          "short_name": "727",
+          "long_name": "COLMENAR VIEJO-SAN AGUSTÍN DEL GUADALIX",
+          "color": "8EBF42",
+          "hasShape": false
+        },
+        {
+          "route_id": "8__728___",
+          "short_name": "728",
+          "long_name": "EST. COLMENAR - SOTO DEL REAL - MANZANARES EL REAL",
+          "color": "8EBF42",
+          "hasShape": false
+        },
+        {
+          "route_id": "8_N_101___",
+          "short_name": "N101",
+          "long_name": "MADRID (Plaza de Castilla)-ALCOBENDAS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_102___",
+          "short_name": "N102",
+          "long_name": "MADRID (Plaza de Castilla)-S.S. DE LOS REYES",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_103___",
+          "short_name": "N103",
+          "long_name": "MADRID (Plaza de Castilla)-ALGETE",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_702___",
+          "short_name": "N702",
+          "long_name": "MADRID (Plaza de Castilla)-COLMENAR VIEJO",
+          "color": "8EBF42",
+          "hasShape": false
+        },
+        {
+          "route_id": "9__1__045_",
+          "short_name": "1",
+          "long_name": "EST. COMENAR VIEJO - LAS ADELFILLAS",
+          "color": "E60003",
+          "hasShape": false
+        },
+        {
+          "route_id": "9__2__045_",
+          "short_name": "2",
+          "long_name": "EST. COLMENAR VIEJO - AV. REMEDIOS",
+          "color": "E60003",
+          "hasShape": false
+        },
+        {
+          "route_id": "9__4__134_",
+          "short_name": "4",
+          "long_name": "POLIDEPORTIVO-MOSCATELARES",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__5__006_",
+          "short_name": "5",
+          "long_name": "S. S. DE LOS REYES-ALCOBENDAS-SOTO MORALEJA",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__6__006_",
+          "short_name": "6",
+          "long_name": "ESTACIÓN FFCC VALDELASFUENTES-POLG. INDUSTRIAL",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__7__134_",
+          "short_name": "7",
+          "long_name": "ESTACIÓN FFCC-POLÍGONOS-ESTACIÓN FFCC",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__9__006_",
+          "short_name": "9",
+          "long_name": "ESTACIÓN FFCC-ARROYO DE LA VEGA",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__10__006_",
+          "short_name": "10",
+          "long_name": "CIRCULAR DE ALCOBENDAS",
+          "color": "E60003",
+          "hasShape": false
+        },
+        {
+          "route_id": "9__11__006_",
+          "short_name": "11",
+          "long_name": "CIRCULAR DE ALCOBENDAS",
+          "color": "E60003",
+          "hasShape": false
+        },
+        {
+          "route_id": "9__I1__009_",
+          "short_name": "I1",
+          "long_name": "INSTITUTO ALGETE",
+          "color": "E60003",
+          "hasShape": false
+        }
+      ]
+    },
+    {
+      "id": "paquete_004",
+      "base": "/gtfs/paquete_004",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "8__571___",
+          "short_name": "571",
+          "long_name": "MADRID (Aluche)-BOADILLA (Por Urb. Montepríncipe)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__572___",
+          "short_name": "572",
+          "long_name": "MADRID (Aluche)-CIUDAD DE LA IMAGEN",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__573___",
+          "short_name": "573",
+          "long_name": "MADRID (Moncloa)-BOADILLA (por Urb. Montepríncipe)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__574___",
+          "short_name": "574",
+          "long_name": "MADRID (Aluche)-BOADILLA DEL MONTE (Por Ciudad Financiera)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__575___",
+          "short_name": "575",
+          "long_name": "BOADILLA DEL MONTE-BRUNETE",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__591___",
+          "short_name": "591",
+          "long_name": "MADRID (Aluche) - ETSI  Informáticos",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__865___",
+          "short_name": "865",
+          "long_name": "MADRID (Moncloa) - CAMPUS UPM MONTEGANCEDO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_905___",
+          "short_name": "N905",
+          "long_name": "MADRID (Moncloa)-BOADILLA DEL MONTE",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1__022_",
+          "short_name": "1",
+          "long_name": "PASEO DE MADRID-OLIVAR-PARQUE-LAS LOMAS",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__2__022_",
+          "short_name": "2",
+          "long_name": "FERIAL DE BOADILLA-VALDEPASTORES-LAS LOMAS",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__3__022_",
+          "short_name": "3",
+          "long_name": "FERIAL DE BOADILLA-VALDECABAÑAS-BONANZA",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__4__022_",
+          "short_name": "4",
+          "long_name": "BOADILLA CENTRO - EL PASTEL",
+          "color": "E60003",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "paquete_005",
+      "base": "/gtfs/paquete_005",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "9__1__013_",
+          "short_name": "1",
+          "long_name": "L1 CIRCULAR (FFCC-Moreras-FFCC)",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__2__013_",
+          "short_name": "2",
+          "long_name": "L2 CIRCULAR (FFCC-Residencia-FFCC)",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__3__013_",
+          "short_name": "3",
+          "long_name": "L3 CIRCULAR (FFCC-Glorieta de la Música-FFCC)",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__4__013_",
+          "short_name": "4",
+          "long_name": "EST. ARANJUEZ - HOSPITAL - PAU DE LA MONTAÑA",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__5__013_",
+          "short_name": "5",
+          "long_name": "L5  CIRCULAR (FFCC-La Montaña-FFCC)",
+          "color": "E60003",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "paquete_008",
+      "base": "/gtfs/paquete_008",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "8__480___",
+          "short_name": "480",
+          "long_name": "MADRID (Plaza Elíptica)-LEGANÉS (Estación FFCC)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__481___",
+          "short_name": "481",
+          "long_name": "MADRID (Oporto)-LEGANÉS (Parquesur-Hospital)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__482___",
+          "short_name": "482",
+          "long_name": "MADRID (Aluche) - LEGANÉS (Arroyo Culebro)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__483___",
+          "short_name": "483",
+          "long_name": "MADRID (Aluche)-LEGANÉS (Vereda de los Estudiantes)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__484___",
+          "short_name": "484",
+          "long_name": "MADRID (Oporto)-LEGANÉS (Estación FFCC)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__485___",
+          "short_name": "485",
+          "long_name": "MADRID (Aluche)-LEGANÉS (Norte-Montepinos)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__486___",
+          "short_name": "486",
+          "long_name": "MADRID (Oporto)-LEGANÉS (Valdepelayo)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__487___",
+          "short_name": "487",
+          "long_name": "MADRID (Aluche)-LEGANÉS (San Nicasio)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__488___",
+          "short_name": "488",
+          "long_name": "LEGANÉS (San Nicasio)-GETAFE (Getafe Norte)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__491___",
+          "short_name": "491",
+          "long_name": "MADRID (Aluche)-FUENLABRADA (Bº Naranjo)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__492___",
+          "short_name": "492",
+          "long_name": "MADRID (Aluche)-FUENLABRADA (P. Granada)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__493___",
+          "short_name": "493",
+          "long_name": "MADRID (Aluche)-FUENLABRADA (Urb. Loranca)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__495___",
+          "short_name": "495",
+          "long_name": "MADRID (Cuatro Vientos)-ARROYOMOLINOS-MORALEJA DE ENMEDIO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__496___",
+          "short_name": "496",
+          "long_name": "FUENLABRADA-MORALEJA DE ENMEDIO-ARROYOMOLINOS (Xanadú)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__497___",
+          "short_name": "497",
+          "long_name": "LEGANÉS (Parque Sur)-MORALEJA DE ENMEDIO (Las Colinas)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__498___",
+          "short_name": "498",
+          "long_name": "MÓSTOLES - ARROYOMOLINOS - MORALEJA DE ENMEDIO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__498_A__",
+          "short_name": "498A",
+          "long_name": "MÓSTOLES (Móstoles - Central) - ARROYOMOLINOS (Parque de Nieve)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__499___",
+          "short_name": "499",
+          "long_name": "MÓSTOLES-ARROYOMOLINOS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_802___",
+          "short_name": "N802",
+          "long_name": "MADRID (Atocha) - LEGANÉS (Vereda de los Estudiantes)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_803___",
+          "short_name": "N803",
+          "long_name": "MADRID (Atocha) - FUENLABRADA (Bº Naranjo)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_804___",
+          "short_name": "N804",
+          "long_name": "MADRID (Atocha) - FUENLABRADA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_808___",
+          "short_name": "N808",
+          "long_name": "MADRID (Príncipe Pío)-ARROYOMOLINOS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1__074_",
+          "short_name": "1",
+          "long_name": "CIRCULAR VEREDA DE LOS ESTUDIANTES-LA FORTUNA",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1_A_015_",
+          "short_name": "1A",
+          "long_name": "CIRCULAR ARROYOMOLINOS",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1_B_015_",
+          "short_name": "1B",
+          "long_name": "CIRCULAR ARROYOMOLINOS",
+          "color": "E60003",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "paquete_009",
+      "base": "/gtfs/paquete_009",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "8__260___",
+          "short_name": "260",
+          "long_name": "ALCALÁ DE HENARES-AMBITE-ORUSCO",
+          "color": "8EBF42",
+          "hasShape": false
+        },
+        {
+          "route_id": "8__261___",
+          "short_name": "261",
+          "long_name": "MADRID (Av. de América) - NUEVO BAZTÁN-VILLAR DEL OLMO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__312___",
+          "short_name": "312",
+          "long_name": "MADRID (Pavones)-ARGANDA (El Mirador)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__312_A__",
+          "short_name": "312A",
+          "long_name": "MADRID (Pavones)-ARGANDA (El Mirador) por La Poveda",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__313___",
+          "short_name": "313",
+          "long_name": "MADRID (Pavones)-VALDILECHA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__320___",
+          "short_name": "320",
+          "long_name": "ARGANDA DEL REY-ALCALÁ DE HENARES",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__321___",
+          "short_name": "321",
+          "long_name": "ARGANDA (Hospital)-VILLAR DEL OLMO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__322___",
+          "short_name": "322",
+          "long_name": "ARGANDA DEL REY (Hospital)-AMBITE",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__326___",
+          "short_name": "326",
+          "long_name": "MADRID (Pavones)-MONDEJAR-DRIEBES",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_303___",
+          "short_name": "N303",
+          "long_name": "MADRID (Atocha)-ARGANDA DEL REY",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1__014_",
+          "short_name": "1",
+          "long_name": "RESIDENCIA-LA POVEDA",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__2__014_",
+          "short_name": "2",
+          "long_name": "LA POVEDA-SIETE VIENTOS-HOSPITAL",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__4__014_",
+          "short_name": "4",
+          "long_name": "CIRCULAR ARGANDA",
+          "color": "E60003",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "paquete_010",
+      "base": "/gtfs/paquete_010",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "8__330___",
+          "short_name": "330",
+          "long_name": "RIVAS-ARGANDA (Hospital)-MORATA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__331___",
+          "short_name": "331",
+          "long_name": "MADRID (Méndez Álvaro)-RIVAS (Sta. Mónica)-RIVAS FUTURA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__332___",
+          "short_name": "332",
+          "long_name": "MADRID (Méndez Álvaro)-RIVAS PUEBLO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__333___",
+          "short_name": "333",
+          "long_name": "Madrid (Méndez Álvaro) - Rivas (Bellavista)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__334___",
+          "short_name": "334",
+          "long_name": "MADRID (Méndez Álvaro)- RIVAS FUTURA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__336___",
+          "short_name": "336",
+          "long_name": "MADRID (Pavones)-MORATA DE TAJUÑA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__337___",
+          "short_name": "337",
+          "long_name": "MADRID (Pavones)-CHINCHÓN-VALDELAGUNA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__339___",
+          "short_name": "339",
+          "long_name": "MADRID (Sierra de Guadalupe)-VALDEMINGÓMEZ",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__410___",
+          "short_name": "410",
+          "long_name": "ARANJUEZ-CIEMPOZUELOS-SAN MARTÍN DE LA VEGA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__411___",
+          "short_name": "411",
+          "long_name": "MADRID (Legazpi) - PERALES DEL RÍO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__412___",
+          "short_name": "412",
+          "long_name": "MADRID (Villaverde Bajo-Cruce)-SAN MARTÍN DE LA VEGA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__413___",
+          "short_name": "413",
+          "long_name": "PINTO (FFCC)-SAN MARTÍN DE LA VEGA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__414___",
+          "short_name": "414",
+          "long_name": "MADRID (Villaverde Bajo-Cruce)-C.P. MADRID III",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__415___",
+          "short_name": "415",
+          "long_name": "MADRID (Villaverde Bajo-Cruce)-VILLACONEJOS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__416___",
+          "short_name": "416",
+          "long_name": "VALDEMORO (Hosp.)-S. M. DE LA VEGA-TITULCIA-COLMENAR DE OREJA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_301___",
+          "short_name": "N301",
+          "long_name": "MADRID (Atocha) - RIVAS (Covibar) - RIVAS FUTURA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_302___",
+          "short_name": "N302",
+          "long_name": "MADRID (Atocha) - RIVAS PUEBLO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_403___",
+          "short_name": "N403",
+          "long_name": "MADRID (Atocha)-SAN MARTÍN DE LA VEGA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1__123_",
+          "short_name": "1",
+          "long_name": "BARRIO DE LA LUNA - RIVAS PUEBLO",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1__132_",
+          "short_name": "1",
+          "long_name": "CIRCULAR SAN MARTIN DE LA VEGA",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9_i_1__132_",
+          "short_name": "i1",
+          "long_name": "RUTAS INSTITUTOS",
+          "color": "E60003",
+          "hasShape": false
+        }
+      ]
+    },
+    {
+      "id": "paquete_011",
+      "base": "/gtfs/paquete_011",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "8__641___",
+          "short_name": "641",
+          "long_name": "MADRID (Moncloa)-VALDEMORILLO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__642___",
+          "short_name": "642",
+          "long_name": "MADRID (Moncloa)-COLMENAR DEL ARROYO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__643___",
+          "short_name": "643",
+          "long_name": "MADRID (Moncloa)-VILLANUEVA DEL PARDILLO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__FS1___",
+          "short_name": "FS1",
+          "long_name": "LAS ROZAS (Centros Comerciales) - VALDEMORILLO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_908___",
+          "short_name": "N908",
+          "long_name": "MADRID (Moncloa)-VILLANUEVA DEL PARDILLO-VALDEMORILLO",
+          "color": "8EBF42",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "paquete_015",
+      "base": "/gtfs/paquete_015",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "8__630___",
+          "short_name": "630",
+          "long_name": "VILLALBA (Estación)-GALAPAGAR-COLMENAREJO-VALDEMORILLO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__631___",
+          "short_name": "631",
+          "long_name": "MADRID (Moncloa)-TORRELODONES (Colonia)-GALAPAGAR-COLMENAREJO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__632___",
+          "short_name": "632",
+          "long_name": "MADRID (Moncloa)-LA NAVATA-GALAPAGAR-EL GUIJO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__633___",
+          "short_name": "633",
+          "long_name": "MAJADAHONDA (Hospital)-TORRELODONES (Colonia)-GALAPAGAR-COLMENAREJO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__634___",
+          "short_name": "634",
+          "long_name": "COLMENAREJO - GALAPAGAR - EST. LA NAVATA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__635___",
+          "short_name": "635",
+          "long_name": "MADRID (Moncloa)-TORRELODONES (Colonia)-LA NAVATA-GALAPAGAR",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_904___",
+          "short_name": "N904",
+          "long_name": "MADRID (Moncloa)-TORRELODONES (Colonia)-GALAPAGAR-COLMENAREJO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1__152_",
+          "short_name": "1",
+          "long_name": "FFCC-PUEBLO-ÁREA HOMOGÉNEA SUR",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__2__152_",
+          "short_name": "2",
+          "long_name": "FFCC-AVENIDA DEHESA-LOS ROBLES",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__4__152_",
+          "short_name": "4",
+          "long_name": "FFCC-PUEBLO-LOS PEÑASCALES",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__5__152_",
+          "short_name": "5",
+          "long_name": "FFCC-PUEBLO-LOS PEÑASCALES (Por Pº Joaquín Ruiz J.)",
+          "color": "E60003",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "paquete_024",
+      "base": "/gtfs/paquete_024",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "8__421___",
+          "short_name": "421",
+          "long_name": "MADRID (Legazpi)-PINTO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__422___",
+          "short_name": "422",
+          "long_name": "MADRID (Legazpi)-VALDEMORO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__423___",
+          "short_name": "423",
+          "long_name": "MADRID (Estación Sur)-ARANJUEZ",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__424___",
+          "short_name": "424",
+          "long_name": "MADRID (Legazpi)-VALDEMORO (El Restón)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__425___",
+          "short_name": "425",
+          "long_name": "VALDEMORO (Hospital)-CIEMPOZUELOS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__426___",
+          "short_name": "426",
+          "long_name": "MADRID (Legazpi)-CIEMPOZUELOS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__427___",
+          "short_name": "427",
+          "long_name": "MADRID (Villaverde Bajo-Cruce)-ÁREA EMPRESARIAL ANDALUCIA-PINTO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__428___",
+          "short_name": "428",
+          "long_name": "GETAFE-VALDEMORO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__429___",
+          "short_name": "429",
+          "long_name": "MADRID (Legazpi)-ARANJUEZ (PAU de la Montaña)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__430___",
+          "short_name": "430",
+          "long_name": "ARANJUEZ-VILLAREJO DE SALVANES",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_401___",
+          "short_name": "N401",
+          "long_name": "MADRID (Atocha)-PINTO-VALDEMORO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_402___",
+          "short_name": "N402",
+          "long_name": "MADRID (Atocha)-CIEMPOZUELOS-ARANJUEZ",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1__161_",
+          "short_name": "1",
+          "long_name": "CIRCULAR (FFCC-Ambulatorio-FFCC)",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1__040_",
+          "short_name": "1",
+          "long_name": "CIRCULAR DE CIEMPOZUELOS",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__2__161_",
+          "short_name": "2",
+          "long_name": "ESTACIÓN FFCC-EL RESTÓN",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__3__161_",
+          "short_name": "3",
+          "long_name": "CIRCULAR (El Restón-Avenida Andalucía-El Restón)",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__4__161_",
+          "short_name": "4",
+          "long_name": "ESTACIÓN FFCC-POLÍGONOS NORTE",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__5__161_",
+          "short_name": "5",
+          "long_name": "ESTACIÓN FFCC-P.I. ROMPECUBAS",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__6__161_",
+          "short_name": "6",
+          "long_name": "ESTACIÓN FFCC-EL CARACOL-EL RESTÓN II",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__7__161_",
+          "short_name": "7",
+          "long_name": "ESTACIÓN FFCC-HOSPITAL-EL RESTÓN",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1_A_113_",
+          "short_name": "1A",
+          "long_name": "CIRCULAR PINTO",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1_B_113_",
+          "short_name": "1B",
+          "long_name": "CIRCULAR PINTO",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__SE__161_",
+          "short_name": "SE",
+          "long_name": "SE URBANA VALDEMORO",
+          "color": "E60003",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "paquete_025",
+      "base": "/gtfs/paquete_025",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "8__670___",
+          "short_name": "670",
+          "long_name": "COLLADO VILLALBA (Hospital)-MORALZARZAL",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__671___",
+          "short_name": "671",
+          "long_name": "MADRID (Moncloa)-MORALZARZAL",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__672___",
+          "short_name": "672",
+          "long_name": "MADRID (Moncloa)-CERCEDA (Por Mataelpino)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__672_A__",
+          "short_name": "672A",
+          "long_name": "MADRID (Moncloa)-CERCEDA (Directo)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__673___",
+          "short_name": "673",
+          "long_name": "MADRID (Moncloa)-COLLADO VILLALBA (Hospital)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__876___",
+          "short_name": "876",
+          "long_name": "MADRID (Plaza de Castilla)-MORALZARZAL-COLLADO VILLALBA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_603___",
+          "short_name": "N603",
+          "long_name": "MADRID (Moncloa)-MORALZARZAL",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1__047_",
+          "short_name": "1",
+          "long_name": "FFCC-PQUE. CORUÑA-LOS VALLES-PUEBLO-URBANIZACIONES",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__2__047_",
+          "short_name": "2",
+          "long_name": "FFCC-PQUE. CORUÑA-CENTRO SALUD-LOS NEGRALES-FFCC",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__3__047_",
+          "short_name": "3",
+          "long_name": "FF.CC. - EL GORRONAL - HOSPITAL",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__4__047_",
+          "short_name": "4",
+          "long_name": "FFCC-PQUE. CORUÑA-PUEBLO",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__6__047_",
+          "short_name": "6",
+          "long_name": "FFCC-CANTOS ALTOS-PUEBLO-ARROYO ARRIBA",
+          "color": "E60003",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "paquete_027",
+      "base": "/gtfs/paquete_027",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "8__171___",
+          "short_name": "171",
+          "long_name": "MADRID (Plaza de Castilla)-URB. SANTO DOMINGO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__8__134_",
+          "short_name": "8",
+          "long_name": "CIRCULAR CIUDALCAMPO",
+          "color": "E60003",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "paquete_026",
+      "base": "/gtfs/paquete_026",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "8__580___",
+          "short_name": "580",
+          "long_name": "MAJADAHONDA(Hospital)-BRUNETE",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__581___",
+          "short_name": "581",
+          "long_name": "MADRID (Cuatro Vientos)-BRUNETE-QUIJORNA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__620___",
+          "short_name": "620",
+          "long_name": "LAS MATAS-HOSPITAL PUERTA DE HIERRO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__621___",
+          "short_name": "621",
+          "long_name": "MADRID (Moncloa)-LAS ROZAS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__622___",
+          "short_name": "622",
+          "long_name": "MADRID (Moncloa)-LAS ROZAS-LAS MATAS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__623___",
+          "short_name": "623",
+          "long_name": "MADRID (Moncloa)-LAS ROZAS-URB.VILLAFRANCA DEL CASTILLO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__624___",
+          "short_name": "624",
+          "long_name": "MADRID (Moncloa)-COL.VERACRUZ-LAS ROZAS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__624_A__",
+          "short_name": "624A",
+          "long_name": "MADRID (Moncloa) - LAS ROZAS (La Marazuela)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__625___",
+          "short_name": "625",
+          "long_name": "MADRID (Moncloa)-MONTE ROZAS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__626___",
+          "short_name": "626",
+          "long_name": "LAS ROZAS-MAJADAHONDA-VILLANUEVA DE LA CAÑADA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__626_A__",
+          "short_name": "626A",
+          "long_name": "MAJADAHONDA (Estación FFCC)-VILLANUEVA DEL PARDILLO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__627___",
+          "short_name": "627",
+          "long_name": "MADRID (Moncloa)-VILLANUEVA DE LA CAÑADA-BRUNETE",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__628___",
+          "short_name": "628",
+          "long_name": "MADRID (Moncloa)-P.EMPRESARIAL-EL CANTIZAL",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__629___",
+          "short_name": "629",
+          "long_name": "MADRID (Moncloa)-LAS ROZAS (Parque Empresarial)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_903___",
+          "short_name": "N903",
+          "long_name": "MADRID (Moncloa)-LAS ROZAS-MONTE ROZAS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_907___",
+          "short_name": "N907",
+          "long_name": "MADRID (Moncloa)-VILLANUEVA DE LA CAÑADA-BRUNETE",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1__127_",
+          "short_name": "1",
+          "long_name": "LAS ROZAS-URBANIZACIÓN MOLINO DE LA HOZ",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__2__127_",
+          "short_name": "2",
+          "long_name": "LAS ROZAS - MONTE ROZAS - EL ENCINAR",
+          "color": "E60003",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "paquete_030",
+      "base": "/gtfs/paquete_030",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "8__827___",
+          "short_name": "827",
+          "long_name": "MADRID (Canillejas)-ALCOBENDAS-UNIVERSIDAD AUTÓNOMA-TRES CANTOS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__827_A__",
+          "short_name": "827A",
+          "long_name": "ALCOBENDAS-S. S. DE LOS REYES-UNIV. AUTÓNOMA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__828___",
+          "short_name": "828",
+          "long_name": "MADRID (Canillejas)-ALCOBENDAS-UNIVERSIDAD AUTÓNOMA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1__006_",
+          "short_name": "1",
+          "long_name": "ARROYO DE LA VEGA-EL SOTO-LA MORALEJA",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__2__006_",
+          "short_name": "2",
+          "long_name": "ALCOBENDAS-LA MORALEJA",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__3__006_",
+          "short_name": "3",
+          "long_name": "ARROYO DE LA VEGA-SOTO DE LA MORALEJA-EL ENCINAR DE LOS REYES",
+          "color": "E60003",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "paquete_034",
+      "base": "/gtfs/paquete_034",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "8__510___",
+          "short_name": "510",
+          "long_name": "ALCORCÓN-VILLAVICIOSA-EL BOSQUE",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__510_A__",
+          "short_name": "510A",
+          "long_name": "MADRID (Colonia Jardín) - VILLAVICIOSA DE ODÓN",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__510_B__",
+          "short_name": "510B",
+          "long_name": "ALCORCÓN (Alcorcón Central) - VILLAVICIOSA DE ODÓN (Universidad Europea)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__511___",
+          "short_name": "511",
+          "long_name": "MADRID (Cuatro Vientos)-ALCORCÓN (Por Parque Lisboa)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__512___",
+          "short_name": "512",
+          "long_name": "MADRID (Cuatro Vientos)-ALCORCÓN (Por C. de los Cantos)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__513___",
+          "short_name": "513",
+          "long_name": "MADRID (Cuatro Vientos)-ALCORCÓN (P.I. Urtinsa)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__514___",
+          "short_name": "514",
+          "long_name": "MADRID (Cuatro Vientos) - ALCORCÓN (por Los Castillos)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__516___",
+          "short_name": "516",
+          "long_name": "MADRID (Cuatro Vientos)-ALCORCÓN (Por Universidad Rey Juan Carlos)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__517___",
+          "short_name": "517",
+          "long_name": "MADRID (Cuatro Vientos) - ALCORCÓN (Fuente Cisneros)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__518___",
+          "short_name": "518",
+          "long_name": "MADRID (Cuatro Vientos) - VILLAVICIOSA DE ODÓN",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__519___",
+          "short_name": "519",
+          "long_name": "MÓSTOLES-VILLAVICIOSA DE ODÓN",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__519_A__",
+          "short_name": "519A",
+          "long_name": "MÓSTOLES (Hospital Rey Juan Carlos) por El Soto-VILLAVICIOSA DE ODÓN (El Bosque)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__520___",
+          "short_name": "520",
+          "long_name": "ALCORCÓN-MÓSTOLES",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__521___",
+          "short_name": "521",
+          "long_name": "MADRID (Cuatro Vientos)-MÓSTOLES",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__522___",
+          "short_name": "522",
+          "long_name": "MADRID (Cuatro Vientos)-MÓSTOLES (Por Pistas DGT)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__523___",
+          "short_name": "523",
+          "long_name": "MADRID (Cuatro Vientos)-MÓSTOLES (Villafontana)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__524___",
+          "short_name": "524",
+          "long_name": "MADRID (Cuatro Vientos) - MÓSTOLES SUR",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__525___",
+          "short_name": "525",
+          "long_name": "MADRID (Cuatro Vientos)-MÓSTOLES SUR (Por Av.Onu)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__526___",
+          "short_name": "526",
+          "long_name": "FUENLABRADA - MÓSTOLES (Por FF.CC)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__527___",
+          "short_name": "527",
+          "long_name": "MÓSTOLES (Estación FFCC)-FUENLABRADA (Urb. Loranca)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__528___",
+          "short_name": "528",
+          "long_name": "MADRID (Cuatro Vientos)-NAVALCARNERO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__529___",
+          "short_name": "529",
+          "long_name": "MÓSTOLES (Hospital Rey Juan Carlos)-NAVALCARNERO-EL ÁLAMO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__529_A__",
+          "short_name": "529A",
+          "long_name": "MÓSTOLES (Hospital Rey Juan Carlos)-NAVALCARNERO-BATRES",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__529_H__",
+          "short_name": "529H",
+          "long_name": "MÓSTOLES (Hospital Rey Juan Carlos) - NAVALCARNERO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__530___",
+          "short_name": "530",
+          "long_name": "NAVALCARNERO-VILLANUEVA DE LA CAÑADA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__531___",
+          "short_name": "531",
+          "long_name": "MÓSTOLES (Hospital Rey Juan Carlos)-NAVALCARNERO-SEVILLA LA NUEVA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__531_A__",
+          "short_name": "531A",
+          "long_name": "MÓSTOLES (Hospital Rey Juan Carlos)-NAVALCARNERO-VILLAMANTILLA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__532___",
+          "short_name": "532",
+          "long_name": "MADRID (Colonia Jardín)-SEVILLA LA NUEVA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__534___",
+          "short_name": "534",
+          "long_name": "MADRID (Cuatro Vientos)-URB. PARQUE COIMBRA-XANADÚ",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__538___",
+          "short_name": "538",
+          "long_name": "MADRID (Cuatro Vientos) - NAVALCARNERO (La Dehesa)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__539___",
+          "short_name": "539",
+          "long_name": "MADRID (Cuatro Vientos)-EL ÁLAMO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_501___",
+          "short_name": "N501",
+          "long_name": "MADRID (Príncipe Pío)-ALCORCÓN-MÓSTOLES",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_502___",
+          "short_name": "N502",
+          "long_name": "MADRID (Príncipe Pío)-ALCORCÓN",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_503___",
+          "short_name": "N503",
+          "long_name": "MADRID (Príncipe Pío)-MÓSTOLES (Villafontana)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_504___",
+          "short_name": "N504",
+          "long_name": "MADRID (Príncipe Pío)-VILLAVICIOSA DE ODÓN",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_505___",
+          "short_name": "N505",
+          "long_name": "MADRID (Príncipe Pío) - NAVALCARNERO - EL ÁLAMO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1__096_",
+          "short_name": "1",
+          "long_name": "LA DEHESA-EL PINAR",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1__092_",
+          "short_name": "1",
+          "long_name": "LAS CUMBRES-ESTACIÓN FFCC",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1__007_",
+          "short_name": "1",
+          "long_name": "PUERTA DEL SUR - FUENTE CISNEROS",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__2__092_",
+          "short_name": "2",
+          "long_name": "MÓSTOLES (Pradillo)-CEMENTERIO",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__2__007_",
+          "short_name": "2",
+          "long_name": "ONDARRETA-PRADO STO DOMINGO",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__3__007_",
+          "short_name": "3",
+          "long_name": "ALCORCÓN CENTRAL - PARQUE EL LUCERO",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__3__092_",
+          "short_name": "3",
+          "long_name": "POLÍGONO INDUSTRIAL LAS NIEVES-MÓSTOLES PRADILLO",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__4__092_",
+          "short_name": "4",
+          "long_name": "MÓSTOLES SUR - MÓSTOLES (HOSPITAL REY JUAN CARLOS)",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__5__092_",
+          "short_name": "5",
+          "long_name": "MOSTOLES (Estación FF.CC.) - PARQUE COIMBRA",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__6__092_",
+          "short_name": "6",
+          "long_name": "UNIVERSIDAD REY JUAN CARLOS-URB. P.GUADARRAMA",
+          "color": "E60003",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "paquete_039",
+      "base": "/gtfs/paquete_039",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "8__640___",
+          "short_name": "640",
+          "long_name": "SAN LORENZO DE EL ESCORIAL-ROBLEDO CHAVELA-VALDEMAQUEDA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__640_A__",
+          "short_name": "640A",
+          "long_name": "ROBLEDO DE CHAVELA FFCC-ROBLEDO DE CHAVELA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__645___",
+          "short_name": "645",
+          "long_name": "MADRID (Moncloa)-ROBLEDO DE CHAVELA-CEBREROS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__660___",
+          "short_name": "660",
+          "long_name": "SAN LORENZO DE EL ESCORIAL-GUADARRAMA-VILLALBA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__661___",
+          "short_name": "661",
+          "long_name": "MADRID (Moncloa)-SAN LORENZO DE EL ESCORIAL (Por Galapagar)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__661_A__",
+          "short_name": "661A",
+          "long_name": "MADRID (Moncloa)-LAS ZORRERAS (Por Galapagar)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__662___",
+          "short_name": "662",
+          "long_name": "MADRID (Moncloa)-URB. MOLINO DE LA HOZ",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__664___",
+          "short_name": "664",
+          "long_name": "MADRID (Moncloa)-SAN LORENZO DE EL ESCORIAL (Guadarrama)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__665___",
+          "short_name": "665",
+          "long_name": "SAN LORENZO DE EL ESCORIAL-PEGUERINOS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__666___",
+          "short_name": "666",
+          "long_name": "SAN LORENZO DE EL ESCORIAL-ZARZALEJO-LAS NAVAS DEL MARQUÉS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__667___",
+          "short_name": "667",
+          "long_name": "MAJADAHONDA (Hospital)-SAN LORENZO DE EL ESCORIAL (Por Galapagar)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__669___",
+          "short_name": "669",
+          "long_name": "SAN LORENZO DE EL ESCORIAL-VILLANUEVA DE LA CAÑADA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__669_A__",
+          "short_name": "669A",
+          "long_name": "S. L. DE EL ESCORIAL - FRESNEDILLAS - NAVALAGAMELLA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_604___",
+          "short_name": "N604",
+          "long_name": "MADRID (Moncloa)-EL ESCORIAL-SAN LORENZO DE EL ESCORIAL",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1__131_",
+          "short_name": "1",
+          "long_name": "S. L. DE EL ESCORIAL-FFCC-S. L. DE EL ESCORIAL",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__2__131_",
+          "short_name": "2",
+          "long_name": "EL ESCORIAL-SAN LORENZO DE EL ESCORIAL-HOSPITAL-LA PIZARRA",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__3__054_",
+          "short_name": "3",
+          "long_name": "EL ESCORIAL-LAS ZORRERAS",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__4__131_",
+          "short_name": "4",
+          "long_name": "CIRCULAR SAN LORENZO DE EL ESCORIAL",
+          "color": "E60003",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "paquete_042",
+      "base": "/gtfs/paquete_042",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "8__551___",
+          "short_name": "551",
+          "long_name": "MADRID (Cuatro Vientos)-SAN MARTÍN DE VALDEIGLESIAS-EL TIEMBLO/CEBREROS",
+          "color": "8EBF42",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "paquete_043",
+      "base": "/gtfs/paquete_043",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "8__541___",
+          "short_name": "541",
+          "long_name": "MADRID (Plaza Elíptica)-VILLAMANTA-LA TORRE DE E. HAMBRAN",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__545___",
+          "short_name": "545",
+          "long_name": "MADRID (Plaza Elíptica)-CENICIENTOS-SOTILLO DE LA ADRADA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__546___",
+          "short_name": "546",
+          "long_name": "MADRID (Plaza Elíptica)-ROZAS DE PUERTO REAL-CASILLAS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__547___",
+          "short_name": "547",
+          "long_name": "MADRID (Plaza Elíptica)-V.DEL PRADO-ALMOROX-ALDEA EN CABO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__548___",
+          "short_name": "548",
+          "long_name": "MADRID (Plaza Elíptica)-ALDEA DEL FRESNO-CALALBERCHE",
+          "color": "8EBF42",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "paquete_050",
+      "base": "/gtfs/paquete_050",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "8__350_A__",
+          "short_name": "350A",
+          "long_name": "ARGANDA (Hospital)-ESTREMERA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__350_B__",
+          "short_name": "350B",
+          "long_name": "ARGANDA (Hospital) - VILLAREJO - VILLAMANRIQUE DE TAJO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__350_C__",
+          "short_name": "350C",
+          "long_name": "ARGANDA (Hospital) - BELMONTE",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__351___",
+          "short_name": "351",
+          "long_name": "MADRID (Estación Sur)-ESTREMERA-BARAJAS DE MELO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__352___",
+          "short_name": "352",
+          "long_name": "MADRID (Estación Sur)-FUENTIDUEÑA-TARANCÓN",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__353___",
+          "short_name": "353",
+          "long_name": "MADRID (Estación Sur)-VILLAMANRIQUE-STA.CRUZ",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__355___",
+          "short_name": "355",
+          "long_name": "FUENTIDUEÑA DE TAJO-CENTRO PENITENCIARIO-ESTREMERA",
+          "color": "8EBF42",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "paquete_079",
+      "base": "/gtfs/paquete_079",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "8__271___",
+          "short_name": "271",
+          "long_name": "ALCALÁ DE HENARES-PEZUELA-PIOZ",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__272___",
+          "short_name": "272",
+          "long_name": "ALCALÁ DE HENARES-VILLALBILLA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__275___",
+          "short_name": "275",
+          "long_name": "ALCALÁ-LOS SANTOS DE LA HUMOSA-ALCALÁ",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_200___",
+          "short_name": "N200",
+          "long_name": "ALCALÁ DE HENARES - VILLALBILLA - ALCALÁ DE HENARES",
+          "color": "8EBF42",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "paquete_076",
+      "base": "/gtfs/paquete_076",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "8__191___",
+          "short_name": "191",
+          "long_name": "MADRID (Plaza de Castilla)-BUITRAGO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__191_A__",
+          "short_name": "191A",
+          "long_name": "BUITRAGO-BRAOJOS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__191_B__",
+          "short_name": "191B",
+          "long_name": "BUITRAGO-SOMOSIERRA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__191_C__",
+          "short_name": "191C",
+          "long_name": "BUITRAGO-MONTEJO DE LA SIERRA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__191_D__",
+          "short_name": "191D",
+          "long_name": "BUITRAGO-ROBLEDILLO DE LA JARA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__191_E__",
+          "short_name": "191E",
+          "long_name": "BUITRAGO-CERVERA DE BUITRAGO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__193___",
+          "short_name": "193",
+          "long_name": "MADRID (Plaza de Castilla)-PEDREZUELA-EL VELLÓN",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__193_A__",
+          "short_name": "193A",
+          "long_name": "EL MOLAR-COTOS DE MONTERREY-VENTURADA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__194___",
+          "short_name": "194",
+          "long_name": "MADRID (Plaza de Castilla)-RASCAFRÍA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__194_A__",
+          "short_name": "194A",
+          "long_name": "BUITRAGO-LOZOYUELA-RASCAFRÍA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__195___",
+          "short_name": "195",
+          "long_name": "MADRID (Plaza de Castilla)-BRAOJOS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__195_A__",
+          "short_name": "195A",
+          "long_name": "CIRCULAR BUITRAGO-GARGANTILLA (Por Lozoyuela)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__195_B__",
+          "short_name": "195B",
+          "long_name": "CIRCULAR BUITRAGO-GARGANTILLA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__196___",
+          "short_name": "196",
+          "long_name": "MADRID (Plaza de Castilla)-LA ACEBEDA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__197___",
+          "short_name": "197",
+          "long_name": "MADRID (Plaza de Castilla)-TORRELAGUNA/UCEDA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__197_A__",
+          "short_name": "197A",
+          "long_name": "TORRELAGUNA-PATONES-UCEDA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__197_B__",
+          "short_name": "197B",
+          "long_name": "TORRELAGUNA-EL BERRUECO-LA CABRERA-VALDEMANCO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__197_C__",
+          "short_name": "197C",
+          "long_name": "TORRELAGUNA-VENTURADA/CABANILLAS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__197_D__",
+          "short_name": "197D",
+          "long_name": "TORRELAGUNA-EL VELLÓN-EL MOLAR",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__197_E__",
+          "short_name": "197E",
+          "long_name": "TORRELAGUNA-VALDEPIÉLAGOS-TALAMANCA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__199_A__",
+          "short_name": "199A",
+          "long_name": "BUITRAGO - MONTEJO - MANJIRÓN - BUITRAGO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__210___",
+          "short_name": "210",
+          "long_name": "S. S. DE LOS REYES (Hospital)-PARACUELLOS DE JARAMA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__211___",
+          "short_name": "211",
+          "long_name": "MADRID (Canillejas) - PARACUELLOS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__212___",
+          "short_name": "212",
+          "long_name": "MADRID (Canillejas) - PARACUELLOS (Miramadrid)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__213___",
+          "short_name": "213",
+          "long_name": "MADRID (Canillejas) - BELVIS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__215___",
+          "short_name": "215",
+          "long_name": "TORREJÓN DE ARDOZ - PARACUELLOS DE JARAMA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__220___",
+          "short_name": "220",
+          "long_name": "TORREJÓN DE ARDOZ-SAN FERNANDO DE HENARES",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__222___",
+          "short_name": "222",
+          "long_name": "MADRID (Avda. América)-MECO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__223___",
+          "short_name": "223",
+          "long_name": "MADRID (Avda. América)-ALCALÁ DE HENARES",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__224___",
+          "short_name": "224",
+          "long_name": "MADRID (Avda. América)-TORREJÓN DE ARDOZ",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__224_A__",
+          "short_name": "224A",
+          "long_name": "MADRID (Avda. América)-TORREJÓN DE ARDOZ (La Mancha Amarilla)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__226___",
+          "short_name": "226",
+          "long_name": "MADRID (Avda. América)-TORREJÓN DE ARDOZ (El Soto)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__227___",
+          "short_name": "227",
+          "long_name": "MADRID (Avda. América)-ALCALÁ (Espartales-Universidad)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__229___",
+          "short_name": "229",
+          "long_name": "MADRID (Avda. América)-ALCALÁ (Virgen del Val)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__231___",
+          "short_name": "231",
+          "long_name": "ALCALÁ DE HENARES-URB. ZULEMA-EL VISO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__232___",
+          "short_name": "232",
+          "long_name": "ALCALÁ DE HENARES-TORRES DE LA ALAMEDA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__250___",
+          "short_name": "250",
+          "long_name": "ALCALÁ DE HENARES-MECO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__251___",
+          "short_name": "251",
+          "long_name": "TORREJÓN-VALDEAVERO-ALCALÁ",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__252___",
+          "short_name": "252",
+          "long_name": "TORREJÓN-DAGANZO-ALCALÁ",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__254___",
+          "short_name": "254",
+          "long_name": "VALDEOLMOS/FUENTE EL SAZ-ALCALÁ DE HENARES",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__255___",
+          "short_name": "255",
+          "long_name": "VALDEAVERO-CAMARMA DE ESTERUELAS-ALCALÁ DE HENARES",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__256___",
+          "short_name": "256",
+          "long_name": "MADRID (Canillejas)-DAGANZO-VALDEAVERO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__819___",
+          "short_name": "819",
+          "long_name": "RASCAFRÍA - COTOS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__824___",
+          "short_name": "824",
+          "long_name": "MADRID (Aeropuerto) - TORREJÓN DE ARDOZ - ALCALÁ DE HENARES",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__913___",
+          "short_name": "913",
+          "long_name": "TORRELAGUNA-EL ATAZAR",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__FS2___",
+          "short_name": "FS2",
+          "long_name": "TORRELAGUNA - ALCALÁ DE HENARES",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_104___",
+          "short_name": "N104",
+          "long_name": "MADRID (Plaza de Castilla)- EL MOLAR",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_202___",
+          "short_name": "N202",
+          "long_name": "MADRID (Av. de América) - TORREJÓN - ALCALÁ - MECO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_204___",
+          "short_name": "N204",
+          "long_name": "MADRID (Canillejas) - PARACUELLOS - DAGANZO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1__108_",
+          "short_name": "1",
+          "long_name": "PEDREZUELA-URBANIZACIONES",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1__104_",
+          "short_name": "1",
+          "long_name": "URB. ALTOS DE JARAMA - MIRAMADRID",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__2__148_",
+          "short_name": "2",
+          "long_name": "FRONTERAS-BARRIO CASTILLO-FRESNO",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__2__104_",
+          "short_name": "2",
+          "long_name": "PICÓN DEL CURA - URB. LOS BERROCALES",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__3__148_",
+          "short_name": "3",
+          "long_name": "LOS FRESNOS - PLAZA DE ESPAÑA - LOS ALMENDROS",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__4__148_",
+          "short_name": "4",
+          "long_name": "TORREJÓN-PARQUE CORREDOR",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__6__148_",
+          "short_name": "6",
+          "long_name": "PLAZA DE ESPAÑA - OASIZ",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1_A_148_",
+          "short_name": "1A",
+          "long_name": "CIRCULAR TORREJÓN",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1_B_148_",
+          "short_name": "1B",
+          "long_name": "CIRCULAR TORREJÓN",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__5_A_148_",
+          "short_name": "5A",
+          "long_name": "CIRCULAR PARQUE EUROPA",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__5_B_148_",
+          "short_name": "5B",
+          "long_name": "CIRCULAR PARQUE EUROPA",
+          "color": "E60003",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "paquete_080",
+      "base": "/gtfs/paquete_080",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "9__2__005_",
+          "short_name": "2",
+          "long_name": "PUERTA DE SANTA ANA - HOSPITAL/UNIVERSIDAD",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__3__005_",
+          "short_name": "3",
+          "long_name": "CUATRO CAÑOS - HOSPITAL/UNIVERSIDAD - ESPARTALES",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__5__005_",
+          "short_name": "5",
+          "long_name": "PLAZA DE LA PAZ - NUEVA RINCONADA",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__6__005_",
+          "short_name": "6",
+          "long_name": "EST. LA GARENA - VIRGEN DEL VAL",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__7__005_",
+          "short_name": "7",
+          "long_name": "ENSANCHE NORTE - NUEVA ALCALÁ / CEMENTERIO JARDÍN",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__8__005_",
+          "short_name": "8",
+          "long_name": "LOS NOGALES - VIRGEN DEL VAL",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__9__005_",
+          "short_name": "9",
+          "long_name": "EST. ALCALÁ DE HENARES - EL OLIVAR /POLÍGONO CAMPORROSO",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__10__005_",
+          "short_name": "10",
+          "long_name": "VIA COMPLUTENSE CENTRO - ESPARTALES NORTE",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__11__005_",
+          "short_name": "11",
+          "long_name": "LA GARENA - EST. ALCALÁ UNIVERSIDAD",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1_A_005_",
+          "short_name": "1A",
+          "long_name": "CIRCULAR ALCALÁ DE HENARES",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1_B_005_",
+          "short_name": "1B",
+          "long_name": "CIRCULAR ALCALÁ DE HENARES",
+          "color": "E60003",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "paquete_180",
+      "base": "/gtfs/paquete_180",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "8__280___",
+          "short_name": "280",
+          "long_name": "COSLADA (FFCC)-HOSPITAL-LOECHES",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__281___",
+          "short_name": "281",
+          "long_name": "MADRID (Av. de América)-SAN FERNANDO DE HENARES",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__282___",
+          "short_name": "282",
+          "long_name": "MADRID (Avda. América)-SAN FERNANDO-MEJORADA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__283___",
+          "short_name": "283",
+          "long_name": "MADRID (Avda. América)-COSLADA-SAN FERNANDO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__284___",
+          "short_name": "284",
+          "long_name": "MADRID (Av. de América)-VELILLA-LOECHES",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__285___",
+          "short_name": "285",
+          "long_name": "COSLADA (San Fernando FFCC)-VELILLA-ARGANDA DEL REY",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__286___",
+          "short_name": "286",
+          "long_name": "MADRID (Ciudad Lineal)-COSLADA (Ciudad 70)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__287___",
+          "short_name": "287",
+          "long_name": "MADRID (Alsacia)-COSLADA (Barrio Estación)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__288___",
+          "short_name": "288",
+          "long_name": "MADRID (Ciudad Lineal)-COSLADA-SAN FERNANDO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__289___",
+          "short_name": "289",
+          "long_name": "MADRID (Ciudad Lineal)-COSLADA (Hospital)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__290___",
+          "short_name": "290",
+          "long_name": "MADRID (El Cañaveral) - COSLADA - PLENILUNIO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__340___",
+          "short_name": "340",
+          "long_name": "TORREJÓN DE ARDOZ-MEJORADA DEL CAMPO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__341___",
+          "short_name": "341",
+          "long_name": "MADRID (Pavones)-MEJORADA-VELILLA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__432___",
+          "short_name": "432",
+          "long_name": "MADRID (Villaverde Bajo-Cruce)-LEGANÉS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__441___",
+          "short_name": "441",
+          "long_name": "MADRID (Plaza Elíptica)-GETAFE (Sector III-Paseo Juan José Rosón)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__442___",
+          "short_name": "442",
+          "long_name": "MADRID (Plaza Elíptica)-GETAFE (Juan de la Cierva)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__443___",
+          "short_name": "443",
+          "long_name": "MADRID (Plaza Elíptica)-GETAFE (Barrio Las Margaritas)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__444___",
+          "short_name": "444",
+          "long_name": "MADRID (Plaza Elíptica)-GETAFE (Sector III-Islas Canarias)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__446___",
+          "short_name": "446",
+          "long_name": "MADRID (Plaza Elíptica)-GETAFE (El Bercial)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__447___",
+          "short_name": "447",
+          "long_name": "MADRID (Legazpi)-GETAFE (Hospital)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__448___",
+          "short_name": "448",
+          "long_name": "MADRID (Legazpi)-GETAFE (Por Villaverde)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__450___",
+          "short_name": "450",
+          "long_name": "GETAFE-LEGANÉS-ALCORCÓN",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__455___",
+          "short_name": "455",
+          "long_name": "PINTO - GETAFE",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__460___",
+          "short_name": "460",
+          "long_name": "MADRID (Plaza Elíptica)-PARLA-BATRES",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__461___",
+          "short_name": "461",
+          "long_name": "MADRID (Plaza Elíptica)-PARLA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__462___",
+          "short_name": "462",
+          "long_name": "PARLA-GETAFE",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__463___",
+          "short_name": "463",
+          "long_name": "MADRID (Plaza Elíptica)-PARLA-TORREJÓN DE VELASCO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__464___",
+          "short_name": "464",
+          "long_name": "MADRID (Plaza Elíptica)-PARLA-YUNCLILLOS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__466___",
+          "short_name": "466",
+          "long_name": "PARLA-VALDEMORO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__468___",
+          "short_name": "468",
+          "long_name": "GETAFE-GRIÑÓN/CASARRUBUELOS/SERRANILLOS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__469___",
+          "short_name": "469",
+          "long_name": "MADRID (Plaza Elíptica)-PARLA (Parla Este)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__470___",
+          "short_name": "470",
+          "long_name": "MADRID (Plaza Elíptica) - HUMANES - GRIÑÓN-SERRANILLOS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__471___",
+          "short_name": "471",
+          "long_name": "HUMANES-FUENLABRADA-PARLA-PINTO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__560___",
+          "short_name": "560",
+          "long_name": "POZUELO DE ALARCÓN-ALCORCÓN",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__561___",
+          "short_name": "561",
+          "long_name": "MADRID (Aluche)-POZUELO-MAJADAHONDA-LAS ROZAS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__561_A__",
+          "short_name": "561A",
+          "long_name": "MADRID (Aluche)-POZUELO-MAJADAHONDA-LAS ROZAS (por Universidad)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__561_B__",
+          "short_name": "561B",
+          "long_name": "MADRID (Aluche)-POZUELO-MAJADAHONDA-LAS ROZAS (por Av. Guadarrama)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__562___",
+          "short_name": "562",
+          "long_name": "MADRID (Aluche)-POZUELO DE ALARCÓN",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__563___",
+          "short_name": "563",
+          "long_name": "MADRID (Aluche)-POZUELO (Por Urb. Las Minas)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__564___",
+          "short_name": "564",
+          "long_name": "MADRID (Aluche)-POZUELO (Por Somosaguas Sur)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__565___",
+          "short_name": "565",
+          "long_name": "POZUELO (Est. El Barrial) - BOADILLA (Est. Puerta de Boadilla)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__566___",
+          "short_name": "566",
+          "long_name": "BOADILLA DEL MONTE-POZUELO DE ALARCÓN",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__567___",
+          "short_name": "567",
+          "long_name": "VILLAVICIOSA DE ODÓN-MAJADAHONDA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__610___",
+          "short_name": "610",
+          "long_name": "TORRELODONES-HOYO DE MANZANARES-COLMENAR VIEJO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__611___",
+          "short_name": "611",
+          "long_name": "MADRID (Moncloa)-HOYO DE MANZANARES",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__611_A__",
+          "short_name": "611A",
+          "long_name": "MADRID (Moncloa)-HOYO DE MANZANARES (Por Urb. Las Colinas)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__612___",
+          "short_name": "612",
+          "long_name": "MADRID (Moncloa)-TORRELODONES",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__613___",
+          "short_name": "613",
+          "long_name": "MADRID (Moncloa)-TORRELODONES (Por Centro Comercial)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__650_A__",
+          "short_name": "650A",
+          "long_name": "CIRCULAR POZUELO- MAJADAHONDA - POZUELO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__650_B__",
+          "short_name": "650B",
+          "long_name": "CIRCULAR POZUELO- MAJADAHONDA - POZUELO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__651___",
+          "short_name": "651",
+          "long_name": "MADRID (Moncloa)-MAJADAHONDA (Avda. de España)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__652___",
+          "short_name": "652",
+          "long_name": "MADRID (Moncloa)-MAJADAHONDA (Carril del Tejar)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__653___",
+          "short_name": "653",
+          "long_name": "MADRID (Moncloa)-MAJADAHONDA (Hospital) (Por FFCC)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__654___",
+          "short_name": "654",
+          "long_name": "MADRID (Moncloa) - MAJADAHONDA (Urb. Los Satélites)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__655___",
+          "short_name": "655",
+          "long_name": "MADRID (Moncloa)-MAJADAHONDA (Hospital)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__656___",
+          "short_name": "656",
+          "long_name": "MADRID (Moncloa)-POZUELO DE ALARCÓN",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__656_A__",
+          "short_name": "656A",
+          "long_name": "MADRID (Moncloa)-POZUELO-URB.LA CABAÑA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__657___",
+          "short_name": "657",
+          "long_name": "MADRID (Moncloa)-POZUELO (Monteclaro)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__657_A__",
+          "short_name": "657A",
+          "long_name": "MADRID (Moncloa) - POZUELO (San Juan de la Cruz)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__658___",
+          "short_name": "658",
+          "long_name": "MADRID (Moncloa)-POZUELO (Prado Somosaguas-Ciudad de la Imagen)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__658_A__",
+          "short_name": "658A",
+          "long_name": "MADRID (Moncloa) - POZUELO (C.C. LaFinca)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__659___",
+          "short_name": "659",
+          "long_name": "MADRID (Moncloa) - Univ. Fco. de Vitoria - El Pinar del Plantío",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__680___",
+          "short_name": "680",
+          "long_name": "COLLADO VILLALBA (Hospital)-CERCEDILLA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__681___",
+          "short_name": "681",
+          "long_name": "MADRID (Moncloa)-ALPEDRETE",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__682___",
+          "short_name": "682",
+          "long_name": "MADRID (Moncloa)-VILLALBA-GUADARRAMA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__683___",
+          "short_name": "683",
+          "long_name": "MADRID (Moncloa)-COLLADO MEDIANO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__684___",
+          "short_name": "684",
+          "long_name": "MADRID (Moncloa)-CERCEDILLA (por Guadarrama)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__685___",
+          "short_name": "685",
+          "long_name": "MAJADAHONDA (Hospital) - LAS ROZAS - GUADARRAMA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__686___",
+          "short_name": "686",
+          "long_name": "MADRID (Moncloa)-TORRELODONES (Por Los Peñascales)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__686_A__",
+          "short_name": "686A",
+          "long_name": "MADRID (Moncloa)-TORRELODONES (Por Montealegre)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__687___",
+          "short_name": "687",
+          "long_name": "MADRID (Moncloa)-COLLADO VILLALBA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__688___",
+          "short_name": "688",
+          "long_name": "MADRID (Moncloa)-LOS MOLINOS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__690___",
+          "short_name": "690",
+          "long_name": "GUADARRAMA-COLLADO MEDIANO-NAVACERRADA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__691___",
+          "short_name": "691",
+          "long_name": "MADRID (Moncloa)-BECERRIL-NAVACERRADA-VALDESQUI",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__692___",
+          "short_name": "692",
+          "long_name": "LOS MOLINOS - CERCEDILLA - VALDESQUÍ",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__696___",
+          "short_name": "696",
+          "long_name": "COLLADO VILLALBA (Hospital)-NAVACERRADA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__815___",
+          "short_name": "815",
+          "long_name": "MADRID (Estación Chamartín)-POZUELO DE ALARCÓN",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__822___",
+          "short_name": "822",
+          "long_name": "MADRID (Aeropuerto)-COSLADA-SAN FERNANDO DE HENARES",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_203___",
+          "short_name": "N203",
+          "long_name": "MADRID (Ciudad Lineal)-COSLADA-S.FERNANDO-VELILLA/LOECHES",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_602___",
+          "short_name": "N602",
+          "long_name": "MADRID (Moncloa)-COLLADO VILLALBA-GUADARRAMA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_801___",
+          "short_name": "N801",
+          "long_name": "MADRID (Atocha)-GETAFE (Buenavista - Sector III)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_805___",
+          "short_name": "N805",
+          "long_name": "MADRID (Atocha) - GETAFE (Los Molinos)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_806___",
+          "short_name": "N806",
+          "long_name": "MADRID (Atocha)-PARLA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_807___",
+          "short_name": "N807",
+          "long_name": "MADRID (Atocha) - GETAFE - HUMANES - GRIÑÓN",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_901___",
+          "short_name": "N901",
+          "long_name": "MADRID (Moncloa)-POZUELO-MAJADAHONDA-MADRID",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_902___",
+          "short_name": "N902",
+          "long_name": "MADRID (Moncloa)-POZUELO (Prado Somosaguas-Ciudad de la Imagen)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_906___",
+          "short_name": "N906",
+          "long_name": "MADRID (Moncloa)-MAJADAHONDA-POZUELO-MADRID",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__SE71___",
+          "short_name": "SE71",
+          "long_name": "AV.MONTSERRAT-EST.SAN FERNANDO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__SE72___",
+          "short_name": "SE72",
+          "long_name": "HOSPITAL DEL HENARES-EST.COSLADA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1__080_",
+          "short_name": "1",
+          "long_name": "CIRCULAR (Hospital-Estación FFCC)",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1__106_",
+          "short_name": "1",
+          "long_name": "CIRCULAR 1",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1__038_",
+          "short_name": "1",
+          "long_name": "HOSPITAL DE LA FUENFRÍA - FF.CC. - INSTITUTO",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1__130_",
+          "short_name": "1",
+          "long_name": "POL. INDUSTRIAL-C.C. SAN FERNANDO",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1__115_",
+          "short_name": "1",
+          "long_name": "POZUELO DE ALARCÓN-URB. LA CABAÑA",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1__065_",
+          "short_name": "1",
+          "long_name": "SECTOR III-AMBULATORIO",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__2__065_",
+          "short_name": "2",
+          "long_name": "ARROYO CULEBRO - AMBULATORIO",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__2__049_",
+          "short_name": "2",
+          "long_name": "BARRIO DE LA ESTACIÓN-CENTRO DE TRANSPORTES",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__2__080_",
+          "short_name": "2",
+          "long_name": "CIRCULAR (Hospital-Estación FFCC)",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__2__106_",
+          "short_name": "2",
+          "long_name": "CIRCULAR 2",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__2__115_",
+          "short_name": "2",
+          "long_name": "CIRCULAR DE POZUELO DE ALARCÓN",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__3__065_",
+          "short_name": "3",
+          "long_name": "3 CIRCULAR DE GETAFE",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__3__115_",
+          "short_name": "3",
+          "long_name": "CIRCULAR DE POZUELO DE ALARCÓN",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__3__106_",
+          "short_name": "3",
+          "long_name": "HOSPITAL-AVENIDA DE AMÉRICA-LAGUNA PARK",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__4__065_",
+          "short_name": "4",
+          "long_name": "POL. IND. LOS ÁNGELES - HOSPITAL - PERALES DEL RÍO",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__4__068_",
+          "short_name": "4",
+          "long_name": "POLIDEPORTIVO-VALLEFRESNOS/LA SERRANILLA",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__5__065_",
+          "short_name": "5",
+          "long_name": "BUENAVISTA - SECTOR III",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__6__065_",
+          "short_name": "6",
+          "long_name": "HOSPITAL - SAN ISIDRO",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__7__065_",
+          "short_name": "7",
+          "long_name": "7 CIRCULAR GETAFE CENTRAL - TECNOGETAFE",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__PI1__065_",
+          "short_name": "PI1",
+          "long_name": "GETAFE CENTRAL - P.I. LOS ANGELES - P.I. LOS OLIVOS",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__PI2__065_",
+          "short_name": "PI2",
+          "long_name": "GETAFE CENTRAL-P.I. SAN MARCOS-P.I. EL LOMO-P.E. LA CARPETANÍA",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__SE__065_",
+          "short_name": "SE",
+          "long_name": "SE ACAR - NAVIDALIA",
+          "color": "E60003",
+          "hasShape": false
+        }
+      ]
+    },
+    {
+      "id": "paquete_129",
+      "base": "/gtfs/paquete_129",
+      "carretera": "M607",
+      "routes": [
+        {
+          "route_id": "8__712___",
+          "short_name": "712",
+          "long_name": "MADRID (Plaza de Castilla) - TRES CANTOS (Por Avda. de Encuartes)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__713___",
+          "short_name": "713",
+          "long_name": "MADRID (Plaza de Castilla)-TRES CANTOS (Por Avda. del Parque)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__714___",
+          "short_name": "714",
+          "long_name": "MADRID (Plaza de Castilla)-UNIV.AUTÓNOMA-UNIV.COMILLAS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__716___",
+          "short_name": "716",
+          "long_name": "MADRID (Plaza de Castilla)-TRES CANTOS (Soto de Viñuelas)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__717___",
+          "short_name": "717",
+          "long_name": "MADRID (Plaza de Castilla)-NUEVO TRES CANTOS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_701___",
+          "short_name": "N701",
+          "long_name": "MADRID (Plaza de Castilla)-TRES CANTOS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1__903_",
+          "short_name": "1",
+          "long_name": "FFCC-AVENIDA VIÑUELAS-AVENIDA COLMENAR-FFCC",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__2__903_",
+          "short_name": "2",
+          "long_name": "FFCC-AVENIDA COLMENAR-AVENIDA VIÑUELAS-FFCC",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__3__903_",
+          "short_name": "3",
+          "long_name": "SOTO DE VIÑUELAS-TRES CANTOS FFCC-SOTO DE VIÑUELAS",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__4__903_",
+          "short_name": "4",
+          "long_name": "NUEVO TRES CANTOS - TRES CANTOS FF.CC.",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__5__903_",
+          "short_name": "5",
+          "long_name": "NUEVO TRES CANTOS - AV. VIÑUELAS",
+          "color": "E60003",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "seseña",
+      "base": "/gtfs/seseña",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "406",
+          "short_name": "406",
+          "long_name": "Madrid (Legazpi) - Seseña",
+          "color": "00AA00",
+          "hasShape": true
+        }
+      ]
+    }
+  ]
+}

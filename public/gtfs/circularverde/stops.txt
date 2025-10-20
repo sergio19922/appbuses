@@ -1,0 +1,25 @@
+stop_id,stop_name
+1,Barrio El Naranjo (Galicia)
+2,Av. Provincias
+3,Zamora
+4,Castilla La Nueva
+5,Av. España
+6,Barcelona
+7,Av. Andes
+8,Calle Asturias
+9,Av. Estados
+10,Panaderas
+11,Extremadura
+12,Constitución
+13,Av. Fco. J. Sauquillo
+14,Av. Madrid
+15,Concejal Jiménez
+16,Luis Sauquillo
+17,Móstoles (zona sur)
+18,Suiza
+19,Portugal
+20,Ctra. del Molino
+21,Francia
+22,Av. Europa
+23,Móstoles - Polígono Vereda
+24,Almendro (C.C. Nexum)

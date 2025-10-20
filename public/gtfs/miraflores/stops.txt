@@ -1,0 +1,16 @@
+stop_id,stop_name,stop_lat,stop_lon
+1,POLÍGONO SEVILLA,40.2821,-3.7895
+2,Cruce Pol. Ind. El Álamo,40.2840,-3.7847
+3,Cruce Pol. Ind. El Palomo,40.2862,-3.7803
+4,Ctra. Pinto,40.2890,-3.7741
+5,Constitución,40.2931,-3.7689
+6,Avda. Fco. J. Sauquillo,40.2974,-3.7623
+7,Leganés,40.3012,-3.7578
+8,Móstoles,40.3050,-3.7521
+9,Galicia,40.3095,-3.7470
+10,Islas Británicas,40.3132,-3.7419
+11,Francia,40.3169,-3.7360
+12,C. del Molino,40.3201,-3.7308
+13,Av. del Hospital,40.3238,-3.7251
+14,Av. Pablo Iglesias,40.3276,-3.7193
+15,PARQUE MIRAFLORES,40.3310,-3.7135

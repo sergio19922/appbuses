@@ -1,0 +1,7 @@
+stop_id,stop_name,stop_lat,stop_lon
+PE,Plaza Elíptica,40.3851,-3.7183
+GET,Getafe,40.3083,-3.7327
+PAR,Parla,40.2360,-3.7676
+TOR,Torrejón de la Calzada,40.1997,-3.8006
+CAS,Casarrubuelos,40.1719,-3.8302
+TOL,Toledo,39.8628,-4.0273

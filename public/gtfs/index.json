@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-09-11T12:00:16.521Z",
+  "generatedAt": "2025-10-20T09:40:07.330Z",
   "packages": [
     {
       "id": "402",
@@ -24,6 +24,20 @@
           "route_id": "CIRCULAR3",
           "short_name": "L3",
           "long_name": "Circular Roja",
+          "color": "FF0000",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "cementerio",
+      "base": "/gtfs/cementerio",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "6",
+          "short_name": "6",
+          "long_name": "Cementerio",
           "color": "FF0000",
           "hasShape": true
         }
@@ -136,20 +150,6 @@
           "route_id": "2",
           "short_name": "2",
           "long_name": "Circular Verde",
-          "color": "FF0000",
-          "hasShape": true
-        }
-      ]
-    },
-    {
-      "id": "cementerio",
-      "base": "/gtfs/cementerio",
-      "carretera": "",
-      "routes": [
-        {
-          "route_id": "6",
-          "short_name": "6",
-          "long_name": "Cementerio",
           "color": "FF0000",
           "hasShape": true
         }
@@ -1619,55 +1619,6 @@
       ]
     },
     {
-      "id": "paquete_030",
-      "base": "/gtfs/paquete_030",
-      "carretera": "",
-      "routes": [
-        {
-          "route_id": "8__827___",
-          "short_name": "827",
-          "long_name": "MADRID (Canillejas)-ALCOBENDAS-UNIVERSIDAD AUTÓNOMA-TRES CANTOS",
-          "color": "8EBF42",
-          "hasShape": true
-        },
-        {
-          "route_id": "8__827_A__",
-          "short_name": "827A",
-          "long_name": "ALCOBENDAS-S. S. DE LOS REYES-UNIV. AUTÓNOMA",
-          "color": "8EBF42",
-          "hasShape": true
-        },
-        {
-          "route_id": "8__828___",
-          "short_name": "828",
-          "long_name": "MADRID (Canillejas)-ALCOBENDAS-UNIVERSIDAD AUTÓNOMA",
-          "color": "8EBF42",
-          "hasShape": true
-        },
-        {
-          "route_id": "9__1__006_",
-          "short_name": "1",
-          "long_name": "ARROYO DE LA VEGA-EL SOTO-LA MORALEJA",
-          "color": "E60003",
-          "hasShape": true
-        },
-        {
-          "route_id": "9__2__006_",
-          "short_name": "2",
-          "long_name": "ALCOBENDAS-LA MORALEJA",
-          "color": "E60003",
-          "hasShape": true
-        },
-        {
-          "route_id": "9__3__006_",
-          "short_name": "3",
-          "long_name": "ARROYO DE LA VEGA-SOTO DE LA MORALEJA-EL ENCINAR DE LOS REYES",
-          "color": "E60003",
-          "hasShape": true
-        }
-      ]
-    },
-    {
       "id": "paquete_034",
       "base": "/gtfs/paquete_034",
       "carretera": "",
@@ -1997,6 +1948,55 @@
       ]
     },
     {
+      "id": "paquete_030",
+      "base": "/gtfs/paquete_030",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "8__827___",
+          "short_name": "827",
+          "long_name": "MADRID (Canillejas)-ALCOBENDAS-UNIVERSIDAD AUTÓNOMA-TRES CANTOS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__827_A__",
+          "short_name": "827A",
+          "long_name": "ALCOBENDAS-S. S. DE LOS REYES-UNIV. AUTÓNOMA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__828___",
+          "short_name": "828",
+          "long_name": "MADRID (Canillejas)-ALCOBENDAS-UNIVERSIDAD AUTÓNOMA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1__006_",
+          "short_name": "1",
+          "long_name": "ARROYO DE LA VEGA-EL SOTO-LA MORALEJA",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__2__006_",
+          "short_name": "2",
+          "long_name": "ALCOBENDAS-LA MORALEJA",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__3__006_",
+          "short_name": "3",
+          "long_name": "ARROYO DE LA VEGA-SOTO DE LA MORALEJA-EL ENCINAR DE LOS REYES",
+          "color": "E60003",
+          "hasShape": true
+        }
+      ]
+    },
+    {
       "id": "paquete_039",
       "base": "/gtfs/paquete_039",
       "carretera": "",
@@ -2186,91 +2186,14 @@
       ]
     },
     {
-      "id": "paquete_050",
-      "base": "/gtfs/paquete_050",
+      "id": "paquete_042",
+      "base": "/gtfs/paquete_042",
       "carretera": "",
       "routes": [
         {
-          "route_id": "8__350_A__",
-          "short_name": "350A",
-          "long_name": "ARGANDA (Hospital)-ESTREMERA",
-          "color": "8EBF42",
-          "hasShape": true
-        },
-        {
-          "route_id": "8__350_B__",
-          "short_name": "350B",
-          "long_name": "ARGANDA (Hospital) - VILLAREJO - VILLAMANRIQUE DE TAJO",
-          "color": "8EBF42",
-          "hasShape": true
-        },
-        {
-          "route_id": "8__350_C__",
-          "short_name": "350C",
-          "long_name": "ARGANDA (Hospital) - BELMONTE",
-          "color": "8EBF42",
-          "hasShape": true
-        },
-        {
-          "route_id": "8__351___",
-          "short_name": "351",
-          "long_name": "MADRID (Estación Sur)-ESTREMERA-BARAJAS DE MELO",
-          "color": "8EBF42",
-          "hasShape": true
-        },
-        {
-          "route_id": "8__352___",
-          "short_name": "352",
-          "long_name": "MADRID (Estación Sur)-FUENTIDUEÑA-TARANCÓN",
-          "color": "8EBF42",
-          "hasShape": true
-        },
-        {
-          "route_id": "8__353___",
-          "short_name": "353",
-          "long_name": "MADRID (Estación Sur)-VILLAMANRIQUE-STA.CRUZ",
-          "color": "8EBF42",
-          "hasShape": true
-        },
-        {
-          "route_id": "8__355___",
-          "short_name": "355",
-          "long_name": "FUENTIDUEÑA DE TAJO-CENTRO PENITENCIARIO-ESTREMERA",
-          "color": "8EBF42",
-          "hasShape": true
-        }
-      ]
-    },
-    {
-      "id": "paquete_079",
-      "base": "/gtfs/paquete_079",
-      "carretera": "",
-      "routes": [
-        {
-          "route_id": "8__271___",
-          "short_name": "271",
-          "long_name": "ALCALÁ DE HENARES-PEZUELA-PIOZ",
-          "color": "8EBF42",
-          "hasShape": true
-        },
-        {
-          "route_id": "8__272___",
-          "short_name": "272",
-          "long_name": "ALCALÁ DE HENARES-VILLALBILLA",
-          "color": "8EBF42",
-          "hasShape": true
-        },
-        {
-          "route_id": "8__275___",
-          "short_name": "275",
-          "long_name": "ALCALÁ-LOS SANTOS DE LA HUMOSA-ALCALÁ",
-          "color": "8EBF42",
-          "hasShape": true
-        },
-        {
-          "route_id": "8_N_200___",
-          "short_name": "N200",
-          "long_name": "ALCALÁ DE HENARES - VILLALBILLA - ALCALÁ DE HENARES",
+          "route_id": "8__551___",
+          "short_name": "551",
+          "long_name": "MADRID (Cuatro Vientos)-SAN MARTÍN DE VALDEIGLESIAS-EL TIEMBLO/CEBREROS",
           "color": "8EBF42",
           "hasShape": true
         }
@@ -2704,84 +2627,175 @@
       ]
     },
     {
-      "id": "paquete_080",
-      "base": "/gtfs/paquete_080",
+      "id": "paquete_050",
+      "base": "/gtfs/paquete_050",
       "carretera": "",
       "routes": [
         {
-          "route_id": "9__2__005_",
+          "route_id": "8__350_A__",
+          "short_name": "350A",
+          "long_name": "ARGANDA (Hospital)-ESTREMERA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__350_B__",
+          "short_name": "350B",
+          "long_name": "ARGANDA (Hospital) - VILLAREJO - VILLAMANRIQUE DE TAJO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__350_C__",
+          "short_name": "350C",
+          "long_name": "ARGANDA (Hospital) - BELMONTE",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__351___",
+          "short_name": "351",
+          "long_name": "MADRID (Estación Sur)-ESTREMERA-BARAJAS DE MELO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__352___",
+          "short_name": "352",
+          "long_name": "MADRID (Estación Sur)-FUENTIDUEÑA-TARANCÓN",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__353___",
+          "short_name": "353",
+          "long_name": "MADRID (Estación Sur)-VILLAMANRIQUE-STA.CRUZ",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__355___",
+          "short_name": "355",
+          "long_name": "FUENTIDUEÑA DE TAJO-CENTRO PENITENCIARIO-ESTREMERA",
+          "color": "8EBF42",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "paquete_079",
+      "base": "/gtfs/paquete_079",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "8__271___",
+          "short_name": "271",
+          "long_name": "ALCALÁ DE HENARES-PEZUELA-PIOZ",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__272___",
+          "short_name": "272",
+          "long_name": "ALCALÁ DE HENARES-VILLALBILLA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__275___",
+          "short_name": "275",
+          "long_name": "ALCALÁ-LOS SANTOS DE LA HUMOSA-ALCALÁ",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_200___",
+          "short_name": "N200",
+          "long_name": "ALCALÁ DE HENARES - VILLALBILLA - ALCALÁ DE HENARES",
+          "color": "8EBF42",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "paquete_129",
+      "base": "/gtfs/paquete_129",
+      "carretera": "M607",
+      "routes": [
+        {
+          "route_id": "8__712___",
+          "short_name": "712",
+          "long_name": "MADRID (Plaza de Castilla) - TRES CANTOS (Por Avda. de Encuartes)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__713___",
+          "short_name": "713",
+          "long_name": "MADRID (Plaza de Castilla)-TRES CANTOS (Por Avda. del Parque)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__714___",
+          "short_name": "714",
+          "long_name": "MADRID (Plaza de Castilla)-UNIV.AUTÓNOMA-UNIV.COMILLAS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__716___",
+          "short_name": "716",
+          "long_name": "MADRID (Plaza de Castilla)-TRES CANTOS (Soto de Viñuelas)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__717___",
+          "short_name": "717",
+          "long_name": "MADRID (Plaza de Castilla)-NUEVO TRES CANTOS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_701___",
+          "short_name": "N701",
+          "long_name": "MADRID (Plaza de Castilla)-TRES CANTOS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1__903_",
+          "short_name": "1",
+          "long_name": "FFCC-AVENIDA VIÑUELAS-AVENIDA COLMENAR-FFCC",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__2__903_",
           "short_name": "2",
-          "long_name": "PUERTA DE SANTA ANA - HOSPITAL/UNIVERSIDAD",
+          "long_name": "FFCC-AVENIDA COLMENAR-AVENIDA VIÑUELAS-FFCC",
           "color": "E60003",
           "hasShape": true
         },
         {
-          "route_id": "9__3__005_",
+          "route_id": "9__3__903_",
           "short_name": "3",
-          "long_name": "CUATRO CAÑOS - HOSPITAL/UNIVERSIDAD - ESPARTALES",
+          "long_name": "SOTO DE VIÑUELAS-TRES CANTOS FFCC-SOTO DE VIÑUELAS",
           "color": "E60003",
           "hasShape": true
         },
         {
-          "route_id": "9__5__005_",
+          "route_id": "9__4__903_",
+          "short_name": "4",
+          "long_name": "NUEVO TRES CANTOS - TRES CANTOS FF.CC.",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__5__903_",
           "short_name": "5",
-          "long_name": "PLAZA DE LA PAZ - NUEVA RINCONADA",
-          "color": "E60003",
-          "hasShape": true
-        },
-        {
-          "route_id": "9__6__005_",
-          "short_name": "6",
-          "long_name": "EST. LA GARENA - VIRGEN DEL VAL",
-          "color": "E60003",
-          "hasShape": true
-        },
-        {
-          "route_id": "9__7__005_",
-          "short_name": "7",
-          "long_name": "ENSANCHE NORTE - NUEVA ALCALÁ / CEMENTERIO JARDÍN",
-          "color": "E60003",
-          "hasShape": true
-        },
-        {
-          "route_id": "9__8__005_",
-          "short_name": "8",
-          "long_name": "LOS NOGALES - VIRGEN DEL VAL",
-          "color": "E60003",
-          "hasShape": true
-        },
-        {
-          "route_id": "9__9__005_",
-          "short_name": "9",
-          "long_name": "EST. ALCALÁ DE HENARES - EL OLIVAR /POLÍGONO CAMPORROSO",
-          "color": "E60003",
-          "hasShape": true
-        },
-        {
-          "route_id": "9__10__005_",
-          "short_name": "10",
-          "long_name": "VIA COMPLUTENSE CENTRO - ESPARTALES NORTE",
-          "color": "E60003",
-          "hasShape": true
-        },
-        {
-          "route_id": "9__11__005_",
-          "short_name": "11",
-          "long_name": "LA GARENA - EST. ALCALÁ UNIVERSIDAD",
-          "color": "E60003",
-          "hasShape": true
-        },
-        {
-          "route_id": "9__1_A_005_",
-          "short_name": "1A",
-          "long_name": "CIRCULAR ALCALÁ DE HENARES",
-          "color": "E60003",
-          "hasShape": true
-        },
-        {
-          "route_id": "9__1_B_005_",
-          "short_name": "1B",
-          "long_name": "CIRCULAR ALCALÁ DE HENARES",
+          "long_name": "NUEVO TRES CANTOS - AV. VIÑUELAS",
           "color": "E60003",
           "hasShape": true
         }
@@ -3572,90 +3586,6 @@
       ]
     },
     {
-      "id": "paquete_129",
-      "base": "/gtfs/paquete_129",
-      "carretera": "M607",
-      "routes": [
-        {
-          "route_id": "8__712___",
-          "short_name": "712",
-          "long_name": "MADRID (Plaza de Castilla) - TRES CANTOS (Por Avda. de Encuartes)",
-          "color": "8EBF42",
-          "hasShape": true
-        },
-        {
-          "route_id": "8__713___",
-          "short_name": "713",
-          "long_name": "MADRID (Plaza de Castilla)-TRES CANTOS (Por Avda. del Parque)",
-          "color": "8EBF42",
-          "hasShape": true
-        },
-        {
-          "route_id": "8__714___",
-          "short_name": "714",
-          "long_name": "MADRID (Plaza de Castilla)-UNIV.AUTÓNOMA-UNIV.COMILLAS",
-          "color": "8EBF42",
-          "hasShape": true
-        },
-        {
-          "route_id": "8__716___",
-          "short_name": "716",
-          "long_name": "MADRID (Plaza de Castilla)-TRES CANTOS (Soto de Viñuelas)",
-          "color": "8EBF42",
-          "hasShape": true
-        },
-        {
-          "route_id": "8__717___",
-          "short_name": "717",
-          "long_name": "MADRID (Plaza de Castilla)-NUEVO TRES CANTOS",
-          "color": "8EBF42",
-          "hasShape": true
-        },
-        {
-          "route_id": "8_N_701___",
-          "short_name": "N701",
-          "long_name": "MADRID (Plaza de Castilla)-TRES CANTOS",
-          "color": "8EBF42",
-          "hasShape": true
-        },
-        {
-          "route_id": "9__1__903_",
-          "short_name": "1",
-          "long_name": "FFCC-AVENIDA VIÑUELAS-AVENIDA COLMENAR-FFCC",
-          "color": "E60003",
-          "hasShape": true
-        },
-        {
-          "route_id": "9__2__903_",
-          "short_name": "2",
-          "long_name": "FFCC-AVENIDA COLMENAR-AVENIDA VIÑUELAS-FFCC",
-          "color": "E60003",
-          "hasShape": true
-        },
-        {
-          "route_id": "9__3__903_",
-          "short_name": "3",
-          "long_name": "SOTO DE VIÑUELAS-TRES CANTOS FFCC-SOTO DE VIÑUELAS",
-          "color": "E60003",
-          "hasShape": true
-        },
-        {
-          "route_id": "9__4__903_",
-          "short_name": "4",
-          "long_name": "NUEVO TRES CANTOS - TRES CANTOS FF.CC.",
-          "color": "E60003",
-          "hasShape": true
-        },
-        {
-          "route_id": "9__5__903_",
-          "short_name": "5",
-          "long_name": "NUEVO TRES CANTOS - AV. VIÑUELAS",
-          "color": "E60003",
-          "hasShape": true
-        }
-      ]
-    },
-    {
       "id": "seseña",
       "base": "/gtfs/seseña",
       "carretera": "",
@@ -3665,6 +3595,90 @@
           "short_name": "406",
           "long_name": "Madrid (Legazpi) - Seseña",
           "color": "00AA00",
+          "hasShape": true
+        }
+      ]
+    },
+    {
+      "id": "paquete_080",
+      "base": "/gtfs/paquete_080",
+      "carretera": "",
+      "routes": [
+        {
+          "route_id": "9__2__005_",
+          "short_name": "2",
+          "long_name": "PUERTA DE SANTA ANA - HOSPITAL/UNIVERSIDAD",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__3__005_",
+          "short_name": "3",
+          "long_name": "CUATRO CAÑOS - HOSPITAL/UNIVERSIDAD - ESPARTALES",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__5__005_",
+          "short_name": "5",
+          "long_name": "PLAZA DE LA PAZ - NUEVA RINCONADA",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__6__005_",
+          "short_name": "6",
+          "long_name": "EST. LA GARENA - VIRGEN DEL VAL",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__7__005_",
+          "short_name": "7",
+          "long_name": "ENSANCHE NORTE - NUEVA ALCALÁ / CEMENTERIO JARDÍN",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__8__005_",
+          "short_name": "8",
+          "long_name": "LOS NOGALES - VIRGEN DEL VAL",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__9__005_",
+          "short_name": "9",
+          "long_name": "EST. ALCALÁ DE HENARES - EL OLIVAR /POLÍGONO CAMPORROSO",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__10__005_",
+          "short_name": "10",
+          "long_name": "VIA COMPLUTENSE CENTRO - ESPARTALES NORTE",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__11__005_",
+          "short_name": "11",
+          "long_name": "LA GARENA - EST. ALCALÁ UNIVERSIDAD",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1_A_005_",
+          "short_name": "1A",
+          "long_name": "CIRCULAR ALCALÁ DE HENARES",
+          "color": "E60003",
+          "hasShape": true
+        },
+        {
+          "route_id": "9__1_B_005_",
+          "short_name": "1B",
+          "long_name": "CIRCULAR ALCALÁ DE HENARES",
+          "color": "E60003",
           "hasShape": true
         }
       ]

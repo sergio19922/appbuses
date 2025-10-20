@@ -366,13 +366,14 @@ if (pack.id === "N4_virtual") {
 
          // ✅ N5 - todas las rutas que indicaste
 // ✅ N5 - todas las rutas que indicaste
-if (["paquete_034", "paquete_038", "paquete_008", "paquete_043", "paquete_026", "N5_virtual"].includes(pack.id)) {
+// ✅ N5 - todas las rutas que indicaste (sin paquete_026)
+if (["paquete_034", "paquete_038", "paquete_008", "paquete_043", "N5_virtual"].includes(pack.id)) {
   const normalizeCode = (code) =>
     String(code || "").trim().toUpperCase().replace(/[^0-9A-Z]/g, "");
 
   const rutasValidasN5 = [
-    // 🔴 Rojas de N5 (Móstoles)
-    "1","2","3","4","5","6",
+    // 🔴 Rojas de N5 (Móstoles / Alcorcón)
+    "1", "2", "3", "4", "5", "6",
     // 🚍 Suburbanas N5
     "510","510A","511","512","513","514","516","517","518","519","519B",
     "520","521","522","523","524","526","527","528","529","530","531",
@@ -388,12 +389,11 @@ if (["paquete_034", "paquete_038", "paquete_008", "paquete_043", "paquete_026", 
     const sn = normalizeCode(route.short_name || "");
     const ln = (route.long_name || "").toUpperCase();
 
-    // ❌ excluir "1 LAS ROZAS - MOLINO DE LA HOZ"
+    // ❌ excluir "1 LAS ROZAS - MOLINO DE LA HOZ" (N6)
     if (sn === "1" && ln.includes("MOLINO DE LA HOZ")) return false;
 
-    // ❌ excluir "2 LAS ROZAS - EL ENCINAR"
-    if (pack.id !== "paquete_026" && sn === "2" && ln.includes("ENCINAR")) return false;
-
+    // ❌ excluir "2 LAS ROZAS - EL ENCINAR" (N6)
+    if (sn === "2" && ln.includes("ENCINAR")) return false;
 
     return rutasValidasN5.includes(sn);
   });

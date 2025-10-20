@@ -9,6 +9,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const ROOT = path.resolve(__dirname, '..');
+
+// ✅ Carpeta donde están los GTFS
 const GTFS_DIR = path.join(ROOT, 'public', 'gtfs');
 const OUT = path.join(GTFS_DIR, 'index.json');
 
@@ -29,10 +31,15 @@ function normShortName(s) {
 (async () => {
   await fs.ensureDir(GTFS_DIR);
 
+  // ✅ Buscar todos los paquetes en public/gtfs
   const files = await fg(['public/gtfs/*/routes.txt'], { cwd: ROOT, onlyFiles: true });
+  console.log(`🧭 Archivos detectados: ${files.length}`);
+
   const packages = [];
 
   for (const rel of files) {
+    console.log(`📦 Procesando archivo: ${rel}`);
+
     const absRoutes = path.join(ROOT, rel);
     const folder = path.basename(path.dirname(absRoutes));
     const base = `/gtfs/${folder}`;
@@ -84,6 +91,7 @@ function normShortName(s) {
       if (hasPoints) shortNamesWithShape.add(sname);
     }
 
+    // Crear lista de rutas del paquete
     const routes = routesRows.map(r => {
       const sn = normShortName(r.route_short_name);
       const hasShape = shortNamesWithShape.has(sn);
@@ -96,16 +104,34 @@ function normShortName(s) {
       };
     });
 
-    // Carretera para M607
-    let carretera = '';
-    if (folder.toLowerCase().includes('colmenar') || folder.toLowerCase().includes('129')) {
-      carretera = 'M607';
-    }
+    // Carretera especial para M607
+    // Carretera especial para M607 y N5
+// 🚦 Asignación de carreteras especiales (automática)
+let carretera = '';
+
+// M607
+if (folder.toLowerCase().includes('colmenar') || folder.toLowerCase().includes('129')) {
+  carretera = 'M607';
+}
+
+// N5 → si contiene rutas de la 580 a la 629 o N903/N907
+const n5Rutas = [
+  '580', '581',
+  '620', '621', '622', '623', '624', '624A',
+  '625', '626', '626A', '627', '628', '629',
+  'N903', 'N907'
+];
+const paqueteRutas = routes.map(r => r.short_name);
+if (paqueteRutas.some(r => n5Rutas.includes(r))) {
+  carretera = 'N5';
+}
+
+
 
     packages.push({ id: folder, base, carretera, routes });
   }
 
-  // 🔹 DEBUG: Mostrar todas las rutas de los paquetes clave
+  // 🔹 DEBUG opcional
   const debugIds = ['0_76', '180', '009'];
   for (const pkgId of debugIds) {
     const pkg = packages.find(p => p.id === pkgId);
@@ -117,7 +143,7 @@ function normShortName(s) {
     }
   }
 
-  // 🔹 Añadir carretera N2 con rutas específicas
+  // 🔹 Añadir carretera N2 virtual (rutas agrupadas)
   const n2Targets = {
     '0_76': ['1A', '002', '003', '004', '5A', '006'],
     '180': [
@@ -147,10 +173,38 @@ function normShortName(s) {
     });
   }
 
+  // ✅ Guardar índice principal
   await fs.writeJson(
     OUT,
     { generatedAt: new Date().toISOString(), packages },
     { spaces: 2 }
   );
-  console.log(`\n✓ Índice GTFS creado en ${OUT} con ${packages.length} paquetes`);
+  console.log(`\n✅ Índice GTFS creado en ${OUT} con ${packages.length} paquetes`);
+
+  // 🚀 Generar automáticamente el índice N5
+  console.log('\n🚀 Generando automáticamente el índice N5...');
+
+  const n5Targets = [
+    '580', '581',
+    '620', '621', '622', '623', '624', '624A',
+    '625', '626', '626A', '627', '628', '629',
+    'N903', 'N907'
+  ];
+
+  const n5Packages = packages
+    .map(pkg => ({
+      id: pkg.id,
+      base: pkg.base,
+      carretera: 'N5',
+      routes: pkg.routes.filter(r => n5Targets.includes(r.short_name))
+    }))
+    .filter(pkg => pkg.routes.length > 0);
+
+  const OUT_N5 = path.join(GTFS_DIR, 'index-n5.json');
+  await fs.writeJson(
+    OUT_N5,
+    { generatedAt: new Date().toISOString(), packages: n5Packages },
+    { spaces: 2 }
+  );
+  console.log(`✅ Índice N5 creado automáticamente en ${OUT_N5} con ${n5Packages.length} paquetes`);
 })();

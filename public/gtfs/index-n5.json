@@ -1,275 +1,124 @@
-[
-  {
-    "id": "paquete_008",
-    "base": "/gtfs/paquete_008",
-    "carretera": "N5",
-    "routes": [
-      {
-        "route_id": "8__495___",
-        "short_name": "495",
-        "long_name": "MADRID (Cuatro Vientos)-ARROYOMOLINOS-MORALEJA DE ENMEDIO",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__498___",
-        "short_name": "498",
-        "long_name": "MÓSTOLES - ARROYOMOLINOS - MORALEJA DE ENMEDIO",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__498_A__",
-        "short_name": "498A",
-        "long_name": "MÓSTOLES (Móstoles - Central) - ARROYOMOLINOS (Parque de Nieve)",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__499___",
-        "short_name": "499",
-        "long_name": "MÓSTOLES-ARROYOMOLINOS",
-        "color": "8EBF42",
-        "hasShape": true
-      }
-    ]
-  },
-  {
-    "id": "paquete_026",
-    "base": "/gtfs/paquete_026",
-    "carretera": "N5",
-    "routes": [
-      {
-        "route_id": "8__581___",
-        "short_name": "581",
-        "long_name": "MADRID (Cuatro Vientos)-BRUNETE-QUIJORNA",
-        "color": "8EBF42",
-        "hasShape": true
-      }
-    ]
-  },
-  {
-    "id": "paquete_034",
-    "base": "/gtfs/paquete_034",
-    "carretera": "N5",
-    "routes": [
-      {
-        "route_id": "8__510___",
-        "short_name": "510",
-        "long_name": "ALCORCÓN-VILLAVICIOSA-EL BOSQUE",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__510_A__",
-        "short_name": "510A",
-        "long_name": "MADRID (Colonia Jardín) - VILLAVICIOSA DE ODÓN",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__511___",
-        "short_name": "511",
-        "long_name": "MADRID (Cuatro Vientos)-ALCORCÓN (Por Parque Lisboa)",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__512___",
-        "short_name": "512",
-        "long_name": "MADRID (Cuatro Vientos)-ALCORCÓN (Por C. de los Cantos)",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__513___",
-        "short_name": "513",
-        "long_name": "MADRID (Cuatro Vientos)-ALCORCÓN (P.I. Urtinsa)",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__514___",
-        "short_name": "514",
-        "long_name": "MADRID (Cuatro Vientos) - ALCORCÓN (por Los Castillos)",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__516___",
-        "short_name": "516",
-        "long_name": "MADRID (Cuatro Vientos)-ALCORCÓN (Por Universidad Rey Juan Carlos)",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__517___",
-        "short_name": "517",
-        "long_name": "MADRID (Cuatro Vientos) - ALCORCÓN (Fuente Cisneros)",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__518___",
-        "short_name": "518",
-        "long_name": "MADRID (Cuatro Vientos) - VILLAVICIOSA DE ODÓN",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__519___",
-        "short_name": "519",
-        "long_name": "MÓSTOLES-VILLAVICIOSA DE ODÓN",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__520___",
-        "short_name": "520",
-        "long_name": "ALCORCÓN-MÓSTOLES",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__521___",
-        "short_name": "521",
-        "long_name": "MADRID (Cuatro Vientos)-MÓSTOLES",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__522___",
-        "short_name": "522",
-        "long_name": "MADRID (Cuatro Vientos)-MÓSTOLES (Por Pistas DGT)",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__523___",
-        "short_name": "523",
-        "long_name": "MADRID (Cuatro Vientos)-MÓSTOLES (Villafontana)",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__524___",
-        "short_name": "524",
-        "long_name": "MADRID (Cuatro Vientos) - MÓSTOLES SUR",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__526___",
-        "short_name": "526",
-        "long_name": "FUENLABRADA - MÓSTOLES (Por FF.CC)",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__527___",
-        "short_name": "527",
-        "long_name": "MÓSTOLES (Estación FFCC)-FUENLABRADA (Urb. Loranca)",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__528___",
-        "short_name": "528",
-        "long_name": "MADRID (Cuatro Vientos)-NAVALCARNERO",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__529___",
-        "short_name": "529",
-        "long_name": "MÓSTOLES (Hospital Rey Juan Carlos)-NAVALCARNERO-EL ÁLAMO",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__530___",
-        "short_name": "530",
-        "long_name": "NAVALCARNERO-VILLANUEVA DE LA CAÑADA",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__531___",
-        "short_name": "531",
-        "long_name": "MÓSTOLES (Hospital Rey Juan Carlos)-NAVALCARNERO-SEVILLA LA NUEVA",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__531_A__",
-        "short_name": "531A",
-        "long_name": "MÓSTOLES (Hospital Rey Juan Carlos)-NAVALCARNERO-VILLAMANTILLA",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__532___",
-        "short_name": "532",
-        "long_name": "MADRID (Colonia Jardín)-SEVILLA LA NUEVA",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__534___",
-        "short_name": "534",
-        "long_name": "MADRID (Cuatro Vientos)-URB. PARQUE COIMBRA-XANADÚ",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__539___",
-        "short_name": "539",
-        "long_name": "MADRID (Cuatro Vientos)-EL ÁLAMO",
-        "color": "8EBF42",
-        "hasShape": true
-      }
-    ]
-  },
-  {
-    "id": "paquete_043",
-    "base": "/gtfs/paquete_043",
-    "carretera": "N5",
-    "routes": [
-      {
-        "route_id": "8__541___",
-        "short_name": "541",
-        "long_name": "MADRID (Plaza Elíptica)-VILLAMANTA-LA TORRE DE E. HAMBRAN",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__545___",
-        "short_name": "545",
-        "long_name": "MADRID (Plaza Elíptica)-CENICIENTOS-SOTILLO DE LA ADRADA",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__546___",
-        "short_name": "546",
-        "long_name": "MADRID (Plaza Elíptica)-ROZAS DE PUERTO REAL-CASILLAS",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__547___",
-        "short_name": "547",
-        "long_name": "MADRID (Plaza Elíptica)-V.DEL PRADO-ALMOROX-ALDEA EN CABO",
-        "color": "8EBF42",
-        "hasShape": true
-      },
-      {
-        "route_id": "8__548___",
-        "short_name": "548",
-        "long_name": "MADRID (Plaza Elíptica)-ALDEA DEL FRESNO-CALALBERCHE",
-        "color": "8EBF42",
-        "hasShape": true
-      }
-    ]
-  }
-]
+{
+  "generatedAt": "2025-10-20T10:46:20.936Z",
+  "packages": [
+    {
+      "id": "paquete_026",
+      "base": "/gtfs/paquete_026",
+      "carretera": "N5",
+      "routes": [
+        {
+          "route_id": "8__580___",
+          "short_name": "580",
+          "long_name": "MAJADAHONDA(Hospital)-BRUNETE",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__581___",
+          "short_name": "581",
+          "long_name": "MADRID (Cuatro Vientos)-BRUNETE-QUIJORNA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__620___",
+          "short_name": "620",
+          "long_name": "LAS MATAS-HOSPITAL PUERTA DE HIERRO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__621___",
+          "short_name": "621",
+          "long_name": "MADRID (Moncloa)-LAS ROZAS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__622___",
+          "short_name": "622",
+          "long_name": "MADRID (Moncloa)-LAS ROZAS-LAS MATAS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__623___",
+          "short_name": "623",
+          "long_name": "MADRID (Moncloa)-LAS ROZAS-URB.VILLAFRANCA DEL CASTILLO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__624___",
+          "short_name": "624",
+          "long_name": "MADRID (Moncloa)-COL.VERACRUZ-LAS ROZAS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__624_A__",
+          "short_name": "624A",
+          "long_name": "MADRID (Moncloa) - LAS ROZAS (La Marazuela)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__625___",
+          "short_name": "625",
+          "long_name": "MADRID (Moncloa)-MONTE ROZAS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__626___",
+          "short_name": "626",
+          "long_name": "LAS ROZAS-MAJADAHONDA-VILLANUEVA DE LA CAÑADA",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__626_A__",
+          "short_name": "626A",
+          "long_name": "MAJADAHONDA (Estación FFCC)-VILLANUEVA DEL PARDILLO",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__627___",
+          "short_name": "627",
+          "long_name": "MADRID (Moncloa)-VILLANUEVA DE LA CAÑADA-BRUNETE",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__628___",
+          "short_name": "628",
+          "long_name": "MADRID (Moncloa)-P.EMPRESARIAL-EL CANTIZAL",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8__629___",
+          "short_name": "629",
+          "long_name": "MADRID (Moncloa)-LAS ROZAS (Parque Empresarial)",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_903___",
+          "short_name": "N903",
+          "long_name": "MADRID (Moncloa)-LAS ROZAS-MONTE ROZAS",
+          "color": "8EBF42",
+          "hasShape": true
+        },
+        {
+          "route_id": "8_N_907___",
+          "short_name": "N907",
+          "long_name": "MADRID (Moncloa)-VILLANUEVA DE LA CAÑADA-BRUNETE",
+          "color": "8EBF42",
+          "hasShape": true
+        }
+      ]
+    }
+  ]
+}

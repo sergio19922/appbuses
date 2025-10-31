@@ -1,0 +1,3 @@
+route_id,route_short_name,route_long_name,route_color
+1,720,Madrid (Plaza de Castilla) - Colmenar Viejo,A8E05F
+

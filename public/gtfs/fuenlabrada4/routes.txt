@@ -1,0 +1,2 @@
+route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_color
+1,CONSORCIO,4,Fuenlabrada - Loranca,"Línea urbana Fuenlabrada 4",3,00843D

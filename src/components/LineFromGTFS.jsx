@@ -33,7 +33,7 @@ export default function LineFromGTFS({
   longName,
   fitBounds: doFit = true,
   onError = (e) => console.warn('[LineFromGTFS]', e?.message || e),
-  onSelectLinea, // 👈 nueva prop
+  onSelectLinea,
 }) {
   const [coords, setCoords] = useState([]);
   const [hover, setHover] = useState(false);
@@ -46,6 +46,7 @@ export default function LineFromGTFS({
 
   useEffect(() => {
     let cancelled = false;
+
     (async () => {
       try {
         const routeToShape = await getJSON(`${preparedBase}/route_to_shape.json`);
@@ -69,14 +70,22 @@ export default function LineFromGTFS({
         if (!cancelled) setCoords([]);
       }
     })();
+
     return () => {
       cancelled = true;
     };
   }, [preparedBase, routeId, shortName, onError]);
 
-  if (!coords.length) return null;
+  // 🔹 Cierra el popup solo cuando la línea se desmonta (por borrar filtros)
+  useEffect(() => {
+    return () => {
+      if (map && map.closePopup) {
+        map.closePopup();
+      }
+    };
+  }, [map]);
 
-  const url = `/mapa?linea=${routeId}&base=${base}`;
+  if (!coords.length) return null;
 
   return (
     <>
@@ -88,39 +97,36 @@ export default function LineFromGTFS({
           mouseover: () => setHover(true),
           mouseout: () => setHover(false),
           click: (e) => {
-            // 👇 avisamos al padre con las coords
             if (onSelectLinea) {
               onSelectLinea(coords);
             }
 
-            // popup como antes
+            // Popup con estilo limpio y visible
             const content = `
-              <div style="text-align:center;max-width:250px;">
+              <div style="
+                text-align:center;
+                max-width:250px;
+                background:rgba(255,255,255,0.95);
+                padding:8px 10px;
+                border-radius:6px;
+                box-shadow:0 2px 6px rgba(0,0,0,0.25);
+              ">
                 <div><b>Línea ${shortName}</b></div>
                 ${
                   longName
                     ? `<div style="margin-top:4px;font-size:13px;color:#333;">
-                         ${longName}
-                       </div>`
+                        ${longName}
+                      </div>`
                     : ''
                 }
-                <div style="margin-top:8px;">
-                  <a href="${url}" target="_blank"
-                     style="display:inline-block;margin-right:8px;padding:4px 10px;background:#2196F3;color:white;border-radius:4px;text-decoration:none;font-size:13px;">
-                    🔗 Abrir
-                  </a>
-                  <button onclick="navigator.clipboard.writeText('${window.location.origin + url}')"
-                          style="display:inline-block;padding:4px 10px;background:#666;color:white;border-radius:4px;border:none;cursor:pointer;font-size:13px;">
-                    📋 Copiar
-                  </button>
-                </div>
               </div>
             `;
+
             L.popup()
               .setLatLng(e.latlng)
               .setContent(content)
               .openOn(map);
-          }
+          },
         }}
       />
     </>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Generador GTFS Visual</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <!-- 🔍 Plugin de buscador -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"
+  />
+  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+  <style>
+    body { margin: 0; font-family: sans-serif; }
+    #map { height: 90vh; width: 100%; }
+    .controls { margin: 10px; display: flex; flex-wrap: wrap; gap: 8px; }
+    button {
+      padding: 8px 12px;
+      border: none;
+      border-radius: 6px;
+      background: #1976d2;
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    button:hover { background: #1258a8; }
+  </style>
+</head>
+<body>
+  <div class="controls">
+    <button id="btnShape">✏️ Dibujar Shape</button>
+    <button id="btnUndoShape">↩️ Deshacer punto</button>
+    <button id="btnClearShape">🗑️ Borrar Shape</button>
+    <button id="btnStop">➕ Añadir Parada</button>
+    <button id="btnUndoStop">❌ Borrar última Parada</button>
+    <button id="btnClearAll">🧹 Borrar Todo</button>
+    <button id="btnGuardar">💾 Guardar Todo</button>
+  </div>
+
+  <div id="map"></div>
+
+  <script>
+    // --- MAPA BASE ---
+    const map = L.map('map').setView([40.4168, -3.7038], 13);
+
+    // 🗺️ Capas base
+    const calles = L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+      maxZoom: 20,
+      attribution: '&copy; OpenStreetMap contributors'
+    });
+
+    const satelite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+      maxZoom: 20,
+      attribution: 'Tiles © Esri'
+    });
+
+    calles.addTo(map);
+
+    // Control para alternar capas
+    L.control.layers(
+      { "🗺️ Calles": calles, "🛰️ Satélite": satelite }
+    ).addTo(map);
+
+    // 🔍 Buscador de direcciones
+    L.Control.geocoder({
+      defaultMarkGeocode: false,
+      placeholder: 'Buscar calle o localidad...',
+      errorMessage: 'No encontrado'
+    })
+    .on('markgeocode', function(e) {
+      map.fitBounds(e.geocode.bbox);
+    })
+    .addTo(map);
+
+    // --- Variables globales ---
+    let dibujandoShape = false;
+    let añadiendoStop = false;
+    let shapeCoords = [];
+    let stops = [];
+    let currentPolyline = null;
+    let stopMarkers = [];
+
+    // --- Redibujar línea ---
+    function redrawShape() {
+      if (currentPolyline) map.removeLayer(currentPolyline);
+      if (shapeCoords.length > 0) {
+        currentPolyline = L.polyline(shapeCoords, { color: 'blue' }).addTo(map);
+      }
+    }
+
+    // --- BOTONES ---
+    document.getElementById('btnShape').onclick = () => {
+      dibujandoShape = true;
+      añadiendoStop = false;
+      alert('Haz clic en el mapa para dibujar el recorrido NUEVO');
+    };
+
+    document.getElementById('btnStop').onclick = () => {
+      dibujandoShape = false;
+      añadiendoStop = true;
+      alert('Haz clic en el mapa para colocar las paradas NUEVAS');
+    };
+
+    document.getElementById('btnUndoShape').onclick = () => {
+      if (shapeCoords.length > 0) {
+        shapeCoords.pop();
+        redrawShape();
+      } else {
+        alert('No hay más puntos que borrar.');
+      }
+    };
+
+    document.getElementById('btnClearShape').onclick = () => {
+      if (confirm('¿Borrar toda la ruta dibujada?')) {
+        shapeCoords = [];
+        redrawShape();
+      }
+    };
+
+    document.getElementById('btnUndoStop').onclick = () => {
+      if (stops.length > 0) {
+        const lastMarker = stopMarkers.pop();
+        map.removeLayer(lastMarker);
+        stops.pop();
+      } else {
+        alert('No hay paradas que borrar.');
+      }
+    };
+
+    document.getElementById('btnClearAll').onclick = () => {
+      if (confirm('¿Borrar ruta y paradas completamente?')) {
+        shapeCoords = [];
+        stops = [];
+        stopMarkers.forEach(m => map.removeLayer(m));
+        stopMarkers = [];
+        redrawShape();
+      }
+    };
+
+    // --- EVENTO CLICK EN MAPA ---
+    map.on('click', (e) => {
+      if (dibujandoShape) {
+        shapeCoords.push(e.latlng);
+        redrawShape();
+      }
+      if (añadiendoStop) {
+        const stop_id = `STOP_${stops.length + 1}`;
+        const stop_name = stop_id;
+        const marker = L.marker(e.latlng).addTo(map).bindPopup(stop_name);
+        stopMarkers.push(marker);
+        stops.push({ stop_id, stop_name, lat: e.latlng.lat, lon: e.latlng.lng });
+      }
+    });
+
+    // --- GUARDAR GTFS ---
+    document.getElementById('btnGuardar').onclick = async () => {
+      const nombreArchivo = prompt("📂 Nombre de la carpeta GTFS:", "402");
+      if (!nombreArchivo) {
+        alert("❌ No se indicó ninguna carpeta.");
+        return;
+      }
+
+      const shape_id = `${nombreArchivo}_001`;
+      const route_id = 1;
+
+      if (shapeCoords.length < 2) {
+        alert("❌ Debes dibujar al menos 2 puntos para la ruta.");
+        return;
+      }
+
+      if (stops.length < 2) {
+        alert("⚠️ No has añadido paradas suficientes (mínimo 2). Se guardará solo el shape.");
+      }
+
+      await fetch('/guardar_shape', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ nombreArchivo, data: shapeCoords, shape_id })
+      });
+
+      await fetch('/guardar_stops', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ nombreArchivo, data: stops })
+      });
+
+      const trip = [{ route_id, service_id: 'WEEKDAY', trip_id: 'TRIP_001', shape_id }];
+      await fetch('/guardar_trips', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ nombreArchivo, data: trip })
+      });
+
+      const stopTimes = stops.map((s, i) => ({
+        trip_id: 'TRIP_001',
+        arrival_time: `08:${String(i).padStart(2, '0')}:00`,
+        departure_time: `08:${String(i).padStart(2, '0')}:00`,
+        stop_id: s.stop_id,
+        stop_sequence: i + 1
+      }));
+
+      await fetch('/guardar_stop_times', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ nombreArchivo, data: stopTimes })
+      });
+
+      alert(`✅ Archivos GTFS guardados correctamente en la carpeta: ${nombreArchivo}`);
+    };
+  </script>
+</body>
+</html>

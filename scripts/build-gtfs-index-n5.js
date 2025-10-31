@@ -104,5 +104,9 @@ const indexN5 = paquetes
   })
   .filter(Boolean);
 
+  // --- 🔧 Forzar inclusión manual de circularverde si no está ---
+
+
+
 fs.writeFileSync(outputPath, JSON.stringify(indexN5, null, 2), "utf8");
 console.log(`✅ Índice N5 creado en ${outputPath}`);

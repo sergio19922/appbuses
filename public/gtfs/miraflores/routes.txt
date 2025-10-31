@@ -1,2 +1,2 @@
-route_id,agency_id,route_short_name,route_long_name,route_type,route_color,route_text_color
-1,1,1,Parque Miraflores - Polígono Sevilla,3,FF0000,FFFFFF
+route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_color,route_text_color
+1,CTM,725,MIRAFLORES - COLMENAR VIEJO,"Línea 725 Miraflores - Colmenar Viejo",3,00843D,FFFFFF

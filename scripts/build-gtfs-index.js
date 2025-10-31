@@ -35,10 +35,14 @@ function normShortName(s) {
   const files = await fg(['public/gtfs/*/routes.txt'], { cwd: ROOT, onlyFiles: true });
   console.log(`🧭 Archivos detectados: ${files.length}`);
 
-  const packages = [];
+  let packages = [];
+
 
   for (const rel of files) {
+    console.log("📦 Paquetes iniciales detectados:", packages.map(p => p.id));
+
     console.log(`📦 Procesando archivo: ${rel}`);
+    
 
     const absRoutes = path.join(ROOT, rel);
     const folder = path.basename(path.dirname(absRoutes));
@@ -129,7 +133,16 @@ if (paqueteRutas.some(r => n5Rutas.includes(r))) {
 
 
     packages.push({ id: folder, base, carretera, routes });
+    if (routes.some(r => /^(15[1-9]|16[0-9]|17[0-9]|18[0-9]|19[0-9])$/.test(r.short_name))) {
+  console.log(`🟢 Paquete ${folder} contiene rutas 151–199:`, routes.map(r => r.short_name));
+}
+
   }
+
+  // 🧹 FILTRAR paquetes no deseados del index principal
+const excluirIds = ["circularverde", "elrellano", "zarzalejo"]; // agrega aquí los que quieras ocultar
+packages = packages.filter(pkg => !excluirIds.includes(pkg.id.toLowerCase()));
+
 
   // 🔹 DEBUG opcional
   const debugIds = ['0_76', '180', '009'];
@@ -172,6 +185,135 @@ if (paqueteRutas.some(r => n5Rutas.includes(r))) {
       routes: n2Routes
     });
   }
+  
+
+    // 🧭 Forzar la línea 161 dentro de la carretera N1
+  packages = packages.map(p => {
+    if (p.id === "161" || (p.routes || []).some(r => r.short_name === "161")) {
+      console.log("✅ Línea 161 detectada y marcada como N1");
+      return {
+        ...p,
+        carretera: "N1",
+        routes: (p.routes || []).map(r => ({
+          ...r,
+          carretera: "N1",
+          color: "A8E05F",
+          long_name: "Madrid-Alcobendas-SS Reyes-Urbanizacion Fuente del Fresno"
+        }))
+      };
+    }
+    return p;
+  });
+
+
+    // 🧭 Forzar la línea 720 dentro de la carretera M607
+  // 🧭 Forzar la línea 720 dentro de la carretera M607 (solo la buena)
+// 🧹 Eliminar completamente la 720 mala (sin shape) y mantener solo la buena
+packages = packages
+  .map(p => {
+    if (p.id === "720" || (p.routes || []).some(r => r.short_name === "720")) {
+      const rutasValidas = (p.routes || []).filter(
+        r => r.short_name === "720" && r.hasShape
+      );
+
+      if (rutasValidas.length > 0) {
+        console.log("✅ Línea 720 buena detectada y marcada como M607");
+        return {
+          ...p,
+          carretera: "M607",
+          routes: rutasValidas.map(r => ({
+            ...r,
+            carretera: "M607",
+            color: "A8E05F", // 💚 verde claro (mismo tono que el resto de M607)
+            long_name: "Colmenar Viejo - Collado Villalba"
+          }))
+        };
+      }
+
+      // 🚨 Si no tiene rutas válidas, eliminar el paquete por completo
+      return null;
+    }
+
+    return p;
+  })
+  .filter(Boolean);
+
+  // 🧭 Forzar la línea 722 dentro de la carretera M607
+packages = packages.map(p => {
+  if (p.id === "722" || (p.routes || []).some(r => r.short_name === "722")) {
+    console.log("✅ Línea 722 detectada y marcada como M607");
+    return {
+      ...p,
+      carretera: "M607",
+      routes: (p.routes || []).map(r => ({
+        ...r,
+        carretera: "M607",
+        color: "00843D", // 💚 verde CRTM interurbano
+        long_name:
+          "Madrid (Plaza de Castilla) - Moralzarzal - Los Molinos - Cercedilla"
+      }))
+    };
+  }
+  return p;
+});
+
+// 🧭 Forzar la línea 725 dentro de la carretera M607
+packages = packages.map(p => {
+  if (p.id === "725" || (p.routes || []).some(r => r.short_name === "725")) {
+    console.log("✅ Línea 725 detectada y marcada como M607");
+    return {
+      ...p,
+      carretera: "M607",
+      routes: (p.routes || []).map(r => ({
+        ...r,
+        carretera: "M607",
+        color: "00843D", // 💚 verde CRTM interurbano
+        long_name: "Miraflores - Colmenar Viejo"
+      }))
+    };
+  }
+  return p;
+});
+
+
+
+    // 🛣️ Asignar automáticamente las interurbanas 151–199 a la carretera N1
+// 🧱 Asegurar que paquete_001 no se pierda por ningún map/filter
+if (!packages.some(p => p.id === "paquete_001")) {
+  console.warn("⚠️ paquete_001 se perdió tras el procesado. Reinyectando manualmente...");
+
+  const absPath = path.join(GTFS_DIR, "paquete_001", "routes.txt");
+  if (await fs.pathExists(absPath)) {
+    const text = await fs.readFile(absPath, "utf8");
+    const rows = await parseCSV(text);
+    const routes = rows.map(r => ({
+      route_id: r.route_id,
+      short_name: (r.route_short_name || "").trim(),
+      long_name: (r.route_long_name || "").trim(),
+      color: "A8E05F", // 💚 verde claro
+      hasShape: true,
+      carretera: "N1",
+    }));
+    packages.push({
+      id: "paquete_001",
+      base: "/gtfs/paquete_001",
+      carretera: "N1",
+      routes,
+    });
+    console.log("✅ paquete_001 reinsertado con", routes.length, "rutas");
+  } else {
+    console.error("❌ No se encontró public/gtfs/paquete_001/routes.txt");
+  }
+}
+
+// 🟢 Forzar Miraflores dentro de la carretera N4
+
+
+
+
+  
+
+
 
   // ✅ Guardar índice principal
   await fs.writeJson(
@@ -206,5 +348,104 @@ if (paqueteRutas.some(r => n5Rutas.includes(r))) {
     { generatedAt: new Date().toISOString(), packages: n5Packages },
     { spaces: 2 }
   );
+  // 🚀 Generar automáticamente el índice N4
+console.log('\n🚀 Generando automáticamente el índice N4...');
+
+const rutasN4 = {
+  paquete_024: ["421", "422", "423", "424", "425", "426", "427", "428"],
+  sueltos: [
+    // Interurbanas reales
+    "161",
+    "402",
+
+    // Urbanas Fuenlabrada y Leganés
+    "fuenlabrada1",
+    "fuenlabrada2",
+    "fuenlabrada3",
+    "fuenlabrada4",
+    "fuenlabrada6",
+    "fuenlabrada13",
+    "fuenlabradacentral",
+    "circular-roja",
+    "cementerio",
+    "loranca",
+    "miraflores",
+    "leganes1"
+  ]
+};
+
+
+const n4Packages = [];
+
+for (const pkg of packages) {
+  const pkgId = pkg.id.trim().toLowerCase();
+
+  // 🟩 Paquete 024 con varias rutas específicas
+  if (pkgId === "paquete_024") {
+    const rutasObjetivo = rutasN4["paquete_024"];
+    const filtradas = pkg.routes.filter(r =>
+      rutasObjetivo.includes(r.short_name)
+    );
+    n4Packages.push({
+      ...pkg,
+      carretera: "N4",
+      routes: filtradas.map(r => ({
+        ...r,
+        carretera: "N4",
+        color: r.color || "00843D",
+        hasShape: true
+      }))
+    });
+    console.log(`🟢 Añadido paquete_024 con rutas ${filtradas.map(r => r.short_name).join(', ')}`);
+    continue;
+  }
+
+  // 🟢 Paquetes sueltos
+  if (rutasN4.sueltos.some(s => pkgId.includes(s.toLowerCase()))) {
+    n4Packages.push({
+      ...pkg,
+      carretera: "N4",
+      routes: (pkg.routes || []).map(r => ({
+        ...r,
+        carretera: "N4",
+        color: r.color || "00843D",
+        hasShape: true
+      }))
+    });
+    console.log(`🟢 Añadido paquete suelto: ${pkg.id}`);
+  }
+}
+
+// ⚙️ Inclusión manual de circular-roja si no está
+if (!n4Packages.some(p => p.id === "circular-roja")) {
+  n4Packages.push({
+    id: "circular-roja",
+    base: "/gtfs/circular-roja",
+    carretera: "N4",
+    routes: [
+      {
+        route_id: "1",
+        short_name: "Circular Roja",
+        long_name: "Fuenlabrada - Circular Roja",
+        color: "E60003",
+        hasShape: true,
+        carretera: "N4"
+      }
+    ]
+  });
+  console.log("⚙️ Añadida circular-roja manualmente.");
+}
+
+// 💾   Guardar index-n4.json
+const OUT_N4 = path.join(GTFS_DIR, 'index-n4.json');
+await fs.writeJson(
+  OUT_N4,
+  { generatedAt: new Date().toISOString(), packages: n4Packages },
+  { spaces: 2 }
+);
+
+console.log(`✅ Índice N4 creado automáticamente en ${OUT_N4} con ${n4Packages.length} paquetes`);
+
   console.log(`✅ Índice N5 creado automáticamente en ${OUT_N5} con ${n5Packages.length} paquetes`);
 })();
+

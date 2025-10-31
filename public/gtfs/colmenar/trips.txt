@@ -1,14 +1,2 @@
 route_id,service_id,trip_id,shape_id
-CIR1,WD,CIR1_1,shape_CIR1
-720,WD,720_1,shape_720
-721,WD,721_1,shape_721
-722,WD,722_1,shape_722
-723,WD,723_1,shape_723
-724,WD,724_1,shape_724
-725,WD,725_1,shape_725
-726,WD,726_1,shape_726
-727,WD,727_1,shape_727
-9__3__045_,WD,3_1,shape_3
-9__4__045_,WD,4_1,shape_4
-9__5__045_,WD,5_1,shape_5
-9__6__045_,WD,6_1,shape_6
+1,WEEKDAY,TRIP_001,colmenar_001

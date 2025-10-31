@@ -1,0 +1,2 @@
+route_id,agency_id,route_short_name,route_long_name,route_type,route_color,route_text_color
+722,CRTM,722,Madrid (Plaza de Castilla) - Moralzarzal - Los Molinos - Cercedilla,3,00843D,FFFFFF

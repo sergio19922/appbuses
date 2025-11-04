@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-31T10:48:22.642Z",
+  "generatedAt": "2025-11-04T17:57:59.678Z",
   "packages": [
     {
       "id": "161",
@@ -32,15 +32,45 @@
       ]
     },
     {
+      "id": "cementerio",
+      "base": "/gtfs/cementerio",
+      "carretera": "N4",
+      "routes": [
+        {
+          "route_id": "cementerio_001",
+          "short_name": "6",
+          "long_name": "Fuenlabrada - Fuenlabrada 6",
+          "color": "E60003",
+          "hasShape": true,
+          "carretera": "N4"
+        }
+      ]
+    },
+    {
+      "id": "circular-roja",
+      "base": "/gtfs/circular-roja",
+      "carretera": "N4",
+      "routes": [
+        {
+          "route_id": "circular-roja_001",
+          "short_name": "3",
+          "long_name": "Fuenlabrada 3",
+          "color": "E60003",
+          "hasShape": true,
+          "carretera": "N4"
+        }
+      ]
+    },
+    {
       "id": "fuenlabrada13",
       "base": "/gtfs/fuenlabrada13",
       "carretera": "N4",
       "routes": [
         {
-          "route_id": "1",
-          "short_name": "F13",
+          "route_id": "fuenlabrada13_001",
+          "short_name": "13",
           "long_name": "Fuenlabrada 13",
-          "color": "00843D",
+          "color": "E60003",
           "hasShape": true,
           "carretera": "N4"
         }
@@ -62,14 +92,14 @@
       ]
     },
     {
-      "id": "loranca",
-      "base": "/gtfs/loranca",
+      "id": "miraflores",
+      "base": "/gtfs/miraflores",
       "carretera": "N4",
       "routes": [
         {
-          "route_id": "LORANCA4",
-          "short_name": "4",
-          "long_name": "Loranca",
+          "route_id": "1",
+          "short_name": "1",
+          "long_name": "Fuenlabrada 1",
           "color": "E60003",
           "hasShape": true,
           "carretera": "N4"
@@ -77,15 +107,15 @@
       ]
     },
     {
-      "id": "miraflores",
-      "base": "/gtfs/miraflores",
+      "id": "loranca_old",
+      "base": "/gtfs/loranca_old",
       "carretera": "N4",
       "routes": [
         {
-          "route_id": "1",
-          "short_name": "725",
-          "long_name": "Miraflores - Colmenar Viejo",
-          "color": "00843D",
+          "route_id": "LORANCA4",
+          "short_name": "4",
+          "long_name": "Loranca",
+          "color": "E60003",
           "hasShape": true,
           "carretera": "N4"
         }
@@ -157,21 +187,6 @@
           "short_name": "428",
           "long_name": "GETAFE-VALDEMORO",
           "color": "8EBF42",
-          "hasShape": true,
-          "carretera": "N4"
-        }
-      ]
-    },
-    {
-      "id": "circular-roja",
-      "base": "/gtfs/circular-roja",
-      "carretera": "N4",
-      "routes": [
-        {
-          "route_id": "1",
-          "short_name": "Circular Roja",
-          "long_name": "Fuenlabrada - Circular Roja",
-          "color": "E60003",
           "hasShape": true,
           "carretera": "N4"
         }

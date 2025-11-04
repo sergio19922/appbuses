@@ -10,68 +10,71 @@ if (!fs.existsSync(indexPath)) {
   process.exit(1);
 }
 
-const raw = fs.readFileSync(indexPath, "utf8");
 let indexData;
 try {
-  indexData = JSON.parse(raw);
-} catch (e) {
+  indexData = JSON.parse(fs.readFileSync(indexPath, "utf8"));
+} catch {
   console.error("❌ index.json no es JSON válido.");
-  console.error(e.message);
   process.exit(1);
 }
 
-// --- Normalización: obtenemos la lista de paquetes ---
-let paquetes;
-if (Array.isArray(indexData)) {
-  paquetes = indexData;
-} else if (indexData && typeof indexData === "object") {
-  const candidates = [
-    "packages",
-    "data",
-    "paquetes",
-    "items",
-    "index",
-    "results",
-    "routes"
-  ];
-  paquetes =
-    candidates.map(k => indexData[k]).find(Array.isArray) ||
-    Object.values(indexData).find(Array.isArray);
-}
+// Obtener lista de paquetes
+let paquetes =
+  Array.isArray(indexData)
+    ? indexData
+    : Object.values(indexData).find(Array.isArray) ||
+      Object.values(indexData).filter(Array.isArray)[0];
 
 if (!Array.isArray(paquetes)) {
-  console.error("❌ No se pudo encontrar una lista de paquetes en index.json.");
+  console.error("❌ No se encontró lista válida de paquetes.");
   process.exit(1);
 }
 
-// --- Paquetes que pertenecen a N6 ---
+// Filtramos solo los paquetes de la N6
 const paquetesN6 = ["paquete_004", "paquete_026", "paquete_039"];
 
-// --- Diccionario de renombres SOLO para rutas urbanas de N6 ---
+// Diccionario de renombres exactos por route_id
 const renombres = {
-  "9__1__127_": { short_name: "1", long_name: "Urb. 1 Boadilla del Monte" },
-  "9__1__022_": { short_name: "1", long_name: "Urb. 1 El Escorial" },
-  "9__2__127_": { short_name: "2", long_name: "Urb. 2 Boadilla del Monte" },
-  "9__2__022_": { short_name: "2", long_name: "Urb. 2 El Escorial" },
-  "9__3__127_": { short_name: "3", long_name: "Urb. 3 Boadilla del Monte" },
-  "9__3__022_": { short_name: "3", long_name: "Urb. 3 El Escorial" },
-  "9__4__127_": { short_name: "4", long_name: "Urb. 4 Boadilla del Monte" },
-  "9__4__131_": { short_name: "4", long_name: "Urb. 4 San Lorenzo del Escorial" }
+  // 🟥 Boadilla del Monte
+  "9__1__022_": "Urbana Boadilla L1",
+  "9__2__022_": "Urbana Boadilla L2",
+  "9__3__022_": "Urbana Boadilla L3",
+  "9__4__022_": "Urbana Boadilla L4",
+
+  // 🟥 Las Rozas / Molino de la Hoz
+  "9__1__127_": "Urbana Las Rozas L1",
+  "9__2__127_": "Urbana Las Rozas L2",
+
+  // 🟥 San Lorenzo / El Escorial
+  "9__1__131_": "Urbana San Lorenzo L1",
+  "9__2__131_": "Urbana San Lorenzo L2",
+  "9__3__054_": "Urbana El Escorial L3",
+  "9__4__131_": "Urbana San Lorenzo L4"
 };
 
-// --- Construcción del índice SOLO con N6 ---
+// Construcción del nuevo índice N6
 const indexN6 = paquetes
-  .filter(paquete => paquetesN6.includes(paquete.id)) // ✅ solo N6
-  .map(paquete => {
-    let rutasModificadas = (paquete.routes || []).map(r => {
-      let ren = renombres[r.route_id];
-      if (ren) {
-        return { ...r, ...ren, carretera: "N6" };
+  .filter(p => paquetesN6.includes(p.id))
+  .map(p => ({
+    ...p,
+    carretera: "N6",
+    routes: (p.routes || []).map(r => {
+      const nuevoNombre = renombres[r.route_id];
+      if (nuevoNombre) {
+        console.log(`🟢 Renombrando ${r.route_id} → ${nuevoNombre}`);
+        return {
+          ...r,
+          long_name: nuevoNombre,
+          short_name: r.short_name.replace(/^0/, ""), // elimina ceros iniciales
+          color: "E60003",
+          hasShape: true,
+          carretera: "N6"
+        };
       }
       return { ...r, carretera: "N6" };
-    });
-    return { ...paquete, routes: rutasModificadas, carretera: "N6" };
-  });
+    })
+  }));
 
+// Guardar resultado
 fs.writeFileSync(outputPath, JSON.stringify(indexN6, null, 2), "utf8");
-console.log(`✅ Índice N6 creado en ${outputPath}`);
+console.log(`✅ index-n6.json generado con ${indexN6.length} paquetes`);

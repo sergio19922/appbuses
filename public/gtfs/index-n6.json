@@ -71,7 +71,7 @@
       {
         "route_id": "9__1__022_",
         "short_name": "1",
-        "long_name": "Urb. 1 El Escorial",
+        "long_name": "Urbana Boadilla L1",
         "color": "E60003",
         "hasShape": true,
         "carretera": "N6"
@@ -79,7 +79,7 @@
       {
         "route_id": "9__2__022_",
         "short_name": "2",
-        "long_name": "Urb. 2 El Escorial",
+        "long_name": "Urbana Boadilla L2",
         "color": "E60003",
         "hasShape": true,
         "carretera": "N6"
@@ -87,7 +87,7 @@
       {
         "route_id": "9__3__022_",
         "short_name": "3",
-        "long_name": "Urb. 3 El Escorial",
+        "long_name": "Urbana Boadilla L3",
         "color": "E60003",
         "hasShape": true,
         "carretera": "N6"
@@ -95,7 +95,7 @@
       {
         "route_id": "9__4__022_",
         "short_name": "4",
-        "long_name": "BOADILLA CENTRO - EL PASTEL",
+        "long_name": "Urbana Boadilla L4",
         "color": "E60003",
         "hasShape": true,
         "carretera": "N6"
@@ -238,7 +238,7 @@
       {
         "route_id": "9__1__127_",
         "short_name": "1",
-        "long_name": "Urb. 1 Boadilla del Monte",
+        "long_name": "Urbana Las Rozas L1",
         "color": "E60003",
         "hasShape": true,
         "carretera": "N6"
@@ -246,7 +246,7 @@
       {
         "route_id": "9__2__127_",
         "short_name": "2",
-        "long_name": "Urb. 2 Boadilla del Monte",
+        "long_name": "Urbana Las Rozas L2",
         "color": "E60003",
         "hasShape": true,
         "carretera": "N6"
@@ -373,7 +373,7 @@
       {
         "route_id": "9__1__131_",
         "short_name": "1",
-        "long_name": "S. L. DE EL ESCORIAL-FFCC-S. L. DE EL ESCORIAL",
+        "long_name": "Urbana San Lorenzo L1",
         "color": "E60003",
         "hasShape": true,
         "carretera": "N6"
@@ -381,7 +381,7 @@
       {
         "route_id": "9__2__131_",
         "short_name": "2",
-        "long_name": "EL ESCORIAL-SAN LORENZO DE EL ESCORIAL-HOSPITAL-LA PIZARRA",
+        "long_name": "Urbana San Lorenzo L2",
         "color": "E60003",
         "hasShape": true,
         "carretera": "N6"
@@ -389,7 +389,7 @@
       {
         "route_id": "9__3__054_",
         "short_name": "3",
-        "long_name": "EL ESCORIAL-LAS ZORRERAS",
+        "long_name": "Urbana El Escorial L3",
         "color": "E60003",
         "hasShape": true,
         "carretera": "N6"
@@ -397,7 +397,7 @@
       {
         "route_id": "9__4__131_",
         "short_name": "4",
-        "long_name": "Urb. 4 San Lorenzo del Escorial",
+        "long_name": "Urbana San Lorenzo L4",
         "color": "E60003",
         "hasShape": true,
         "carretera": "N6"

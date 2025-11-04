@@ -196,8 +196,7 @@ N5: {
 useEffect(() => {
   // 🚦 Detecta automáticamente la carretera según la URL actual
   const path = window.location.pathname.toUpperCase();
-  const selectedCarretera = ""; // 👈 no filtramos por defecto
-
+  const selectedCarretera = path.includes("N6") ? "N6" : "N1"; // usa N1 por defecto
 
   // 📂 Selecciona el archivo JSON correcto
   const url =
@@ -207,7 +206,7 @@ useEffect(() => {
 
   console.log(`📂 Cargando datos desde: ${url}`);
 
-  fetch(url)
+    fetch(url)
     .then(res => res.json())
     .then(data => {
       // ✅ Soporta tanto { packages: [...] } como un array directo
@@ -219,35 +218,50 @@ useEffect(() => {
       );
 
       // 🔍 Verificamos si está el paquete_026 (para depuración)
-      // 🔍 Verificamos si está el paquete_026 (para depuración)
-const pack026 = packs.find(p => p.id === "paquete_026");
-if (pack026) {
-  console.log(
-    "🔎 Rutas detectadas en paquete_026:",
-    (pack026.routes || []).map(r => ({
-      short: r.short_name,
-      long: r.long_name,
-    }))
-  );
-}
+      const pack026 = packs.find(p => p.id === "paquete_026");
+      if (pack026) {
+        console.log(
+          "🔎 Rutas detectadas en paquete_026:",
+          (pack026.routes || []).map(r => ({
+            short: r.short_name,
+            long: r.long_name,
+          }))
+        );
+      }
 
-// 🧭 Verificamos si está el paquete miraflores (para depuración)
-const packMiraflores = packs.find(p => p.id === "miraflores");
-if (packMiraflores) {
-  console.log(
-    "🧭 Paquete miraflores detectado:",
-    packMiraflores,
-    "Rutas:",
-    (packMiraflores.routes || []).map(r => ({
-      short: r.short_name,
-      long: r.long_name,
-      carretera: r.carretera,
-      color: r.color
-    }))
-  );
-} else {
-  console.warn("⚠️ No se encontró el paquete miraflores en los datos cargados.");
-}
+      // 🧩 Buscar shapes de líneas de Alcobendas / Moraleja
+      console.log("🔍 Explorando posibles shapes reales para Alcobendas/Moraleja...");
+      (packs || []).forEach(pack => {
+        (pack.routes || []).forEach(r => {
+          const ln = (r.long_name || "").toUpperCase();
+          if (ln.includes("ALCOBENDAS") || ln.includes("MORALEJA") || ln.includes("SOTO")) {
+            console.log(pack.id, r.short_name, r.long_name, r.shape_id);
+          }
+        });
+      });
+
+
+      // 🕵️‍♂️ Buscar la línea urbana 5 real de La Moraleja
+      console.log("🔎 Buscando la línea urbana 5 real de La Moraleja...");
+      (packs || []).forEach(pack => {
+        const r5 = (pack.routes || []).find(
+          r =>
+            r.short_name === "5" ||
+            (r.long_name || "").toUpperCase().includes("MORALEJA")
+        );
+        if (r5) {
+          console.log(
+            `✅ Encontrada posible L5 en ${pack.id}:`,
+            r5.short_name,
+            r5.long_name,
+            r5.shape_id
+          );
+        }
+      });
+
+      // 🔧 A partir de aquí continúa toda tu lógica normal de transformación de "packs"
+      // (la parte que reasigna carreteras, modifica nombres, etc.)
+      // 👇👇👇
 
 
 
@@ -362,7 +376,11 @@ packs.push({
       carretera: "N1"
     }
   ]
+  
 });
+
+
+
 
 
 
@@ -990,39 +1008,104 @@ packs = packs.map(pack => {
 
 console.log("🧹 Rutas nocturnas eliminadas. Paquetes restantes:", packs.length);
 
-// 🧹 Filtro adicional — solo mostrar carreteras nacionales visibles en la app
-const CARRETERAS_VALIDAS = ["N1", "N2", "N3", "N4", "N5", "N6", "M607"];
+// 🟥 Forzar que la línea 5 (El Soto - La Moraleja) esté siempre en N1
+// 🟥 Forzar que la línea 5 (El Soto - La Moraleja) esté siempre en N1
+// 🧩 Recuperar el shape_id de la L5 real si existe en algún paquete
 
-// 🔎 Mantener solo los paquetes y rutas con carretera válida
-packs = packs
-  .map(pack => {
-    const rutasFiltradas = (pack.routes || []).filter(r =>
-      CARRETERAS_VALIDAS.includes((r.carretera || "").toUpperCase())
-    );
-
-    const carreteraPack = (pack.carretera || "").toUpperCase();
-    if (rutasFiltradas.length > 0 || CARRETERAS_VALIDAS.includes(carreteraPack)) {
-      return { ...pack, routes: rutasFiltradas, carretera: carreteraPack };
+console.log("🔍 Explorando shapes disponibles en GTFS:");
+(packs || []).forEach(pack => {
+  (pack.routes || []).forEach(r => {
+    if (r.shape_id) {
+      console.log(pack.id, r.short_name, r.long_name, r.shape_id);
     }
-    return null; // ❌ descarta paquetes sin rutas válidas
-  })
-  .filter(Boolean);
+  });
+});
 
-console.log(
-  "🧭 Paquetes visibles tras filtro N1–N6/M607:",
-  packs.map(p => `${p.id} → ${p.carretera} (${p.routes.length} rutas)`)
+let shapeL5 = null;
+(packs || []).forEach(pack => {
+  const r5 = (pack.routes || []).find(
+    r =>
+      (r.short_name === "5" ||
+       (r.long_name || "").toUpperCase().includes("MORALEJA")) &&
+      r.shape_id
+  );
+  if (r5) shapeL5 = r5.shape_id;
+});
+
+console.log("🟢 Shape encontrado para L5:", shapeL5);
+
+// 🟥 Forzar que la línea 5 (El Soto - La Moraleja) esté siempre en N1 con shape válido
+// 🟥 Forzar que la línea 5 (El Soto - La Moraleja) esté siempre en N1 con shape válido
+const existeL5 = (packs || []).some(pack =>
+  (pack.routes || []).some(
+    r =>
+      (r.carretera || "").toUpperCase() === "N1" &&
+      (r.short_name || "") === "5" &&
+      (r.long_name || "").toUpperCase().includes("MORALEJA")
+  )
 );
 
-// 🟧 Añadimos manualmente la línea 161 al paquete N1
-// 🟧 Añadimos manualmente la línea 161 al paquete N1
+if (!existeL5) {
+  console.log("⚙️ Añadiendo manualmente la L5 de La Moraleja...");
+  const packN1 = (packs || []).find(p => p.id === "paquete_001");
 
+  // 🔍 Intentamos buscar la ruta 155 en cualquier paquete que la contenga
+  let shapeL5 = null;
+  (packs || []).forEach(p => {
+    (p.routes || []).forEach(r => {
+      const name = (r.long_name || "").toUpperCase();
+      if (
+        (r.short_name === "155" || name.includes("EL SOTO")) &&
+        (r.hasShape || r.shape_id)
+      ) {
+        shapeL5 = r.route_id; // usamos su id como shape base
+      }
+    });
+  });
+
+  if (!shapeL5) {
+    console.warn("⚠️ No se encontró la 155 con shape válido, usando fallback.");
+  }
+
+  if (packN1) {
+    if (!packN1.routes) packN1.routes = [];
+
+    packN1.routes.push({
+  route_id: "8__155___", // 👈 mismo ID que la línea 155
+  short_name: "5",
+  long_name: "Urb El Soto La Moraleja",
+  color: "E60003",       // rojo urbano
+  carretera: "N1",
+  hasShape: true
+});
+
+
+    console.log("✅ L5 de La Moraleja añadida con shape:", shapeL5 || "8__155___");
+  } else {
+    console.error("❌ No se encontró paquete_001 para añadir la L5.");
+  }
+}
+
+// 🔍 Verificar en consola
+console.table(
+  (packs.find(p => p.id === "paquete_001")?.routes || [])
+    .filter(r => r.short_name === "5")
+    .map(r => ({
+      id: r.route_id,
+      long: r.long_name,
+      shape: r.shape_id,
+      hasShape: r.hasShape,
+    }))
+);
 
 // ✅ Guardamos los paquetes finales
 setPackages(packs);
 
+
 })
 .catch(err => console.error("Error cargando GTFS index:", err));
 }, []);
+
 
 
 
@@ -1050,21 +1133,6 @@ const todasLasRutas = packages.flatMap(pack =>
   let uniqueRutas = Array.from(
     new Map(todasLasRutas.map(r => [`${r.packId}-${r.route_id}`, r])).values()
   );
-
-  // 🧭 Depuración Miraflores 725
-console.log(
-  "🧭 Rutas 725 detectadas:",
-  uniqueRutas
-    .filter(r => (r.short_name || "").trim() === "725")
-    .map(r => ({
-      short: r.short_name,
-      long: r.long_name,
-      carretera: r.carretera,
-      packId: r.packId,
-      color: r.color
-    }))
-);
-
 
   // 🧩 Correcciones de clasificación: N1 y M607
 // 🧩 Correcciones de clasificación: N1 y M607
@@ -1101,6 +1169,18 @@ uniqueRutas = uniqueRutas.map(r => {
   return r;
 });
 
+console.table(
+  uniqueRutas
+    .filter(r => (r.carretera || "").toUpperCase() === "N1")
+    .map(r => ({
+      pack: r.packId,
+      id: r.route_id,
+      short: r.short_name,
+      long: r.long_name,
+      color: r.color,
+      car: r.carretera
+    }))
+);
 
 // 🚫 Eliminar duplicadas 720–729 en N1
 // 🧹 Eliminar de raíz todas las urbanas rojas de N1 excepto la 5 (El Soto la Moraleja)
@@ -1151,6 +1231,21 @@ uniqueRutas = uniqueRutas
     return true;
   });
 
+
+  console.log("🔍 Verificando la línea 5 N1 antes del filtrado final:");
+console.table(
+  uniqueRutas
+    .filter(r => r.short_name === "5" && r.carretera === "N1")
+    .map(r => ({
+      id: r.route_id,
+      long: r.long_name,
+      color: r.color,
+      shape: r.shape_id,
+      pack: r.packId,
+      hasShape: r.hasShape
+    }))
+);
+
 // 🧾 Mostrar resumen final
 console.table(
   uniqueRutas
@@ -1164,69 +1259,33 @@ console.table(
     }))
 );
 
-// 🧹 Limpieza final — mantener solo la 5, eliminar 1 y 6 de N1/N607 sin tocar otras carreteras
-uniqueRutas = uniqueRutas.filter(r => {
-  const sn = (r.short_name || "").trim().toUpperCase();
-  const ln = (r.long_name || "").toUpperCase();
-  const car = (r.carretera || "").toUpperCase();
-
-  // 🟢 Excepción: mantener siempre la 161 de N1
-  if (sn === "161" && car === "N1") return true;
-
-  if (!["N1", "N607"].includes(car)) return true;
-
-  const esMoraleja = sn === "5" && (ln.includes("MORALEJA") || ln.includes("SOTO"));
-  if (esMoraleja) return true;
-
-  const numerosUrbanos = ["1", "6", "9", "10", "11"];
-  const palabrasProhibidas = [
-    "URB",
-    "ALCOBENDAS",
-    "COLMENAR",
-    "SAN SEBASTIAN",
-    "S.S.",
-    "REYES"
-  ];
-
-  const esUrbanaProhibida =
-    numerosUrbanos.includes(sn) ||
-    palabrasProhibidas.some(p => ln.includes(p));
-
-  if (esUrbanaProhibida) {
-    console.log("🧹 Eliminando urbana prohibida:", sn, ln, car);
-    return false;
-  }
-
-  return true;
-});
 
 
-
-// 🧹 Corrección: eliminar duplicado 725 de N1 y mantener solo el de N4 (Miraflores)
-uniqueRutas = uniqueRutas.filter(r => {
-  const sn = (r.short_name || "").trim();
-  const car = (r.carretera || "").trim().toUpperCase();
-  if (sn === "725" && car === "N1") {
-    console.log("🧹 Eliminando duplicado 725 de N1");
-    return false;
-  }
-  return true;
-});
-
-
-// 🔴 Líneas rojas válidas (solo circulares y excepciones)
+  // 🔴 Líneas rojas válidas (solo circulares y excepciones)
 // 🔴 Líneas rojas válidas (N1 + N2 + N3 + N4)
 const lineasRojasValidas = [
   // N1
-  "5", "Circular Ciudalcampo",
+  "5", "6", "8", "9", "Circular Ciudalcampo",
   // N2
   "1A", "2", "3", "4", "5A", "6",
   // N3
   "1", "2", "4",
   // N4
   "2", "Circular Roja", "1", "CIRCULAR VEREDA DE LOS ESTUDIANTES-LA FORTUNA",
-  "4", "6", "13"
+  "4", "6", "13",
+  // N6 - Urbanas
+  "Urbana Boadilla L1",
+  "Urbana Boadilla L2",
+  "Urbana Boadilla L3",
+  "Urbana Boadilla L4",
+  "Urbana Las Rozas L1",
+  "Urbana Las Rozas L2",
+  "Urbana San Lorenzo L1",
+  "Urbana San Lorenzo L2",
+  "Urbana El Escorial L3",
+  "Urbana San Lorenzo L4"
 ];
+
 
 
   const splitShortName = (name = "") => {
@@ -1247,8 +1306,8 @@ const lineasRojasValidas = [
 // 👉 Detectamos solo las líneas rojas de N4
 const esRojaN4 = (r) =>
   r.carretera === "N4" &&
-  ["1", "2", "3", "4", "6", "13", "Circular Roja", "CIRCULAR VEREDA DE LOS ESTUDIANTES-LA FORTUNA"]
-    .includes(r.short_name) || ["Circular Roja","CIRCULAR VEREDA DE LOS ESTUDIANTES-LA FORTUNA"].includes(r.long_name);
+  ["1", "2", "3", "4", "6", "13", "Circular Roja", "Circular Verde", "CIRCULAR VEREDA DE LOS ESTUDIANTES-LA FORTUNA"]
+    .includes(r.short_name) || ["Circular Roja","Circular Verde","CIRCULAR VEREDA DE LOS ESTUDIANTES-LA FORTUNA"].includes(r.long_name);
 
 const rojasN4 = uniqueRutas.filter(esRojaN4);
 const resto = uniqueRutas.filter(r => !esRojaN4(r));
@@ -1264,14 +1323,22 @@ const ordenN4 = [
   "13"   // 13. Fuenlabrada
 ];
 
+// 🧮 Orden numérico natural en N4
 uniqueRutas = [
   ...rojasN4.sort((a, b) => {
-    const aKey = ordenN4.find(k => k === a.short_name || k === a.long_name);
-    const bKey = ordenN4.find(k => k === b.short_name || k === b.long_name);
-    return ordenN4.indexOf(aKey) - ordenN4.indexOf(bKey);
+    const numA = parseInt(a.short_name);
+    const numB = parseInt(b.short_name);
+    // Si ambos son números (1,2,3,4,6,13) → orden numérico
+    if (!isNaN(numA) && !isNaN(numB)) return numA - numB;
+    // Si uno es numérico y otro no, el numérico primero
+    if (!isNaN(numA) && isNaN(numB)) return -1;
+    if (isNaN(numA) && !isNaN(numB)) return 1;
+    // Por texto si no son numéricos
+    return (a.short_name || "").localeCompare(b.short_name || "");
   }),
   ...resto.sort(compararLineas)
 ];
+
 
 // 📍 Lista de municipios únicos a partir de uniqueRutas
 const municipiosUnicos = Array.from(
@@ -1448,30 +1515,54 @@ const handleSelect = (route) => {
     }
 
     // 🔧 Ajustes especiales para la N6 (Boadilla / Escorial / San Lorenzo)
-    if (route.carretera === "N6") {
-      const ln = (route.long_name || "").toLowerCase();
+    // 🟥 Renombrado y color para líneas urbanas de la N6
+if ((route.carretera || "").toUpperCase().includes("N6")) {
+  const ln = (route.long_name || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, ""); // quita tildes
 
-      if (route.short_name === "1" && ln.includes("boadilla"))
-        nombrePersonalizado = "1. Boadilla del Monte";
-      if (route.short_name === "1" && ln.includes("escorial"))
-        nombrePersonalizado = "1. El Escorial";
+  const sn = (route.short_name || "").toLowerCase(); // short_name normalizado
 
-      if (route.short_name === "2" && ln.includes("boadilla"))
-        nombrePersonalizado = "2. Boadilla del Monte";
-      if (route.short_name === "2" && ln.includes("escorial"))
-        nombrePersonalizado = "2. El Escorial";
+  console.log("🧭 Detectado N6:", sn, ln);
 
-      if (route.short_name === "3" && ln.includes("boadilla"))
-        nombrePersonalizado = "3. Boadilla del Monte";
-      if (route.short_name === "3" && ln.includes("escorial"))
-        nombrePersonalizado = "3. El Escorial";
+  // 🟢 Inicialmente, todas las urbanas de la N6 → color rojo
+  route.color = "E60003";
 
-      if (route.short_name === "4" && ln.includes("san lorenzo"))
-        nombrePersonalizado = "4. San Lorenzo del Escorial";
+  // 🟢 BOADILLA DEL MONTE
+// 🟥 BOADILLA DEL MONTE
+if (ln.includes("boadilla")) {
+  if (sn.includes("1")) nombrePersonalizado = "Urbana Boadilla L1";
+  else if (sn.includes("2")) nombrePersonalizado = "Urbana Boadilla L2";
+  else if (sn.includes("3")) nombrePersonalizado = "Urbana Boadilla L3";
+  else if (sn.includes("4")) nombrePersonalizado = "Urbana Boadilla L4";
+}
 
-      if (route.short_name === "5" && ln.includes("boadilla"))
-        nombrePersonalizado = "5. Boadilla del Monte";
-    }
+else if (ln.includes("rozas")) {
+  if (sn.includes("1")) nombrePersonalizado = "Urbana Las Rozas L1";
+  else if (sn.includes("2")) nombrePersonalizado = "Urbana Las Rozas L2";
+}
+
+else if (ln.includes("el escorial")) {
+  if (sn.includes("3")) nombrePersonalizado = "Urbana El Escorial L3";
+}
+
+else if (ln.includes("san lorenzo")) {
+  if (sn.includes("1")) nombrePersonalizado = "Urbana San Lorenzo L1";
+  else if (sn.includes("2")) nombrePersonalizado = "Urbana San Lorenzo L2";
+  else if (sn.includes("4")) nombrePersonalizado = "Urbana San Lorenzo L4";
+}
+
+// 👇 ESTA ES LA CLAVE
+if (nombrePersonalizado) {
+  route.long_name = nombrePersonalizado;
+  route.nombrePersonalizado = nombrePersonalizado; // <--- NUEVA LÍNEA
+  console.log("✅ Asignado:", sn, "→", nombrePersonalizado);
+}
+
+
+}
+
 
     // 🚀 Continuar con la selección
     onSelectLine({
@@ -1522,14 +1613,14 @@ return (
         border: "1px solid #ccc"
       }}
     >
-      <option value="">Todas</option>
-      <option value="N1">N1</option>
-      <option value="N2">N2</option>
-      <option value="N3">N3</option>
-      <option value="N4">N4</option>
-      <option value="N5">N5</option>
-      <option value="N6">N6</option>
-      <option value="M607">M607</option>
+        <option value="">Todas</option>
+  <option value="M607">M607</option> {/* 👈 ahora la primera */}
+  <option value="N1">N1</option>
+  <option value="N2">N2</option>
+  <option value="N3">N3</option>
+  <option value="N4">N4</option>
+  <option value="N5">N5</option>
+  <option value="N6">N6</option>
     </select>
 
     {/*
@@ -1638,31 +1729,7 @@ return (
       Borrar filtros
     </button>
 
-   {rutasFiltradasFinal
-  .slice()
-  .sort((a, b) => {
-    const esRoja = (r) => {
-      const color = (r.color || "").toUpperCase();
-      const sn = (r.short_name || "").toUpperCase();
-      const ln = (r.long_name || "").toUpperCase();
-
-      return (
-        ["E60003", "FF0000", "C00000", "D60003"].includes(color) ||
-        lineasRojasValidas.includes(sn) ||
-        lineasRojasValidas.includes(ln)
-      );
-    };
-
-    const rojaA = esRoja(a);
-    const rojaB = esRoja(b);
-
-    if (rojaA && !rojaB) return -1;
-    if (!rojaA && rojaB) return 1;
-    return 0;
-  })
-  .map(route => {
-
-
+    {rutasFiltradasFinal.map(route => {
   // 💚 Forzamos verde para las interurbanas M607
   let colorHex = `#${route.color}`;
   const snNum = parseInt(route.short_name);

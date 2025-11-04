@@ -52,7 +52,7 @@ export default function App() {
             routeId,
             shortName: routeId,
             longName: "",
-            color: "#F39400",
+            color: "#35ef0bff",
             carretera: "Otras",
           };
         })
@@ -65,33 +65,39 @@ export default function App() {
   }, [location.search]);
 
   // 📦 Comprobación dinámica de carreteras (N2, N4)
-  useEffect(() => {
-    const checkCarreteras = async () => {
-      try {
-        const resultados = await Promise.all([
-          fetch("/gtfs/index-n2.json?v=20250814").then((r) => r.json()).catch(() => null),
-          fetch("/gtfs/index-n4.json?v=20250814").then((r) => r.json()).catch(() => null),
-        ]);
+  // 📦 Comprobación dinámica de carreteras (N2, N4, N6)
+useEffect(() => {
+  const checkCarreteras = async () => {
+    try {
+      const resultados = await Promise.all([
+        fetch("/gtfs/index-n2.json?v=20250814").then((r) => r.json()).catch(() => null),
+        fetch("/gtfs/index-n4.json?v=20250814").then((r) => r.json()).catch(() => null),
+        fetch("/gtfs/index-n6.json?v=20250814").then((r) => r.json()).catch(() => null), // 👈 añade esto
+      ]);
 
-        const [dataN2, dataN4] = resultados;
+      const [dataN2, dataN4, dataN6] = resultados;
 
-        setCarreteras((prev) => {
-          let nueva = [...prev];
-          if (Array.isArray(dataN2) && dataN2.length > 0 && !nueva.some((o) => o.value === "N2")) {
-            nueva.push({ value: "N2", label: "N2" });
-          }
-          if (Array.isArray(dataN4) && dataN4.length > 0 && !nueva.some((o) => o.value === "N4")) {
-            nueva.push({ value: "N4", label: "N4" });
-          }
-          return nueva;
-        });
-      } catch (e) {
-        console.error("Error comprobando index-n2/n4", e);
-      }
-    };
+      setCarreteras((prev) => {
+        let nueva = [...prev];
+        if (Array.isArray(dataN2) && dataN2.length > 0 && !nueva.some((o) => o.value === "N2")) {
+          nueva.push({ value: "N2", label: "N2" });
+        }
+        if (Array.isArray(dataN4) && dataN4.length > 0 && !nueva.some((o) => o.value === "N4")) {
+          nueva.push({ value: "N4", label: "N4" });
+        }
+        if (Array.isArray(dataN6) && dataN6.length > 0 && !nueva.some((o) => o.value === "N6")) {
+          nueva.push({ value: "N6", label: "N6" }); // 👈 y añade esto
+        }
+        return nueva;
+      });
+    } catch (e) {
+      console.error("Error comprobando index-n2/n4/n6", e);
+    }
+  };
 
-    checkCarreteras();
-  }, []);
+  checkCarreteras();
+}, []);
+
 
   // 📍 Selección de línea
   const onSelectLine = (item) => {
@@ -104,7 +110,7 @@ export default function App() {
       const exists = prev.some((p) => p.key === item.key);
       if (exists) return prev.filter((p) => p.key !== item.key);
 
-      const color = "#F39400"; // Naranja corporativo
+      const color = "#35f300ff"; 
       return [
         ...prev,
         {
@@ -322,7 +328,7 @@ export default function App() {
                   routeId={s.routeId}
                   shortName={s.shortName}
                   longName={s.longName}
-                  color="#F39400"
+                  color="#78BE20"
                 />
               ))}
             </MapView>

@@ -140,7 +140,7 @@ if (paqueteRutas.some(r => n5Rutas.includes(r))) {
   }
 
   // 🧹 FILTRAR paquetes no deseados del index principal
-const excluirIds = ["circularverde", "elrellano", "zarzalejo"]; // agrega aquí los que quieras ocultar
+const excluirIds = ["elrellano", "zarzalejo"]; // agrega aquí los que quieras ocultar
 packages = packages.filter(pkg => !excluirIds.includes(pkg.id.toLowerCase()));
 
 
@@ -279,6 +279,8 @@ packages = packages.map(p => {
 
     // 🛣️ Asignar automáticamente las interurbanas 151–199 a la carretera N1
 // 🧱 Asegurar que paquete_001 no se pierda por ningún map/filter
+// 🛣️ Asignar automáticamente las interurbanas 151–199 a la carretera N1
+// 🧱 Asegurar que paquete_001 no se pierda por ningún map/filter
 if (!packages.some(p => p.id === "paquete_001")) {
   console.warn("⚠️ paquete_001 se perdió tras el procesado. Reinyectando manualmente...");
 
@@ -286,14 +288,22 @@ if (!packages.some(p => p.id === "paquete_001")) {
   if (await fs.pathExists(absPath)) {
     const text = await fs.readFile(absPath, "utf8");
     const rows = await parseCSV(text);
-    const routes = rows.map(r => ({
-      route_id: r.route_id,
-      short_name: (r.route_short_name || "").trim(),
-      long_name: (r.route_long_name || "").trim(),
-      color: "A8E05F", // 💚 verde claro
-      hasShape: true,
-      carretera: "N1",
-    }));
+
+    // 🔹 Solo conservar rutas interurbanas 150–199
+    const routes = rows
+      .filter(r => {
+        const sn = (r.route_short_name || "").trim();
+        return /^1[5-9][0-9]$/.test(sn); // Solo 150–199
+      })
+      .map(r => ({
+        route_id: r.route_id,
+        short_name: (r.route_short_name || "").trim(),
+        long_name: (r.route_long_name || "").trim(),
+        color: "A8E05F", // 💚 verde claro N1
+        hasShape: true,
+        carretera: "N1",
+      }));
+
     packages.push({
       id: "paquete_001",
       base: "/gtfs/paquete_001",
@@ -417,6 +427,7 @@ for (const pkg of packages) {
 }
 
 // ⚙️ Inclusión manual de circular-roja si no está
+// ⚙️ Inclusión manual de circular-roja si no está
 if (!n4Packages.some(p => p.id === "circular-roja")) {
   n4Packages.push({
     id: "circular-roja",
@@ -437,7 +448,7 @@ if (!n4Packages.some(p => p.id === "circular-roja")) {
 }
 
 // 💾   Guardar index-n4.json
-const OUT_N4 = path.join(GTFS_DIR, 'index-n4.json');
+const OUT_N4 = path.join(GTFS_DIR, "index-n4.json");
 await fs.writeJson(
   OUT_N4,
   { generatedAt: new Date().toISOString(), packages: n4Packages },
@@ -446,6 +457,38 @@ await fs.writeJson(
 
 console.log(`✅ Índice N4 creado automáticamente en ${OUT_N4} con ${n4Packages.length} paquetes`);
 
-  console.log(`✅ Índice N5 creado automáticamente en ${OUT_N5} con ${n5Packages.length} paquetes`);
+// 🧭 Forzar urbanas del sur en la carretera N4 (Fuenlabrada, Leganés, Loranca, Cementerio, etc.)
+packages = packages.map(p => {
+  const id = p.id.toLowerCase();
+  const esN4 =
+    id.startsWith("fuenlabrada") ||
+    id.startsWith("leganes") ||
+    ["loranca", "miraflores", "cementerio"].includes(id);
+
+  if (esN4) {
+    console.log(`✅ Marcando paquete ${p.id} como N4`);
+    return {
+      ...p,
+      carretera: "N4",
+      routes: (p.routes || []).map(r => ({
+        ...r,
+        carretera: "N4",
+        color: r.color || "E60003", // 🔴 Rojo urbano
+        hasShape: true
+      }))
+    };
+  }
+  return p;
+});
+
+// 💾 Guardar índice principal (index.json)
+await fs.writeJson(
+  OUT,
+  { generatedAt: new Date().toISOString(), packages },
+  { spaces: 2 }
+);
+
+console.log(`\n✅ Índice GTFS creado en ${OUT} con ${packages.length} paquetes`);
+console.log(`✅ Índice N5 creado automáticamente en ${OUT_N5} con ${n5Packages.length} paquetes`);
 })();
 

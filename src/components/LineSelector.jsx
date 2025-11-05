@@ -272,7 +272,7 @@ useEffect(() => {
     if (pack.id === "paquete_001") {
   // 👇 listado de líneas interurbanas de la N1
   const rutasValidasN1 = [
-     "5",
+    "5",
     "151", "152", "152C", "153", "154", "154C",
     "155", "155B", "156", "157", "157C", "158",
     "159", "166", "180", "181", "182",
@@ -282,9 +282,16 @@ useEffect(() => {
   const rutasModificadas = pack.routes.map(r => {
     const sn = (r.short_name || "").trim();
     const ln = (r.long_name || "").toUpperCase();
+    const snNum = parseInt(sn, 10);
 
-    // 🏙️ Urbana Colmenar Viejo L1
-    
+    // 💚 Color unificado para interurbanas N1 (151–199 y 180–185)
+    let colorBase = r.color || "";
+    if (
+      (snNum >= 151 && snNum <= 199) ||
+      ["180", "181", "182", "183", "184", "185"].includes(sn)
+    ) {
+      colorBase = "A8E05F"; // 🌿 verde claro unificado
+    }
 
     //
 
@@ -1101,6 +1108,8 @@ console.table(
 // ✅ Guardamos los paquetes finales
 setPackages(packs);
 
+console.table(uniqueRutas.filter(r => ["182","185"].includes(r.short_name)))
+
 
 })
 .catch(err => console.error("Error cargando GTFS index:", err));
@@ -1194,42 +1203,56 @@ uniqueRutas = uniqueRutas
     color: (r.color || "").toUpperCase()
   }))
   // 🔍 Luego filtramos lo que queremos conservar
-  .filter(r => {
-    const { short_name: sn, long_name: ln, carretera: car, color } = r;
+ .filter(r => {
+  const { short_name: sn, long_name: ln, carretera: car, color } = r;
 
-    // 🚦 Solo actuar sobre N1
-    if (car !== "N1") return true;
+  // 🚫 Quitar 182 y 185 de N1
+  if (car === "N1" && ["182", "185"].includes(sn)) return false;
 
-    // ❤️ Mantener solo la L5 (El Soto - La Moraleja)
-    const esMoraleja = sn === "5" && (ln.includes("MORALEJA") || ln.includes("SOTO"));
-    if (esMoraleja) {
-      // Garantizamos color rojo urbano
-      r.color = "E60003";
-      r.long_name = "Urb El Soto La Moraleja";
-      return true;
-    }
+  if (car !== "N1") return true;
 
-    // 💚 Mantener interurbanas verdes (151–199)
-    if (/^(15[1-9]|16[0-9]|17[0-9]|18[0-9]|19[0-9])$/.test(sn)) return true;
-
-    // 🚫 Eliminar cualquier otra roja urbana N1
-    const esRoja =
-      ["E60003", "FF0000", "C00000", "D60003"].includes(color) ||
-      ln.includes("URB") ||
-      ln.includes("ALCOBENDAS") ||
-      ln.includes("COLMENAR") ||
-      ln.includes("S.S.") ||
-      ln.includes("REYES") ||
-      ln.includes("CIRCULAR");
-
-    if (esRoja) {
-      console.log("🧹 Eliminando roja N1:", sn, ln);
-      return false;
-    }
-
-    // ✅ Mantener el resto
+  // 💚 Forzar que las 182 y 185 siempre se conserven (interurbanas verdes)
+  if (car === "N1" && /^18[0-9]/.test(sn)) {
+    r.color = "78BE20"; // verde interurbano
     return true;
-  });
+  }
+
+  // ❤️ Mantener solo la L5 (El Soto - La Moraleja)
+  const esMoraleja = sn === "5" && (ln.includes("MORALEJA") || ln.includes("SOTO"));
+  if (esMoraleja) {
+    r.color = "E60003";
+    r.long_name = "Urb El Soto La Moraleja";
+    return true;
+  }
+
+  // 💚 Mantener interurbanas verdes (151–199)
+ // 💚 Mantener interurbanas verdes (151–199 + excepciones 152C y 155B)
+if (
+  /^(15[1-9]|16[0-9]|17[0-9]|19[0-9])$/.test(sn) ||
+  ["152C", "155B"].includes(sn)
+) {
+  r.color = "A8E05F"; // 🌿 verde claro definitivo
+  return true;
+}
+
+
+  // 🚫 Eliminar cualquier otra roja urbana N1
+  const esRoja =
+    ["E60003", "FF0000", "C00000", "D60003"].includes(color) ||
+    ln.includes("URB") ||
+    ln.includes("ALCOBENDAS") ||
+    ln.includes("COLMENAR") ||
+    ln.includes("S.S.") ||
+    ln.includes("REYES") ||
+    ln.includes("CIRCULAR");
+
+  if (esRoja) {
+    console.log("🧹 Eliminando roja N1:", sn, ln);
+    return false;
+  }
+
+  return true;
+});
 
 
   console.log("🔍 Verificando la línea 5 N1 antes del filtrado final:");
@@ -1741,7 +1764,7 @@ return (
       (snNum >= 720 && snNum <= 727)
     )
   ) {
-    colorHex = "#78BE20";
+    colorHex = "#A8E05F" ;
   }
 
 
@@ -1811,7 +1834,7 @@ backgroundColor:
         ["913"].includes(route.short_name) ||
         (parseInt(route.short_name) >= 720 && parseInt(route.short_name) <= 727)
       )
-    ? "#78BE20"
+    ? "#A8E05F" 
     : `#${route.color}`,
 
     color: "#fff",

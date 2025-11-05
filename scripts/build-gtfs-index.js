@@ -292,8 +292,8 @@ if (!packages.some(p => p.id === "paquete_001")) {
     // 🔹 Solo conservar rutas interurbanas 150–199
     const routes = rows
       .filter(r => {
-        const sn = (r.route_short_name || "").trim();
-        return /^1[5-9][0-9]$/.test(sn); // Solo 150–199
+        const sn = (r.route_short_name || "").trim().toUpperCase();
+    return /^1[5-9][0-9][A-Z]?$/.test(sn); // ✅ admite letras opcionale
       })
       .map(r => ({
         route_id: r.route_id,

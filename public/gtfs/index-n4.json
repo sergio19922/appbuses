@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-04T17:57:59.678Z",
+  "generatedAt": "2025-11-05T14:35:59.834Z",
   "packages": [
     {
       "id": "161",
@@ -62,21 +62,6 @@
       ]
     },
     {
-      "id": "fuenlabrada13",
-      "base": "/gtfs/fuenlabrada13",
-      "carretera": "N4",
-      "routes": [
-        {
-          "route_id": "fuenlabrada13_001",
-          "short_name": "13",
-          "long_name": "Fuenlabrada 13",
-          "color": "E60003",
-          "hasShape": true,
-          "carretera": "N4"
-        }
-      ]
-    },
-    {
       "id": "fuenlabrada4",
       "base": "/gtfs/fuenlabrada4",
       "carretera": "N4",
@@ -92,14 +77,14 @@
       ]
     },
     {
-      "id": "miraflores",
-      "base": "/gtfs/miraflores",
+      "id": "fuenlabrada13",
+      "base": "/gtfs/fuenlabrada13",
       "carretera": "N4",
       "routes": [
         {
-          "route_id": "1",
-          "short_name": "1",
-          "long_name": "Fuenlabrada 1",
+          "route_id": "fuenlabrada13_001",
+          "short_name": "13",
+          "long_name": "Fuenlabrada 13",
           "color": "E60003",
           "hasShape": true,
           "carretera": "N4"
@@ -115,6 +100,21 @@
           "route_id": "LORANCA4",
           "short_name": "4",
           "long_name": "Loranca",
+          "color": "E60003",
+          "hasShape": true,
+          "carretera": "N4"
+        }
+      ]
+    },
+    {
+      "id": "miraflores",
+      "base": "/gtfs/miraflores",
+      "carretera": "N4",
+      "routes": [
+        {
+          "route_id": "1",
+          "short_name": "1",
+          "long_name": "Fuenlabrada 1",
           "color": "E60003",
           "hasShape": true,
           "carretera": "N4"
